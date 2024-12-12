@@ -1,0 +1,31 @@
+:root {
+  --color-text-default-secondary: var(--color-primitives-gray-500);
+  --color-text-default-tertiary: var(--color-primitives-gray-400);
+  --color-primitives-gray-500: rgba(117, 117, 117, 1);
+  --color-primitives-gray-400: rgba(179, 179, 179, 1);
+  --color-primitives-white-500: rgba(255, 255, 255, 0.7);
+  --color-primitives-white-400: rgba(255, 255, 255, 0.4);
+  --size-space-300: 12px;
+}
+
+/*
+
+To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:
+
+<body data-color-mode="SDS-light">
+    <!-- the rest of your content -->
+</body>
+
+You can apply the theme on any DOM node, not just the `body`
+
+*/
+
+[data-color-mode="SDS-light"] {
+  --color-text-default-secondary: var(--color-primitives-gray-500);
+  --color-text-default-tertiary: var(--color-primitives-gray-400);
+}
+
+[data-color-mode="SDS-dark"] {
+  --color-text-default-secondary: var(--color-primitives-white-500);
+  --color-text-default-tertiary: var(--color-primitives-white-400);
+}

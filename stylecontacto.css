@@ -1,0 +1,1314 @@
+.contacto.contacto-wrapper {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.contacto .div {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 390px;
+  height: 1402px;
+  position: relative;
+}
+
+.contacto .rectangle {
+  top: 12px;
+  position: absolute;
+  width: 52px;
+  height: 8px;
+  left: 324px;
+  background-color: #479fd4;
+}
+
+.contacto .rectangle-2 {
+  top: 23px;
+  position: absolute;
+  width: 52px;
+  height: 8px;
+  left: 324px;
+  background-color: #479fd4;
+}
+
+.contacto .rectangle-3 {
+  top: 35px;
+  position: absolute;
+  width: 52px;
+  height: 8px;
+  left: 324px;
+  background-color: #479fd4;
+}
+
+.contacto .ctechpng {
+  width: 148px;
+  height: 32px;
+  top: 11px;
+  left: 28px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.contacto .div-2 {
+  position: absolute;
+  width: 2017px;
+  height: 1344px;
+  top: 58px;
+  left: -617px;
+}
+
+.contacto .overlap {
+  position: absolute;
+  width: 1231px;
+  height: 776px;
+  left: 420px;
+  background-color: #479fd4;
+}
+
+.contacto .LET-s-MAKE-THINGS {
+  position: absolute;
+  top: 410px;
+  left: 223px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 60px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* Estilo general del formulario */
+.contacto .form {
+  position: relative;
+  width: 40%;  /* Reducido el ancho al 50% */
+  max-width: 300px; /* Limitar el tamaño máximo a 300px */
+  height: auto;  /* Altura ajustada automáticamente */
+  margin-left: 240px; /* Centrado horizontal */
+  padding: 15px; /* Reducido padding para hacerlo más compacto */
+  border-radius: 8px; /* Bordes redondeados */
+  top: 60px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los campos del formulario */
+.contacto .form input[type="text"],
+.contacto .form input[type="email"],
+.contacto .form input[type="tel"],
+.contacto .form textarea {
+  width: 100%; /* Ancho completo */
+  padding: 8px; /* Reducido padding para mayor ajuste */
+  margin-bottom: 8px; /* Margen entre los campos */
+  background-color: #f4f4f4;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 12px; /* Reducido tamaño de fuente */
+  box-sizing: border-box;
+}
+
+.contacto .form #comentarios {
+  height: 60px; /* Altura menor para textarea */
+  resize: none; /* Evitar que el textarea sea redimensionado */
+}
+
+/* Estilo para los placeholders */
+.contacto .form input::placeholder,
+.contacto .form textarea::placeholder {
+  color: #999999; /* Color más suave para el placeholder */
+  font-size: 12px; /* Tamaño de fuente ajustado */
+}
+
+/* Estilo del botón de envío */
+.contacto .form .submit-btn {
+  width: 100%;
+  padding: 10px 0; /* Ajuste de padding */
+  font-size: 12px; /* Tamaño de fuente reducido */
+  color: #ffffff;
+  background: #479fd4;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contacto .form .submit-btn:hover {
+  background: #3477a5;
+}
+
+.contacto .footer {
+  position: absolute;
+  width: 2035px;
+  height: 568px;
+  top: 776px;
+  left: 0;
+  background-color: transparent;
+}
+
+.contacto .overlap-group {
+  position: relative;
+  width: 2015px;
+  height: 568px;
+  background-color: #050b21;
+}
+
+.contacto .linkedin {
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  top: 132px;
+  left: 774px;
+  object-fit: cover;
+}
+
+.contacto .partner {
+  position: absolute;
+  width: 111px;
+  height: 33px;
+  top: 132px;
+  left: 650px;
+  object-fit: cover;
+}
+
+.contacto .p {
+  position: absolute;
+  width: 229px;
+  top: 76px;
+  left: 650px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 11.9px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contacto .ctechpng-2 {
+  width: 111px;
+  height: 24px;
+  top: 35px;
+  left: 650px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.contacto .text-wrapper-4 {
+  position: absolute;
+  top: 356px;
+  left: 829px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contacto .text-wrapper-5 {
+  position: absolute;
+  top: 334px;
+  left: 829px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contacto .text-wrapper-6 {
+  position: absolute;
+  top: 313px;
+  left: 829px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contacto .text-wrapper-7 {
+  position: absolute;
+  top: 290px;
+  left: 829px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 11.9px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.contacto .text-wrapper-8 {
+  position: absolute;
+  top: 377px;
+  left: 655px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contacto .text-wrapper-9 {
+  position: absolute;
+  top: 356px;
+  left: 655px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contacto .text-wrapper-10 {
+  position: absolute;
+  top: 334px;
+  left: 655px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contacto .text-wrapper-11 {
+  position: absolute;
+  top: 313px;
+  left: 655px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contacto .text-wrapper-12 {
+  position: absolute;
+  top: 290px;
+  left: 655px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 11.9px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.contacto.div-wrapper {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.contacto .div-3 {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 596px;
+  height: 2142.54px;
+  position: relative;
+}
+
+.contacto .rectangle-4 {
+  position: absolute;
+  width: 79px;
+  height: 12px;
+  top: 18px;
+  left: 495px;
+  background-color: #479fd4;
+}
+
+.contacto .rectangle-5 {
+  position: absolute;
+  width: 79px;
+  height: 12px;
+  top: 36px;
+  left: 495px;
+  background-color: #479fd4;
+}
+
+.contacto .rectangle-6 {
+  position: absolute;
+  width: 79px;
+  height: 12px;
+  top: 53px;
+  left: 495px;
+  background-color: #479fd4;
+}
+
+.contacto .ctechpng-3 {
+  position: absolute;
+  width: 226px;
+  height: 49px;
+  top: 17px;
+  left: 43px;
+  object-fit: cover;
+}
+
+.contacto .div-4 {
+  position: absolute;
+  width: 3081px;
+  height: 2054px;
+  top: 89px;
+  left: -943px;
+}
+
+.contacto .overlap-2 {
+  position: absolute;
+  width: 1881px;
+  height: 1186px;
+  top: 0;
+  left: 642px;
+  background-color: #479fd4;
+}
+
+.contacto .overlap-group-wrapper {
+  position: absolute;
+  width: 3099px;
+  height: 868px;
+  top: 1186px;
+  left: 0;
+  background-color: transparent;
+}
+
+
+.contacto.contacto-wrapper-2 {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.contacto .LET-s-MAKE-THINGS-2 {
+  position: absolute;
+  top: 573px;
+  left: 341px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 100.8px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* Estilo general del formulario */
+.contacto .form-2 {
+  position: relative;
+  width: 70%;  /* Reducido el ancho para tablets */
+  max-width: 400px; /* Limitar el tamaño máximo */
+  height: auto;  /* Altura ajustada automáticamente */
+  margin-left: 400px; /* Centrado */
+  padding: 20px; /* Añadido padding dentro del formulario */
+  background-color: #ffffff; /* Fondo blanco */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar el formulario */
+  top: 100px;
+}
+
+/* Estilo para los campos del formulario */
+.contacto .form-2 input[type="text"],
+.contacto .form-2 input[type="email"],
+.contacto .form-2 input[type="tel"],
+.contacto .form-2 textarea {
+  width: 100%; /* Ancho completo */
+  padding: 10px; /* Añadido padding */
+  margin-bottom: 10px; /* Margen entre los campos */
+  background-color: #f4f4f4;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 14px; /* Ajustado el tamaño de la fuente */
+  box-sizing: border-box;
+}
+
+.contacto .form-2 #mensaje {
+  height: 80px; /* Altura mayor para textarea */
+  resize: none; /* Evitar que el textarea sea redimensionado */
+}
+
+/* Estilo para los placeholders */
+.contacto .form-2 input::placeholder,
+.contacto .form-2 textarea::placeholder {
+  color: #999999; /* Color más suave para el placeholder */
+  font-size: 14px; /* Tamaño de fuente adecuado */
+}
+
+
+/* Estilo del botón de envío */
+.contacto .form-2 .submit-btn {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 14px;
+  color: #ffffff;
+  background: #479fd4;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contacto .form-2 .submit-btn:hover {
+  background: #3477a5;
+}
+
+/* Estilo para el botón de flecha */
+.contacto .flecha {
+  width: 80px; /* Ajustado el tamaño */
+  height: 60px;
+  margin-top: 20px;
+  cursor: pointer; /* Añadido cursor de puntero */
+  transition: transform 0.3s ease;
+}
+
+.contacto .flecha:hover {
+  transform: scale(1.1); /* Efecto hover para la flecha */
+}
+
+
+.contacto .overlap-group-3 {
+  position: relative;
+  width: 836px;
+  height: 206px;
+  background-color: #050b21;
+  top: 580px;
+}
+
+.contacto .text-wrapper-26 {
+  position: absolute;
+  width: 225px;
+  top: 74px;
+  left: 66px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 11.8px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contacto .ctechpng-6 {
+  position: absolute;
+  width: 109px;
+  height: 24px;
+  top: 35px;
+  left: 66px;
+  object-fit: cover;
+}
+
+.contacto .image {
+  width: 109px;
+  left: 66px;
+  position: absolute;
+  height: 32px;
+  top: 130px;
+  object-fit: cover;
+}
+
+
+.contacto .text-wrapper-27 {
+  position: absolute;
+  top: 35px;
+  left: 472px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 11.8px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.contacto .text-wrapper-28 {
+  position: absolute;
+  top: 35px;
+  left: 643px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 11.8px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.contacto .text-wrapper-29 {
+  position: absolute;
+  top: 57px;
+  left: 472px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contacto .text-wrapper-30 {
+  position: absolute;
+  top: 78px;
+  left: 472px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contacto .text-wrapper-31 {
+  position: absolute;
+  top: 99px;
+  left: 472px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contacto .text-wrapper-32 {
+  position: absolute;
+  top: 120px;
+  left: 472px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contacto .text-wrapper-33 {
+  position: absolute;
+  top: 57px;
+  left: 643px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contacto .text-wrapper-34 {
+  position: absolute;
+  top: 78px;
+  left: 643px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contacto .text-wrapper-35 {
+  position: absolute;
+  top: 99px;
+  left: 643px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contacto .image-2 {
+  width: 32px;
+  left: 187px;
+  position: absolute;
+  height: 32px;
+  top: 130px;
+  object-fit: cover;
+}
+
+
+
+.contacto .ctechpng-5 {
+  position: absolute;
+  width: 148px;
+  height: 32px;
+  top: 15px;
+  left: 29px;
+  object-fit: cover;
+}
+
+.contacto .rectangle-7 {
+  position: absolute;
+  width: 52px;
+  height: 8px;
+  top: 12px;
+  left: 736px;
+  background-color: #479fd4;
+}
+
+.contacto .rectangle-8 {
+  position: absolute;
+  width: 52px;
+  height: 8px;
+  top: 23px;
+  left: 736px;
+  background-color: #479fd4;
+}
+
+.contacto .rectangle-9 {
+  position: absolute;
+  width: 52px;
+  height: 8px;
+  top: 35px;
+  left: 736px;
+  background-color: #479fd4;
+}
+
+
+.contacto .overlap-wrapper {
+  position: absolute;
+  width: 844px;
+  height: 508px;
+  top: 79px;
+}
+
+/* Estilo general del contenedor de contacto para tablet 1 */
+.overlap-wrapper .overlap-3 {
+  position: relative;
+  width: 836px;
+  height: 508px;
+  background-color: #479fd4;
+}
+
+/* Estilo del formulario dentro del div de overlap-3 */
+.overlap-wrapper .overlap-3 .form form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #ffffff;
+  padding: 10px; /* Reducido el padding */
+  border-radius: 8px; /* Bordes redondeados */
+  width: 40%; /* Ajustado a 50% para hacerlo más angosto */
+  margin: 0 auto;
+}
+
+/* Estilo para los campos del formulario */
+.overlap-wrapper .overlap-3 .form form input,
+.overlap-wrapper .overlap-3 .form form textarea {
+  width: 100%;
+  margin-bottom: 8px; /* Reducido el margen entre campos */
+  padding: 6px; /* Reducido el padding */
+  background-color: #f4f4f4;
+  color: #333;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 12px; /* Reducido el tamaño de la fuente */
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+/* Enfoque de los campos */
+.overlap-wrapper .overlap-3 .form form input:focus,
+.overlap-wrapper .overlap-3 .form form textarea:focus {
+  outline: none;
+  border-color: #479fd4;
+}
+
+/* Placeholder con estilo */
+.overlap-wrapper .overlap-3 .form form input::placeholder,
+.overlap-wrapper .overlap-3 .form form textarea::placeholder {
+  color: #999999;
+}
+
+/* Textarea específico */
+.overlap-wrapper .overlap-3 .form form textarea {
+  resize: none; /* Evitar el redimensionamiento */
+  height: 60px; /* Reducido el alto del textarea */
+}
+
+/* Estilo del botón de envío */
+.overlap-wrapper .overlap-3 .form form .submit-btn {
+  width: 100%;
+  padding: 8px 12px; /* Reducido el padding */
+  font-size: 12px; /* Reducido el tamaño de la fuente */
+  color: #ffffff;
+  background: #479fd4;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Efecto hover para el botón de envío */
+.overlap-wrapper .overlap-3 .form form .submit-btn:hover {
+  background: #3477a5;
+}
+
+
+/* Estilo del texto LET’S MAKE THINGS HAPPEN */
+.contacto .LET-s-MAKE-THINGS-3 {
+  position: absolute;
+  top: 57px;
+  left: 66px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 60px; /* Reducido el tamaño de la fuente */
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+
+.contacto .footer-3 {
+  position: absolute;
+  width: 1460px;
+  height: 354px;
+  top: 964px;
+  left: 0;
+  background-color: transparent;
+}
+
+.contacto .overlap-group-4 {
+  position: relative;
+  width: 1440px;
+  height: 354px;
+  background-color: #050b21;
+}
+
+.contacto .text-wrapper-39 {
+  position: absolute;
+  width: 388px;
+  top: 128px;
+  left: 114px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 20.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contacto .ctechpng-7 {
+  position: absolute;
+  width: 188px;
+  height: 40px;
+  top: 60px;
+  left: 114px;
+  object-fit: cover;
+}
+
+.contacto .image-3 {
+  position: absolute;
+  width: 188px;
+  height: 55px;
+  top: 224px;
+  left: 114px;
+  object-fit: cover;
+}
+
+.contacto .text-wrapper-40 {
+  position: absolute;
+  top: 60px;
+  left: 812px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 20.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contacto .text-wrapper-41 {
+  position: absolute;
+  top: 60px;
+  left: 1107px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 20.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contacto .text-wrapper-42 {
+  position: absolute;
+  top: 99px;
+  left: 812px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contacto .text-wrapper-43 {
+  position: absolute;
+  top: 135px;
+  left: 812px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contacto .text-wrapper-44 {
+  position: absolute;
+  top: 171px;
+  left: 812px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contacto .text-wrapper-45 {
+  position: absolute;
+  top: 207px;
+  left: 812px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contacto .text-wrapper-46 {
+  position: absolute;
+  top: 99px;
+  left: 1107px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contacto .text-wrapper-47 {
+  position: absolute;
+  top: 135px;
+  left: 1107px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contacto .text-wrapper-48 {
+  position: absolute;
+  top: 171px;
+  left: 1107px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contacto .image-4 {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  top: 224px;
+  left: 323px;
+  object-fit: cover;
+}
+
+.contacto .overlap-wrapper-2 {
+  position: absolute;
+  width: 1448px;
+  height: 875px;
+  top: 89px;
+  left: 0;
+}
+
+/* Estilo general del contenedor de contacto */
+.contacto .overlap-4 {
+  position: relative;
+  width: 1440px;
+  height: 875px;
+  background-color: #479fd4;
+}
+
+/* Estilo del formulario */
+.contacto .form-desk form {
+  position: absolute; /* Permite usar 'right' */
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 500px;
+  width: 100%;
+  right: 100px; /* Separa del borde derecho */
+  top: 45%; /* Opcional: centra verticalmente */
+  transform: translateY(-50%); /* Ajusta para centrar perfectamente */
+}
+
+/* Inputs y Textarea */
+.contacto .form-desk form input,
+.contacto .form-desk form textarea {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333333;
+  background: #f9f9f9;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.contacto .form-desk form input:focus,
+.contacto .form-desk form textarea:focus {
+  outline: none;
+  border-color: #479fd4;
+}
+
+/* Placeholder */
+.contacto .form-desk form input::placeholder,
+.contacto .form-desk form textarea::placeholder {
+  color: #999999;
+}
+
+/* Textarea específico */
+.contacto .form-desk form textarea {
+  resize: none; /* Evitar el redimensionamiento */
+  height: 100px;
+}
+
+/* Botón de envío */
+.contacto .form-desk form .submit-btn {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 16px;
+  color: #ffffff;
+  background: #479fd4;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contacto .form-desk form .submit-btn:hover {
+  background: #3477a5;
+}
+
+/* Estilo del texto LET’S MAKE THINGS HAPPEN */
+.contacto .LET-s-MAKE-THINGS-4 {
+  position: absolute;
+  top: 98px;
+  left: 115px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 126.1px; /* Ajustado según lo solicitado */
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+
+.contacto .navbar {
+  position: fixed;
+  width: 100%;
+  height: 89px;
+  top: 0;
+}
+
+.contacto .navbar-2 {
+  position: relative;
+  width: 1440px;
+  height: 89px;
+  background-color: #ffffff;
+}
+
+.contacto .text-wrapper-52 {
+  left: 593px;
+  font-weight: 400;
+  position: absolute;
+  top: 29px;
+  font-family: "Open Sans", Helvetica;
+  color: #000000;
+  font-size: 22.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contacto .text-wrapper-53 {
+  left: 1299px;
+  font-weight: 700;
+  position: absolute;
+  top: 29px;
+  font-family: "Open Sans", Helvetica;
+  color: #000000;
+  font-size: 22.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contacto .text-wrapper-54 {
+  position: absolute;
+  top: 29px;
+  left: 684px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 22.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contacto .text-wrapper-55 {
+  left: 880px;
+  font-weight: 400;
+  position: absolute;
+  top: 29px;
+  font-family: "Open Sans", Helvetica;
+  color: #000000;
+  font-size: 22.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* Contenedor para el activador y el dropdown */
+.contacto .dropdown-container {
+  position: relative; /* Asegura que el dropdown se posicione relativo al contenedor */
+}
+
+/* Estilo inicial del submenú */
+.contacto .drop-down {
+  opacity: 0; /* Inicialmente oculto */
+  pointer-events: none; /* Deshabilitar la interactividad */
+  position: absolute;
+  top: 60px; /* Espaciado debajo del activador */
+  left: 1013px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  list-style: none;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 10; /* Asegura que aparezca por encima de otros elementos */
+  transition: opacity 0.3s ease-in-out; /* Transición suave para aparecer/desaparecer */
+  width: 190px; /* Ajuste del ancho del dropdown */
+}
+
+/* Ítems del submenú */
+.contacto .drop-down li {
+  font-family: "Open Sans", Helvetica;
+  font-size: 18px; /* Tamaño de fuente del menú */
+  font-weight: 400;
+  color: #000000;
+  padding: 5px 0; /* Espaciado entre los ítems */
+}
+
+/* Enlaces dentro del submenú */
+.contacto .drop-down li a {
+  text-decoration: none;
+  color: inherit;
+  display: block; /* Asegura que todo el ítem sea clickeable */
+}
+
+/* Hover en ítems del submenú */
+.contacto .drop-down li:hover {
+  background-color: #f0f0f0; /* Color de fondo al pasar el mouse */
+}
+
+/* Mostrar el dropdown cuando el contenedor tiene hover */
+.contacto .dropdown-container:hover .drop-down {
+  opacity: 1; /* Hacer visible */
+  pointer-events: auto; /* Permitir la interacción */
+}
+
+/* Estilo del activador (texto principal) */
+.contacto .text-wrapper-56 {
+  display: inline-block;
+  left: 1010px;
+  font-weight: 400;
+  position: absolute;
+  top: 28px;
+  font-family: "Open Sans", Helvetica;
+  color: #000000;
+  font-size: 22.7px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.contacto .text-wrapper-57 {
+  left: 1146px;
+  font-weight: 400;
+  position: absolute;
+  top: 29px;
+  font-family: "Open Sans", Helvetica;
+  color: #000000;
+  font-size: 22.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contacto .ctechpng-8 {
+  position: absolute;
+  width: 166px;
+  height: 36px;
+  top: 26px;
+  left: 114px;
+  object-fit: cover;
+}
+
+/* Barra de navegación */
+.nav-bar {
+  position: fixed;  /* Fija la barra en la parte superior */
+  width: 100%;  /* Asegura que ocupe todo el ancho */
+  height: 60px;  /* Altura fija de la barra */
+  top: 0;  /* Siempre en la parte superior */
+  left: 0;  /* Alineación desde la izquierda */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #ffffff;
+  z-index: 1;  /* Asegura que esté por encima de otros elementos */
+}
+
+.nav-bar .ctechpng-2 {
+  width: 148px;
+  height: 32px;
+  object-fit: cover;
+}
+
+.nav-bar .burger {
+  width: 52px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.nav-bar .burger div {
+  width: 100%;
+  height: 6px;
+  background-color: #479fd4;
+}
+
+/* Estilos del menú */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #479fd4;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;  /* Asegura que esté por encima de otros elementos */
+}
+
+.menu-options {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  color: white;
+}
+
+.menu-options li {
+  color: white;
+  font-family: "Inter", Helvetica;
+  padding-top: 30px;
+  font-weight: 500;
+}
+
+.menu-options a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.industriasmenu a{
+  font-size: 17px;
+}
+
+@media (max-width: 595px) {
+  .contacto.div-wrapper {
+    display: none !important;
+  }
+  .contacto.contacto-wrapper-2 {
+    display: none !important;
+  }
+  .contacto.contacto-wrapper-3 {
+    display: none !important;
+  }
+}
+
+@media (min-width: 596px) and (max-width: 833px) {
+  .contacto.contacto-wrapper {
+    display: none !important;
+  }
+  .contacto.contacto-wrapper-2 {
+    display: none !important;
+  }
+  .contacto.contacto-wrapper-3 {
+    display: none !important;
+  }
+}
+
+@media (min-width: 834px) and (max-width: 1439px) {
+  .contacto.contacto-wrapper {
+    display: none !important;
+  }
+  .contacto.div-wrapper {
+    display: none !important;
+  }
+  .contacto.contacto-wrapper-3 {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .contacto.contacto-wrapper {
+    display: none !important;
+  }
+  .contacto.div-wrapper {
+    display: none !important;
+  }
+  .contacto.contacto-wrapper-2 {
+    display: none !important;
+  }
+  .nav-bar{
+    display: none !important;
+  }
+  .menu-overlay{
+    display: none !important;
+  }
+}

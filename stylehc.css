@@ -1,0 +1,2388 @@
+.industrias-hc.industrias-hc-wrapper {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.industrias-hc .div {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 390px;
+  height: 2561px;
+  position: relative;
+}
+
+.industrias-hc .rectangle {
+  top: 12px;
+  position: absolute;
+  width: 52px;
+  height: 8px;
+  left: 324px;
+  background-color: #479fd4;
+}
+
+.industrias-hc .rectangle-2 {
+  top: 23px;
+  position: absolute;
+  width: 52px;
+  height: 8px;
+  left: 324px;
+  background-color: #479fd4;
+}
+
+.industrias-hc .rectangle-3 {
+  top: 35px;
+  position: absolute;
+  width: 52px;
+  height: 8px;
+  left: 324px;
+  background-color: #479fd4;
+}
+
+.industrias-hc .ctechpng {
+  width: 148px;
+  height: 32px;
+  top: 11px;
+  left: 28px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.industrias-hc .health {
+  position: absolute;
+  width: 902px;
+  height: 526px;
+  top: 62px;
+  left: -33px;
+}
+
+.industrias-hc .overlap-group {
+  position: relative;
+  width: 896px;
+  height: 526px;
+  background-color: #050b21;
+}
+
+.industrias-hc .text-wrapper {
+  position: absolute;
+  top: 61px;
+  left: 69px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 39.3px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .p {
+  position: absolute;
+  width: 305px;
+  top: 142px;
+  left: 69px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .overlap {
+  position: absolute;
+  width: 318px;
+  height: 121px;
+  top: 325px;
+  left: 69px;
+  background-color: #ffffff;
+  border-radius: 14.02px;
+}
+
+.industrias-hc .eficiencia-operativa {
+  position: absolute;
+  width: 193px;
+  top: 32px;
+  left: 120px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 11.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .captura-de-pantalla {
+  position: absolute;
+  width: 83px;
+  height: 95px;
+  top: 13px;
+  left: 17px;
+  object-fit: cover;
+}
+
+.industrias-hc .image {
+  position: absolute;
+  width: 81px;
+  height: 60px;
+  top: 58px;
+  left: 294px;
+  object-fit: cover;
+}
+
+.industrias-hc .care {
+  position: absolute;
+  width: 335px;
+  height: 1201px;
+  top: 819px;
+  left: 28px;
+}
+
+.industrias-hc .caso {
+  position: absolute;
+  width: 335px;
+  height: 382px;
+  top: 0;
+  left: 0;
+}
+
+.industrias-hc .overlap-group-2 {
+  position: relative;
+  width: 331px;
+  height: 382px;
+  background-color: #b6e3ff70;
+  border-radius: 12.93px;
+}
+
+.industrias-hc .caso-de-xito-care {
+  position: absolute;
+  width: 291px;
+  top: 43px;
+  left: 21px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .span {
+  font-weight: 700;
+}
+
+.industrias-hc .text-wrapper-2 {
+  font-weight: 600;
+}
+
+.industrias-hc .modelo-de-negocio {
+  position: absolute;
+  width: 291px;
+  top: 200px;
+  left: 21px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 12.9px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-3 {
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 12.9px;
+  letter-spacing: 0;
+}
+
+.industrias-hc .desafos {
+  position: absolute;
+  width: 333px;
+  height: 195px;
+  top: 404px;
+  left: 1px;
+}
+
+.industrias-hc .desaf-os-care-wrapper {
+  position: relative;
+  width: 331px;
+  height: 195px;
+  background-color: #479fd4;
+  border-radius: 12.93px;
+}
+
+.industrias-hc .desaf-os-care {
+  position: absolute;
+  width: 296px;
+  top: 21px;
+  left: 21px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.industrias-hc .text-wrapper-4 {
+  font-size: 12.9px;
+}
+
+.industrias-hc .soluciones {
+  position: absolute;
+  width: 334px;
+  height: 195px;
+  top: 621px;
+  left: 0;
+}
+
+.industrias-hc .soluciones-wrapper {
+  position: relative;
+  width: 332px;
+  height: 195px;
+  background-color: #b6e3ff70;
+  border-radius: 12.93px;
+}
+
+.industrias-hc .soluciones-2 {
+  position: absolute;
+  width: 283px;
+  top: 14px;
+  left: 21px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+}
+
+.industrias-hc .text-wrapper-5 {
+  font-weight: 700;
+  font-size: 12.9px;
+}
+
+.industrias-hc .beneficios {
+  position: absolute;
+  width: 336px;
+  height: 363px;
+  top: 838px;
+  left: 1px;
+}
+
+.industrias-hc .overlap-2 {
+  position: relative;
+  width: 334px;
+  height: 363px;
+  background-color: #479fd4;
+  border-radius: 12.93px;
+}
+
+.industrias-hc .globos {
+  position: absolute;
+  width: 297px;
+  height: 116px;
+  top: 210px;
+  left: 22px;
+}
+
+.industrias-hc .div-wrapper {
+  position: absolute;
+  width: 221px;
+  height: 26px;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 21.98px;
+  border: 1.65px solid;
+  border-color: #050b21;
+}
+
+.industrias-hc .text-wrapper-6 {
+  position: absolute;
+  top: 4px;
+  left: 7px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 8.8px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .overlap-3 {
+  position: absolute;
+  width: 261px;
+  height: 26px;
+  top: 31px;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 21.98px;
+  border: 1.65px solid;
+  border-color: #050b21;
+}
+
+.industrias-hc .overlap-group-3 {
+  position: absolute;
+  width: 221px;
+  height: 26px;
+  top: 60px;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 21.98px;
+  border: 1.65px solid;
+  border-color: #050b21;
+}
+
+.industrias-hc .overlap-4 {
+  position: absolute;
+  width: 289px;
+  height: 26px;
+  top: 90px;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 21.98px;
+  border: 1.65px solid;
+  border-color: #050b21;
+}
+
+.industrias-hc .beneficios-junto-a {
+  position: absolute;
+  width: 288px;
+  top: 27px;
+  left: 20px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.industrias-hc .img {
+  position: absolute;
+  width: 331px;
+  height: 203px;
+  top: 602px;
+  left: 28px;
+  object-fit: cover;
+}
+
+.industrias-hc .footer {
+  position: absolute;
+  width: 2035px;
+  height: 496px;
+  top: 2065px;
+  left: -618px;
+  background-color: transparent;
+}
+
+.industrias-hc .overlap-5 {
+  position: relative;
+  width: 2015px;
+  height: 496px;
+  background-color: #050b21;
+}
+
+.industrias-hc .linkedin {
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  top: 132px;
+  left: 774px;
+  object-fit: cover;
+}
+
+.industrias-hc .partner {
+  position: absolute;
+  width: 111px;
+  height: 33px;
+  top: 132px;
+  left: 650px;
+  object-fit: cover;
+}
+
+.industrias-hc .text-wrapper-7 {
+  position: absolute;
+  width: 229px;
+  top: 76px;
+  left: 650px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 11.9px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .ctechpng-2 {
+  width: 111px;
+  height: 24px;
+  top: 35px;
+  left: 650px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.industrias-hc .text-wrapper-8 {
+  position: absolute;
+  top: 380px;
+  left: 829px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-9 {
+  position: absolute;
+  top: 358px;
+  left: 829px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-10 {
+  position: absolute;
+  top: 337px;
+  left: 829px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-11 {
+  position: absolute;
+  top: 314px;
+  left: 829px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 11.9px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.industrias-hc .text-wrapper-12 {
+  position: absolute;
+  top: 401px;
+  left: 655px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-13 {
+  position: absolute;
+  top: 380px;
+  left: 655px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-14 {
+  position: absolute;
+  top: 358px;
+  left: 655px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-15 {
+  position: absolute;
+  top: 337px;
+  left: 655px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-16 {
+  position: absolute;
+  top: 314px;
+  left: 655px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 11.9px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.industrias-hc.industrias-hc-wrapper-2 {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.industrias-hc .div-2 {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 596px;
+  height: 3913.73px;
+  position: relative;
+}
+
+.industrias-hc .rectangle-4 {
+  position: absolute;
+  width: 79px;
+  height: 12px;
+  top: 18px;
+  left: 495px;
+  background-color: #479fd4;
+}
+
+.industrias-hc .rectangle-5 {
+  position: absolute;
+  width: 79px;
+  height: 12px;
+  top: 36px;
+  left: 495px;
+  background-color: #479fd4;
+}
+
+.industrias-hc .rectangle-6 {
+  position: absolute;
+  width: 79px;
+  height: 12px;
+  top: 53px;
+  left: 495px;
+  background-color: #479fd4;
+}
+
+.industrias-hc .ctechpng-3 {
+  position: absolute;
+  width: 226px;
+  height: 49px;
+  top: 17px;
+  left: 43px;
+  object-fit: cover;
+}
+
+.industrias-hc .overlap-group-wrapper {
+  position: absolute;
+  width: 1375px;
+  height: 804px;
+  top: 95px;
+  left: -50px;
+}
+
+.industrias-hc .overlap-group-4 {
+  position: relative;
+  width: 1369px;
+  height: 804px;
+  background-color: #050b21;
+}
+
+.industrias-hc .text-wrapper-17 {
+  position: absolute;
+  top: 94px;
+  left: 105px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 60px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-18 {
+  position: absolute;
+  width: 466px;
+  top: 217px;
+  left: 105px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 28.3px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .overlap-6 {
+  position: absolute;
+  width: 486px;
+  height: 185px;
+  top: 497px;
+  left: 105px;
+  background-color: #ffffff;
+  border-radius: 21.43px;
+}
+
+.industrias-hc .eficiencia-operativa-2 {
+  position: absolute;
+  width: 295px;
+  top: 49px;
+  left: 183px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 17.8px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .captura-de-pantalla-2 {
+  width: 126px;
+  height: 145px;
+  top: 20px;
+  left: 26px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.industrias-hc .image-2 {
+  position: absolute;
+  width: 123px;
+  height: 92px;
+  top: 89px;
+  left: 449px;
+  object-fit: cover;
+}
+
+.industrias-hc .care-2 {
+  position: absolute;
+  width: 512px;
+  height: 1835px;
+  top: 1252px;
+  left: 43px;
+}
+
+.industrias-hc .caso-2 {
+  position: absolute;
+  width: 510px;
+  height: 584px;
+  top: 0;
+  left: 0;
+}
+
+.industrias-hc .overlap-group-5 {
+  position: relative;
+  width: 506px;
+  height: 584px;
+  background-color: #b6e3ff70;
+  border-radius: 19.77px;
+}
+
+.industrias-hc .caso-de-xito-care-2 {
+  position: absolute;
+  width: 445px;
+  top: 66px;
+  left: 32px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 28.4px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .modelo-de-negocio-2 {
+  position: absolute;
+  width: 445px;
+  top: 306px;
+  left: 32px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 19.8px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-19 {
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 19.8px;
+  letter-spacing: 0;
+}
+
+.industrias-hc .overlap-wrapper {
+  position: absolute;
+  width: 508px;
+  height: 298px;
+  top: 617px;
+  left: 2px;
+}
+
+.industrias-hc .overlap-7 {
+  position: relative;
+  width: 506px;
+  height: 298px;
+  background-color: #479fd4;
+  border-radius: 19.77px;
+}
+
+.industrias-hc .desaf-os-care-2 {
+  position: absolute;
+  width: 452px;
+  top: 32px;
+  left: 32px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.industrias-hc .text-wrapper-20 {
+  font-size: 19.8px;
+}
+
+.industrias-hc .soluciones-3 {
+  position: absolute;
+  width: 509px;
+  height: 298px;
+  top: 949px;
+  left: 0;
+}
+
+.industrias-hc .overlap-8 {
+  position: relative;
+  width: 507px;
+  height: 298px;
+  background-color: #b6e3ff70;
+  border-radius: 19.77px;
+}
+
+.industrias-hc .soluciones-4 {
+  position: absolute;
+  width: 432px;
+  top: 22px;
+  left: 32px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 28px;
+}
+
+.industrias-hc .text-wrapper-21 {
+  font-weight: 700;
+  font-size: 19.8px;
+}
+
+.industrias-hc .beneficios-2 {
+  position: absolute;
+  width: 512px;
+  height: 555px;
+  top: 1281px;
+  left: 2px;
+}
+
+.industrias-hc .overlap-9 {
+  position: relative;
+  width: 510px;
+  height: 555px;
+  background-color: #479fd4;
+  border-radius: 19.77px;
+}
+
+.industrias-hc .globos-2 {
+  position: absolute;
+  width: 450px;
+  height: 177px;
+  top: 321px;
+  left: 34px;
+}
+
+.industrias-hc .overlap-10 {
+  position: absolute;
+  width: 338px;
+  height: 39px;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 33.59px;
+  border: 2.52px solid;
+  border-color: #050b21;
+}
+
+.industrias-hc .text-wrapper-22 {
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 13.4px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .overlap-group-6 {
+  position: absolute;
+  width: 399px;
+  height: 39px;
+  top: 47px;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 33.59px;
+  border: 2.52px solid;
+  border-color: #050b21;
+}
+
+.industrias-hc .overlap-11 {
+  position: absolute;
+  width: 338px;
+  height: 39px;
+  top: 92px;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 33.59px;
+  border: 2.52px solid;
+  border-color: #050b21;
+}
+
+.industrias-hc .overlap-12 {
+  position: absolute;
+  width: 442px;
+  height: 39px;
+  top: 138px;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 33.59px;
+  border: 2.52px solid;
+  border-color: #050b21;
+}
+
+.industrias-hc .beneficios-junto-a-2 {
+  position: absolute;
+  width: 440px;
+  top: 41px;
+  left: 31px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.industrias-hc .captura-de-pantalla-3 {
+  width: 506px;
+  height: 310px;
+  top: 920px;
+  left: 43px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.industrias-hc .footer-2 {
+  position: absolute;
+  width: 3100px;
+  height: 758px;
+  top: 3156px;
+  left: -944px;
+  background-color: transparent;
+}
+
+.industrias-hc .overlap-13 {
+  position: relative;
+  width: 3080px;
+  height: 758px;
+  background-color: #050b21;
+}
+
+.industrias-hc .linkedin-2 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 202px;
+  left: 1182px;
+  object-fit: cover;
+}
+
+.industrias-hc .partner-2 {
+  position: absolute;
+  width: 169px;
+  height: 50px;
+  top: 202px;
+  left: 994px;
+  object-fit: cover;
+}
+
+.industrias-hc .text-wrapper-23 {
+  position: absolute;
+  width: 350px;
+  top: 116px;
+  left: 994px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 18.3px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .ctechpng-4 {
+  position: absolute;
+  width: 169px;
+  height: 37px;
+  top: 54px;
+  left: 994px;
+  object-fit: cover;
+}
+
+.industrias-hc .text-wrapper-24 {
+  position: absolute;
+  top: 580px;
+  left: 1267px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-25 {
+  position: absolute;
+  top: 548px;
+  left: 1267px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-26 {
+  position: absolute;
+  top: 515px;
+  left: 1267px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-27 {
+  top: 480px;
+  left: 1267px;
+  font-weight: 700;
+  font-size: 18.3px;
+  position: absolute;
+  font-family: "Inter", Helvetica;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-28 {
+  top: 613px;
+  left: 1001px;
+  font-weight: 400;
+  font-size: 16.2px;
+  position: absolute;
+  font-family: "Inter", Helvetica;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-29 {
+  position: absolute;
+  top: 580px;
+  left: 1001px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-30 {
+  position: absolute;
+  top: 548px;
+  left: 1001px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-31 {
+  position: absolute;
+  top: 515px;
+  left: 1001px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-32 {
+  position: absolute;
+  top: 480px;
+  left: 1001px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 18.3px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc.industrias-hc-wrapper-3 {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.industrias-hc .div-3 {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 834px;
+  height: 1717px;
+  position: relative;
+}
+
+.industrias-hc .ctechpng-5 {
+  position: absolute;
+  width: 148px;
+  height: 32px;
+  top: 15px;
+  left: 29px;
+  object-fit: cover;
+}
+
+.industrias-hc .rectangle-7 {
+  position: absolute;
+  width: 52px;
+  height: 8px;
+  top: 12px;
+  left: 736px;
+  background-color: #479fd4;
+}
+
+.industrias-hc .rectangle-8 {
+  position: absolute;
+  width: 52px;
+  height: 8px;
+  top: 23px;
+  left: 736px;
+  background-color: #479fd4;
+}
+
+.industrias-hc .rectangle-9 {
+  position: absolute;
+  width: 52px;
+  height: 8px;
+  top: 35px;
+  left: 736px;
+  background-color: #479fd4;
+}
+
+.industrias-hc .health-2 {
+  position: absolute;
+  width: 902px;
+  height: 586px;
+  top: 62px;
+  left: -33px;
+}
+
+.industrias-hc .overlap-group-7 {
+  position: relative;
+  width: 896px;
+  height: 586px;
+  background-color: #050b21;
+}
+
+.industrias-hc .overlap-14 {
+  position: absolute;
+  width: 361px;
+  height: 356px;
+  top: 90px;
+  left: 478px;
+}
+
+.industrias-hc .captura-de-pantalla-4 {
+  width: 262px;
+  height: 263px;
+  top: 60px;
+  left: 99px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.industrias-hc .captura-de-pantalla-5 {
+  width: 306px;
+  height: 356px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.industrias-hc .text-wrapper-33 {
+  position: absolute;
+  top: 89px;
+  left: 69px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 39.3px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-34 {
+  position: absolute;
+  width: 377px;
+  top: 173px;
+  left: 69px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .overlap-15 {
+  position: absolute;
+  width: 377px;
+  height: 121px;
+  top: 325px;
+  left: 69px;
+  background-color: #ffffff;
+  border-radius: 14.02px;
+}
+
+.industrias-hc .eficiencia-operativa-3 {
+  position: absolute;
+  width: 234px;
+  top: 22px;
+  left: 121px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .captura-de-pantalla-6 {
+  width: 83px;
+  height: 95px;
+  top: 13px;
+  left: 25px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.industrias-hc .image-3 {
+  position: absolute;
+  width: 81px;
+  height: 60px;
+  top: 86px;
+  left: 294px;
+  object-fit: cover;
+}
+
+.industrias-hc .care-3 {
+  position: absolute;
+  width: 773px;
+  height: 833px;
+  top: 663px;
+  left: 29px;
+}
+
+.industrias-hc .captura-de-pantalla-7 {
+  width: 372px;
+  height: 408px;
+  top: 212px;
+  left: 401px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.industrias-hc .caso-3 {
+  position: absolute;
+  width: 777px;
+  height: 195px;
+  top: 0;
+  left: 0;
+}
+
+.industrias-hc .overlap-group-8 {
+  position: relative;
+  width: 773px;
+  height: 195px;
+  background-color: #b6e3ff70;
+  border-radius: 12.93px;
+}
+
+.industrias-hc .modelo-de-negocio-3 {
+  position: absolute;
+  width: 261px;
+  top: 19px;
+  left: 485px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 12.9px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .caso-de-xito-care-3 {
+  position: absolute;
+  width: 394px;
+  top: 41px;
+  left: 23px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20.7px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .desafos-2 {
+  position: absolute;
+  width: 382px;
+  height: 195px;
+  top: 212px;
+  left: 0;
+}
+
+.industrias-hc .overlap-16 {
+  position: relative;
+  width: 380px;
+  height: 195px;
+  background-color: #479fd4;
+  border-radius: 12.93px;
+}
+
+.industrias-hc .desaf-os-care-3 {
+  position: absolute;
+  width: 340px;
+  top: 21px;
+  left: 24px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.industrias-hc .soluciones-5 {
+  position: absolute;
+  width: 382px;
+  height: 195px;
+  top: 425px;
+  left: 0;
+}
+
+.industrias-hc .overlap-17 {
+  position: relative;
+  width: 380px;
+  height: 195px;
+  background-color: #b6e3ff70;
+  border-radius: 12.93px;
+}
+
+.industrias-hc .soluciones-6 {
+  position: absolute;
+  width: 324px;
+  top: 14px;
+  left: 24px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+}
+
+.industrias-hc .beneficios-3 {
+  position: absolute;
+  width: 775px;
+  height: 195px;
+  top: 638px;
+  left: 0;
+}
+
+.industrias-hc .overlap-18 {
+  position: relative;
+  width: 773px;
+  height: 195px;
+  background-color: #479fd4;
+  border-radius: 12.93px;
+}
+
+.industrias-hc .beneficios-junto-a-3 {
+  position: absolute;
+  width: 334px;
+  top: 33px;
+  left: 401px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.industrias-hc .globos-3 {
+  position: absolute;
+  width: 348px;
+  height: 136px;
+  top: 29px;
+  left: 24px;
+}
+
+.industrias-hc .overlap-19 {
+  position: absolute;
+  width: 261px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 25.87px;
+  border: 1.94px solid;
+  border-color: #050b21;
+}
+
+.industrias-hc .text-wrapper-35 {
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 10.3px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .overlap-20 {
+  position: absolute;
+  width: 307px;
+  height: 30px;
+  top: 36px;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 25.87px;
+  border: 1.94px solid;
+  border-color: #050b21;
+}
+
+.industrias-hc .overlap-21 {
+  position: absolute;
+  width: 261px;
+  height: 30px;
+  top: 71px;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 25.87px;
+  border: 1.94px solid;
+  border-color: #050b21;
+}
+
+.industrias-hc .overlap-group-9 {
+  position: absolute;
+  width: 340px;
+  height: 30px;
+  top: 106px;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 25.87px;
+  border: 1.94px solid;
+  border-color: #050b21;
+}
+
+.industrias-hc .footer-3 {
+  position: absolute;
+  width: 857px;
+  height: 206px;
+  top: 1511px;
+  left: 0;
+  background-color: transparent;
+}
+
+.industrias-hc .overlap-22 {
+  position: relative;
+  width: 837px;
+  height: 206px;
+  background-color: #050b21;
+}
+
+.industrias-hc .text-wrapper-36 {
+  position: absolute;
+  width: 226px;
+  top: 75px;
+  left: 66px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 11.8px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .ctechpng-6 {
+  position: absolute;
+  width: 109px;
+  height: 24px;
+  top: 35px;
+  left: 66px;
+  object-fit: cover;
+}
+
+.industrias-hc .image-4 {
+  width: 109px;
+  left: 66px;
+  position: absolute;
+  height: 32px;
+  top: 130px;
+  object-fit: cover;
+}
+
+.industrias-hc .text-wrapper-37 {
+  position: absolute;
+  top: 35px;
+  left: 472px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 11.8px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.industrias-hc .text-wrapper-38 {
+  top: 35px;
+  left: 644px;
+  font-weight: 700;
+  font-size: 11.8px;
+  white-space: nowrap;
+  position: absolute;
+  font-family: "Inter", Helvetica;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-39 {
+  position: absolute;
+  top: 58px;
+  left: 472px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-40 {
+  position: absolute;
+  top: 78px;
+  left: 472px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-41 {
+  position: absolute;
+  top: 99px;
+  left: 472px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-42 {
+  top: 120px;
+  left: 472px;
+  font-weight: 400;
+  font-size: 10.5px;
+  position: absolute;
+  font-family: "Inter", Helvetica;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-43 {
+  position: absolute;
+  top: 58px;
+  left: 644px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-44 {
+  position: absolute;
+  top: 78px;
+  left: 644px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-45 {
+  position: absolute;
+  top: 99px;
+  left: 644px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .image-5 {
+  width: 32px;
+  left: 188px;
+  position: absolute;
+  height: 32px;
+  top: 130px;
+  object-fit: cover;
+}
+
+.industrias-hc.industrias-hc-wrapper-4 {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.industrias-hc .div-4 {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 1440px;
+  height: 2891.25px;
+  position: relative;
+}
+
+.industrias-hc .navbar {
+  position: absolute;
+  width: 1452px;
+  height: 89px;
+  top: 0;
+  left: 0;
+}
+
+.industrias-hc .navbar {
+  position: relative;
+  width: 100%;
+  height: 89px;
+  background-color: #ffffff;
+}
+
+.industrias-hc .text-wrapper-46 {
+  left: 593px;
+  font-weight: 400;
+  position: absolute;
+  top: 29px;
+  font-family: "Open Sans", Helvetica;
+  color: #000000;
+  font-size: 22.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-47 {
+  left: 1299px;
+  font-weight: 400;
+  position: absolute;
+  top: 29px;
+  font-family: "Open Sans", Helvetica;
+  color: #000000;
+  font-size: 22.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-48 {
+  position: absolute;
+  top: 29px;
+  left: 684px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 22.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-49 {
+  left: 880px;
+  font-weight: 400;
+  position: absolute;
+  top: 29px;
+  font-family: "Open Sans", Helvetica;
+  color: #000000;
+  font-size: 22.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* Estilos generales para Industrias */
+.industrias-hc .text-wrapper-50 {
+  left: 1007px;
+  font-weight: 700;
+  position: absolute;
+  top: 29px;
+  font-family: "Open Sans", Helvetica;
+  color: #000000;
+  font-size: 22.5px;
+  letter-spacing: 0;
+  line-height: normal;
+  cursor: pointer;
+}
+
+/* Submenú */
+.industrias-hc .drop-down {
+  opacity: 0; /* Inicialmente oculto */
+  pointer-events: none; /* Deshabilitar la interactividad */
+  position: absolute;
+  top: 60px; /* Espaciado debajo de "Industrias" */
+  left: 1000px; /* Alineado con el padre */
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  list-style: none;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  transition: opacity 0.3s ease-out; /* Transición suave para desaparecer */
+  width: 190px;
+}
+
+.industrias-hc .drop-down li {
+  font-family: "Open Sans", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.industrias-hc .drop-down li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.industrias-hc .drop-down li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Mostrar el submenú */
+.industrias-hc .dropdown-container:hover .drop-down {
+  opacity: 1; /* Hacerlo visible */
+  pointer-events: auto; /* Habilitar la interactividad */
+  transition: opacity 0.3s ease-in; /* Transición suave para aparecer */
+}
+
+/* Mantener visible con retraso al ocultarse */
+.industrias-hc .drop-down.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 2s ease-out; /* Se desvanece lentamente */
+}
+
+
+.industrias-hc .text-wrapper-51 {
+  left: 1146px;
+  font-weight: 400;
+  position: absolute;
+  top: 29px;
+  font-family: "Open Sans", Helvetica;
+  color: #000000;
+  font-size: 22.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .ctechpng-7 {
+  position: absolute;
+  width: 166px;
+  height: 36px;
+  top: 26px;
+  left: 114px;
+  object-fit: cover;
+}
+
+.industrias-hc .footer-4 {
+  position: absolute;
+  width: 1460px;
+  height: 354px;
+  top: 2537px;
+  left: 0;
+  background-color: transparent;
+}
+
+.industrias-hc .overlap-23 {
+  position: relative;
+  width: 1440px;
+  height: 354px;
+  background-color: #050b21;
+}
+
+.industrias-hc .text-wrapper-52 {
+  position: absolute;
+  width: 388px;
+  top: 128px;
+  left: 114px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 20.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .ctechpng-8 {
+  position: absolute;
+  width: 188px;
+  height: 40px;
+  top: 60px;
+  left: 114px;
+  object-fit: cover;
+}
+
+.industrias-hc .image-6 {
+  position: absolute;
+  width: 188px;
+  height: 55px;
+  top: 224px;
+  left: 114px;
+  object-fit: cover;
+}
+
+.industrias-hc .text-wrapper-53 {
+  position: absolute;
+  top: 60px;
+  left: 812px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 20.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-54 {
+  top: 60px;
+  left: 1107px;
+  font-weight: 700;
+  font-size: 20.2px;
+  position: absolute;
+  font-family: "Inter", Helvetica;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-55 {
+  position: absolute;
+  top: 99px;
+  left: 812px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-56 {
+  position: absolute;
+  top: 135px;
+  left: 812px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-57 {
+  position: absolute;
+  top: 171px;
+  left: 812px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-58 {
+  top: 207px;
+  left: 812px;
+  font-weight: 400;
+  font-size: 18px;
+  position: absolute;
+  font-family: "Inter", Helvetica;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-59 {
+  position: absolute;
+  top: 99px;
+  left: 1107px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-60 {
+  position: absolute;
+  top: 135px;
+  left: 1107px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-61 {
+  position: absolute;
+  top: 171px;
+  left: 1107px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .image-7 {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  top: 224px;
+  left: 323px;
+  object-fit: cover;
+}
+
+.industrias-hc .health-3 {
+  position: absolute;
+  width: 1446px;
+  height: 942px;
+  top: 89px;
+  left: 0;
+}
+
+.industrias-hc .overlap-24 {
+  position: relative;
+  width: 1440px;
+  height: 942px;
+  background-color: #050b21;
+}
+
+.industrias-hc .overlap-25 {
+  position: absolute;
+  width: 620px;
+  height: 611px;
+  top: 155px;
+  left: 772px;
+}
+
+.industrias-hc .captura-de-pantalla-8 {
+  width: 450px;
+  height: 452px;
+  top: 102px;
+  left: 170px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.industrias-hc .captura-de-pantalla-9 {
+  width: 525px;
+  height: 611px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.industrias-hc .text-wrapper-62 {
+  position: absolute;
+  top: 155px;
+  left: 111px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 67.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-63 {
+  position: absolute;
+  width: 651px;
+  top: 321px;
+  left: 108px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 27px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .overlap-group-10 {
+  position: absolute;
+  width: 605px;
+  height: 194px;
+  top: 559px;
+  left: 111px;
+  background-color: #ffffff;
+  border-radius: 22.5px;
+}
+
+.industrias-hc .eficiencia-operativa-4 {
+  position: absolute;
+  width: 376px;
+  top: 36px;
+  left: 195px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 22.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .captura-de-pantalla-10 {
+  width: 133px;
+  height: 152px;
+  top: 21px;
+  left: 40px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.industrias-hc .image-8 {
+  position: absolute;
+  width: 138px;
+  height: 104px;
+  top: 150px;
+  left: 497px;
+  object-fit: cover;
+}
+
+.industrias-hc .care-4 {
+  position: absolute;
+  width: 1344px;
+  height: 1449px;
+  top: 1058px;
+  left: 47px;
+}
+
+.industrias-hc .captura-de-pantalla-11 {
+  width: 647px;
+  height: 710px;
+  top: 369px;
+  left: 698px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.industrias-hc .caso-4 {
+  position: absolute;
+  width: 1348px;
+  height: 340px;
+  top: 0;
+  left: 0;
+}
+
+.industrias-hc .overlap-group-11 {
+  position: relative;
+  width: 1344px;
+  height: 340px;
+  background-color: #b6e3ff70;
+  border-radius: 22.5px;
+}
+
+.industrias-hc .modelo-de-negocio-4 {
+  position: absolute;
+  width: 453px;
+  top: 34px;
+  left: 844px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 22.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .text-wrapper-64 {
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 22.5px;
+  letter-spacing: 0;
+}
+
+.industrias-hc .caso-de-xito-care-4 {
+  position: absolute;
+  width: 685px;
+  top: 71px;
+  left: 39px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .desafos-3 {
+  position: absolute;
+  width: 664px;
+  height: 340px;
+  top: 369px;
+  left: 0;
+}
+
+.industrias-hc .overlap-26 {
+  position: relative;
+  width: 662px;
+  height: 340px;
+  background-color: #479fd4;
+  border-radius: 22.5px;
+}
+
+.industrias-hc .desaf-os-care-4 {
+  position: absolute;
+  width: 591px;
+  top: 36px;
+  left: 42px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 36px;
+}
+
+.industrias-hc .text-wrapper-65 {
+  font-size: 22.5px;
+}
+
+.industrias-hc .soluciones-7 {
+  position: absolute;
+  width: 664px;
+  height: 340px;
+  top: 739px;
+  left: 0;
+}
+
+.industrias-hc .overlap-27 {
+  position: relative;
+  width: 662px;
+  height: 340px;
+  background-color: #b6e3ff70;
+  border-radius: 22.5px;
+}
+
+.industrias-hc .soluciones-8 {
+  position: absolute;
+  width: 564px;
+  top: 25px;
+  left: 42px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 36px;
+}
+
+.industrias-hc .text-wrapper-66 {
+  font-weight: 700;
+  font-size: 22.5px;
+}
+
+.industrias-hc .beneficios-4 {
+  position: absolute;
+  width: 1346px;
+  height: 340px;
+  top: 1109px;
+  left: 0;
+}
+
+.industrias-hc .overlap-28 {
+  position: relative;
+  width: 1344px;
+  height: 340px;
+  background-color: #479fd4;
+  border-radius: 22.5px;
+}
+
+.industrias-hc .beneficios-junto-a-4 {
+  position: absolute;
+  width: 580px;
+  top: 57px;
+  left: 698px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 36px;
+}
+
+.industrias-hc .globos-4 {
+  position: absolute;
+  width: 600px;
+  height: 237px;
+  top: 51px;
+  left: 42px;
+}
+
+.overlap-29:hover, .overlap-30:hover, .overlap-31:hover, .overlap-group-12:hover  {
+  transform: scale(1.05); /* Aumenta el tamaño al 110% */
+}
+
+.industrias-hc .overlap-29 {
+  position: absolute;
+  width: 453px;
+  height: 53px;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 45px;
+  border: 3.38px solid;
+  border-color: #050b21;
+}
+
+.industrias-hc .text-wrapper-67 {
+  position: absolute;
+  top: 9px;
+  left: 13px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-hc .overlap-group-12 {
+  position: absolute;
+  width: 534px;
+  height: 53px;
+  top: 63px;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 45px;
+  border: 3.38px solid;
+  border-color: #050b21;
+}
+
+.industrias-hc .overlap-30 {
+  position: absolute;
+  width: 453px;
+  height: 53px;
+  top: 124px;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 45px;
+  border: 3.38px solid;
+  border-color: #050b21;
+}
+
+.industrias-hc .overlap-31 {
+  position: absolute;
+  width: 592px;
+  height: 53px;
+  top: 184px;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 45px;
+  border: 3.38px solid;
+  border-color: #050b21;
+}
+
+/* Barra de navegación */
+.nav-bar {
+  position: fixed;  /* Fija la barra en la parte superior */
+  width: 100%;  /* Asegura que ocupe todo el ancho */
+  height: 60px;  /* Altura fija de la barra */
+  top: 0;  /* Siempre en la parte superior */
+  left: 0;  /* Alineación desde la izquierda */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #ffffff;
+  z-index: 1;  /* Asegura que esté por encima de otros elementos */
+}
+
+.nav-bar .ctechpng-2 {
+  width: 148px;
+  height: 32px;
+  object-fit: cover;
+}
+
+.nav-bar .burger {
+  width: 52px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.nav-bar .burger div {
+  width: 100%;
+  height: 6px;
+  background-color: #479fd4;
+}
+
+/* Estilos del menú */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #479fd4;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;  /* Asegura que esté por encima de otros elementos */
+}
+
+.menu-options {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  color: white;
+}
+
+.menu-options li {
+  color: white;
+  font-family: "Inter", Helvetica;
+  padding-top: 30px;
+  font-weight: 500;
+}
+
+.menu-options a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.industriasmenu a{
+  font-size: 17px;
+}
+
+@media (max-width: 595px) {
+  .industrias-hc.industrias-hc-wrapper-2 {
+    display: none !important;
+  }
+  .industrias-hc.industrias-hc-wrapper-3 {
+    display: none !important;
+  }
+  .industrias-hc.industrias-hc-wrapper-4 {
+    display: none !important;
+  }
+}
+
+@media (min-width: 596px) and (max-width: 833px) {
+  .industrias-hc.industrias-hc-wrapper {
+    display: none !important;
+  }
+  .industrias-hc.industrias-hc-wrapper-3 {
+    display: none !important;
+  }
+  .industrias-hc.industrias-hc-wrapper-4 {
+    display: none !important;
+  }
+}
+
+@media (min-width: 834px) and (max-width: 1439px) {
+  .industrias-hc.industrias-hc-wrapper {
+    display: none !important;
+  }
+  .industrias-hc.industrias-hc-wrapper-2 {
+    display: none !important;
+  }
+  .industrias-hc.industrias-hc-wrapper-4 {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .industrias-hc.industrias-hc-wrapper {
+    display: none !important;
+  }
+  .industrias-hc.industrias-hc-wrapper-2 {
+    display: none !important;
+  }
+  .industrias-hc.industrias-hc-wrapper-3 {
+    display: none !important;
+  }
+  .nav-bar{
+    display: none !important;
+  }
+  .menu-overlay{
+    display: none !important;
+  }
+}

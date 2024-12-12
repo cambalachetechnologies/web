@@ -1,0 +1,2394 @@
+.servicios.servicios-wrapper {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.servicios .div {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 390px;
+  height: 3394px;
+  position: relative;
+}
+
+.servicios .rectangle {
+  width: 52px;
+  height: 8px;
+  top: 12px;
+  left: 324px;
+  position: absolute;
+  background-color: #479fd4;
+}
+
+.servicios .rectangle-2 {
+  width: 52px;
+  height: 8px;
+  top: 23px;
+  left: 324px;
+  position: absolute;
+  background-color: #479fd4;
+}
+
+.servicios .rectangle-3 {
+  width: 52px;
+  height: 8px;
+  top: 35px;
+  left: 324px;
+  position: absolute;
+  background-color: #479fd4;
+}
+
+.servicios .ctechpng {
+  width: 148px;
+  height: 32px;
+  top: 11px;
+  left: 28px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.servicios .overlap {
+  position: absolute;
+  width: 1200px;
+  height: 1745px;
+  top: 68px;
+  left: -153px;
+}
+
+.servicios .nosotros {
+  position: absolute;
+  width: 1185px;
+  height: 560px;
+  top: 0;
+  left: 15px;
+}
+
+.servicios .overlap-group {
+  position: relative;
+  width: 390px;
+  height: 560px;
+  left: 138px;
+  background-image: url(https://c.animaapp.com/L9Hv37hP/img/captura-de-pantalla-2024-09-29-a-las-15-15-44-1.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.servicios .text-wrapper {
+  position: absolute;
+  top: 94px;
+  left: 43px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 23.4px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .impulsa-tu {
+  position: absolute;
+  width: 281px;
+  top: 153px;
+  left: 43px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16.1px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .span {
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16.1px;
+  letter-spacing: 0;
+}
+
+.servicios .text-wrapper-2 {
+  font-weight: 700;
+}
+
+.servicios .div-wrapper {
+  position: absolute;
+  width: 217px;
+  height: 66px;
+  top: 410px;
+  left: 43px;
+  background-color: #479fd4;
+  border-radius: 13.82px;
+}
+
+.servicios .text-wrapper-3 {
+  top: 18px;
+  left: 28px;
+  font-size: 22.1px;
+  position: absolute;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .aportamos {
+  position: absolute;
+  width: 999px;
+  height: 1197px;
+  top: 548px;
+  left: 0;
+}
+
+.servicios .overlap-2 {
+  position: relative;
+  width: 995px;
+  height: 1197px;
+  background-color: #050b21;
+}
+
+.servicios .text-wrapper-4 {
+  position: absolute;
+  top: 88px;
+  left: 196px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 27.8px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .en-un-mundo {
+  position: absolute;
+  width: 262px;
+  top: 164px;
+  left: 196px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 14.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .captura-de-pantalla {
+  position: absolute;
+  width: 315px;
+  height: 278px;
+  top: 538px;
+  left: 196px;
+  object-fit: cover;
+}
+
+.servicios .text-wrapper-5 {
+  position: absolute;
+  top: 1393px;
+  left: 196px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 31.1px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .experiencia-m-s-de {
+  position: absolute;
+  width: 315px;
+  top: 1454px;
+  left: 196px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 15.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-6 {
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 15.5px;
+  letter-spacing: 0;
+}
+
+.servicios .overlap-3 {
+  position: absolute;
+  width: 317px;
+  height: 767px;
+  top: 1868px;
+  left: 41px;
+}
+
+.servicios .div-2 {
+  position: absolute;
+  width: 317px;
+  height: 763px;
+  top: 4px;
+  left: 0;
+}
+
+.servicios .text-wrapper-7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 18.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .proyectos-de-wrapper {
+  position: absolute;
+  width: 307px;
+  height: 142px;
+  top: 141px;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 2.21px 2.21px #00000040;
+}
+
+.servicios .proyectos-de {
+  position: absolute;
+  width: 268px;
+  top: 34px;
+  left: 20px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 13.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-8 {
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 13.2px;
+  letter-spacing: 0;
+}
+
+.servicios .devops-implementamos-wrapper {
+  position: absolute;
+  width: 307px;
+  height: 142px;
+  top: 301px;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 2.21px 2.21px #00000040;
+}
+
+.servicios .p {
+  position: absolute;
+  width: 268px;
+  top: 33px;
+  left: 20px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 13.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .implementaci-n-quick-wrapper {
+  position: absolute;
+  width: 307px;
+  height: 142px;
+  top: 621px;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 2.21px 2.21px #00000040;
+}
+
+.servicios .abonos-evolutivos-wrapper {
+  position: absolute;
+  width: 307px;
+  height: 142px;
+  top: 461px;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 2.21px 2.21px #00000040;
+}
+
+.servicios .abonos-evolutivos {
+  position: absolute;
+  width: 264px;
+  top: 34px;
+  left: 25px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 13.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .rectangle-4 {
+  width: 111px;
+  height: 34px;
+  top: 0;
+  left: 196px;
+  border-radius: 7.09px;
+  position: absolute;
+  background-color: #479fd4;
+}
+
+.servicios .text-wrapper-9 {
+  top: 8px;
+  left: 210px;
+  font-size: 11.3px;
+  position: absolute;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-10 {
+  position: absolute;
+  width: 307px;
+  top: 59px;
+  left: 0;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 10.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .puntos {
+  position: absolute;
+  width: 373px;
+  height: 175px;
+  top: 2725px;
+  left: 9px;
+  background-image: url(https://c.animaapp.com/L9Hv37hP/img/captura-de-pantalla-2024-09-29-a-las-15-40-00-1@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.servicios .footer {
+  position: absolute;
+  width: 2035px;
+  height: 496px;
+  top: 2900px;
+  left: -618px;
+  background-color: transparent;
+}
+
+.servicios .overlap-4 {
+  position: relative;
+  width: 2015px;
+  height: 496px;
+  background-color: #050b21;
+}
+
+.servicios .linkedin {
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  top: 132px;
+  left: 774px;
+  object-fit: cover;
+}
+
+.servicios .partner {
+  position: absolute;
+  width: 111px;
+  height: 33px;
+  top: 132px;
+  left: 650px;
+  object-fit: cover;
+}
+
+.servicios .text-wrapper-11 {
+  position: absolute;
+  width: 229px;
+  top: 76px;
+  left: 650px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 11.9px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .img {
+  width: 111px;
+  height: 24px;
+  top: 35px;
+  left: 650px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.servicios .text-wrapper-12 {
+  position: absolute;
+  top: 356px;
+  left: 829px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-13 {
+  position: absolute;
+  top: 334px;
+  left: 829px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-14 {
+  position: absolute;
+  top: 313px;
+  left: 829px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-15 {
+  top: 290px;
+  left: 829px;
+  font-weight: 700;
+  font-size: 11.9px;
+  white-space: nowrap;
+  position: absolute;
+  font-family: "Inter", Helvetica;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-16 {
+  top: 377px;
+  left: 655px;
+  font-weight: 400;
+  font-size: 10.6px;
+  position: absolute;
+  font-family: "Inter", Helvetica;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-17 {
+  position: absolute;
+  top: 356px;
+  left: 655px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-18 {
+  position: absolute;
+  top: 334px;
+  left: 655px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-19 {
+  position: absolute;
+  top: 313px;
+  left: 655px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-20 {
+  position: absolute;
+  top: 290px;
+  left: 655px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 11.9px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.servicios.servicios-wrapper-2 {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.servicios .div-3 {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 596px;
+  height: 5186.73px;
+  position: relative;
+}
+
+.servicios .rectangle-5 {
+  position: absolute;
+  width: 79px;
+  height: 12px;
+  top: 18px;
+  left: 495px;
+  background-color: #479fd4;
+}
+
+.servicios .rectangle-6 {
+  position: absolute;
+  width: 79px;
+  height: 12px;
+  top: 36px;
+  left: 495px;
+  background-color: #479fd4;
+}
+
+.servicios .rectangle-7 {
+  position: absolute;
+  width: 79px;
+  height: 12px;
+  top: 53px;
+  left: 495px;
+  background-color: #479fd4;
+}
+
+.servicios .ctechpng-2 {
+  position: absolute;
+  width: 226px;
+  height: 49px;
+  top: 17px;
+  left: 43px;
+  object-fit: cover;
+}
+
+.servicios .overlap-5 {
+  position: absolute;
+  width: 1831px;
+  height: 2667px;
+  top: 104px;
+  left: -234px;
+}
+
+.servicios .overlap-group-wrapper {
+  position: absolute;
+  width: 1808px;
+  height: 856px;
+  top: 0;
+  left: 23px;
+}
+
+.servicios .overlap-group-2 {
+  position: relative;
+  width: 596px;
+  height: 856px;
+  left: 211px;
+  background-image: url(https://c.animaapp.com/L9Hv37hP/img/captura-de-pantalla-2024-09-29-a-las-15-15-44-1-1.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.servicios .text-wrapper-21 {
+  position: absolute;
+  top: 144px;
+  left: 65px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 35.8px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .impulsa-tu-2 {
+  position: absolute;
+  width: 429px;
+  top: 234px;
+  left: 66px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-22 {
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24.6px;
+  letter-spacing: 0;
+}
+
+.servicios .overlap-6 {
+  position: absolute;
+  width: 332px;
+  height: 101px;
+  top: 627px;
+  left: 66px;
+  background-color: #479fd4;
+  border-radius: 21.11px;
+}
+
+.servicios .text-wrapper-23 {
+  top: 28px;
+  left: 42px;
+  font-size: 33.8px;
+  position: absolute;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .overlap-wrapper {
+  position: absolute;
+  width: 1525px;
+  height: 1829px;
+  top: 837px;
+  left: 0;
+}
+
+.servicios .overlap-7 {
+  position: relative;
+  width: 1521px;
+  height: 1829px;
+  background-color: #050b21;
+}
+
+.servicios .text-wrapper-24 {
+  position: absolute;
+  top: 134px;
+  left: 300px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 42.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .en-un-mundo-2 {
+  position: absolute;
+  width: 400px;
+  top: 251px;
+  left: 300px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 21.7px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .captura-de-pantalla-2 {
+  position: absolute;
+  width: 481px;
+  height: 425px;
+  top: 822px;
+  left: 300px;
+  object-fit: cover;
+}
+
+.servicios .text-wrapper-25 {
+  position: absolute;
+  top: 2129px;
+  left: 300px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 47.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .experiencia-m-s-de-2 {
+  position: absolute;
+  width: 481px;
+  top: 2222px;
+  left: 300px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 23.8px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-26 {
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 23.8px;
+  letter-spacing: 0;
+}
+
+.servicios .overlap-8 {
+  position: absolute;
+  width: 480px;
+  height: 1173px;
+  top: 2855px;
+  left: 63px;
+}
+
+.servicios .div-4 {
+  position: absolute;
+  width: 480px;
+  height: 1167px;
+  top: 6px;
+  left: 0;
+}
+
+.servicios .text-wrapper-27 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 27.8px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .overlap-9 {
+  position: absolute;
+  width: 470px;
+  height: 218px;
+  top: 215px;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 3.37px 3.37px #00000040;
+}
+
+.servicios .div-5 {
+  position: absolute;
+  width: 409px;
+  top: 51px;
+  left: 30px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-28 {
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20.2px;
+  letter-spacing: 0;
+}
+
+.servicios .overlap-10 {
+  position: absolute;
+  width: 470px;
+  height: 218px;
+  top: 460px;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 3.37px 3.37px #00000040;
+}
+
+.servicios .overlap-11 {
+  position: absolute;
+  width: 470px;
+  height: 218px;
+  top: 949px;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 3.37px 3.37px #00000040;
+}
+
+.servicios .overlap-12 {
+  position: absolute;
+  width: 470px;
+  height: 218px;
+  top: 705px;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 3.37px 3.37px #00000040;
+}
+
+.servicios .abonos-evolutivos-2 {
+  position: absolute;
+  width: 403px;
+  top: 51px;
+  left: 38px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .rectangle-8 {
+  position: absolute;
+  width: 170px;
+  height: 52px;
+  top: 0;
+  left: 300px;
+  background-color: #479fd4;
+  border-radius: 10.83px;
+}
+
+.servicios .text-wrapper-29 {
+  top: 13px;
+  left: 321px;
+  font-size: 17.3px;
+  position: absolute;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-30 {
+  position: absolute;
+  width: 469px;
+  top: 90px;
+  left: 0;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16.1px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .puntos-2 {
+  position: absolute;
+  width: 570px;
+  height: 267px;
+  top: 4164px;
+  left: 14px;
+  background-image: url(https://c.animaapp.com/L9Hv37hP/img/captura-de-pantalla-2024-09-29-a-las-15-40-00-1-1.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.servicios .footer-2 {
+  position: absolute;
+  width: 3100px;
+  height: 758px;
+  top: 4432px;
+  left: -944px;
+  background-color: transparent;
+}
+
+.servicios .overlap-13 {
+  position: relative;
+  width: 3080px;
+  height: 758px;
+  background-color: #050b21;
+}
+
+.servicios .linkedin-2 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 202px;
+  left: 1182px;
+  object-fit: cover;
+}
+
+.servicios .partner-2 {
+  position: absolute;
+  width: 169px;
+  height: 50px;
+  top: 202px;
+  left: 994px;
+  object-fit: cover;
+}
+
+.servicios .text-wrapper-31 {
+  position: absolute;
+  width: 350px;
+  top: 116px;
+  left: 994px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 18.3px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .ctechpng-3 {
+  position: absolute;
+  width: 169px;
+  height: 37px;
+  top: 54px;
+  left: 994px;
+  object-fit: cover;
+}
+
+.servicios .text-wrapper-32 {
+  position: absolute;
+  top: 544px;
+  left: 1267px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-33 {
+  position: absolute;
+  top: 511px;
+  left: 1267px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-34 {
+  position: absolute;
+  top: 479px;
+  left: 1267px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-35 {
+  top: 443px;
+  left: 1267px;
+  font-weight: 700;
+  font-size: 18.3px;
+  position: absolute;
+  font-family: "Inter", Helvetica;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-36 {
+  top: 576px;
+  left: 1001px;
+  font-weight: 400;
+  font-size: 16.2px;
+  position: absolute;
+  font-family: "Inter", Helvetica;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-37 {
+  position: absolute;
+  top: 544px;
+  left: 1001px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-38 {
+  position: absolute;
+  top: 511px;
+  left: 1001px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-39 {
+  position: absolute;
+  top: 479px;
+  left: 1001px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-40 {
+  position: absolute;
+  top: 443px;
+  left: 1001px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 18.3px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios.servicios-wrapper-3 {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.servicios .div-6 {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 834px;
+  height: 2531px;
+  position: relative;
+}
+
+.servicios .ctechpng-4 {
+  position: absolute;
+  width: 148px;
+  height: 32px;
+  top: 15px;
+  left: 29px;
+  object-fit: cover;
+}
+
+.servicios .rectangle-9 {
+  position: absolute;
+  width: 52px;
+  height: 8px;
+  top: 12px;
+  left: 736px;
+  background-color: #479fd4;
+}
+
+.servicios .rectangle-10 {
+  position: absolute;
+  width: 52px;
+  height: 8px;
+  top: 23px;
+  left: 736px;
+  background-color: #479fd4;
+}
+
+.servicios .rectangle-11 {
+  position: absolute;
+  width: 52px;
+  height: 8px;
+  top: 35px;
+  left: 736px;
+  background-color: #479fd4;
+}
+
+.servicios .overlap-14 {
+  position: absolute;
+  width: 1185px;
+  height: 1304px;
+  top: 62px;
+  left: -26px;
+}
+
+.servicios .nosotros-2 {
+  position: absolute;
+  width: 1185px;
+  height: 560px;
+  top: 0;
+  left: 0;
+}
+
+.servicios .overlap-group-3 {
+  position: relative;
+  width: 834px;
+  height: 560px;
+  left: 26px;
+  background-image: url(https://c.animaapp.com/L9Hv37hP/img/captura-de-pantalla-2024-09-29-a-las-15-15-44-1-2.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.servicios .text-wrapper-41 {
+  position: absolute;
+  top: 100px;
+  left: 67px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 44.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .impulsa-tu-3 {
+  position: absolute;
+  width: 677px;
+  top: 197px;
+  left: 67px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 22.1px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-42 {
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 22.1px;
+  letter-spacing: 0;
+}
+
+.servicios .overlap-15 {
+  position: absolute;
+  width: 217px;
+  height: 66px;
+  top: 401px;
+  left: 67px;
+  background-color: #479fd4;
+  border-radius: 13.82px;
+}
+
+.servicios .aportamos-2 {
+  position: absolute;
+  width: 1003px;
+  height: 752px;
+  top: 552px;
+  left: 26px;
+}
+
+.servicios .overlap-16 {
+  position: relative;
+  width: 995px;
+  height: 752px;
+  background-color: #050b21;
+}
+
+.servicios .text-wrapper-43 {
+  position: absolute;
+  top: 42px;
+  left: 79px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 37.3px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-44 {
+  position: absolute;
+  top: 376px;
+  left: 429px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 31.1px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .experiencia-m-s-de-3 {
+  position: absolute;
+  width: 341px;
+  top: 437px;
+  left: 429px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 15.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .en-un-mundo-3 {
+  position: absolute;
+  width: 683px;
+  top: 124px;
+  left: 79px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18.7px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .captura-de-pantalla-3 {
+  position: absolute;
+  width: 315px;
+  height: 278px;
+  top: 383px;
+  left: 79px;
+  object-fit: cover;
+}
+
+.servicios .div-7 {
+  position: absolute;
+  width: 764px;
+  height: 455px;
+  top: 1447px;
+  left: 45px;
+}
+
+.servicios .text-wrapper-45 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 26.1px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-46 {
+  position: absolute;
+  width: 206px;
+  top: 10px;
+  left: 396px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 10.5px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .overlap-17 {
+  position: absolute;
+  width: 364px;
+  height: 169px;
+  top: 99px;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 2.61px 2.61px #00000040;
+}
+
+.servicios .proyectos-de-2 {
+  position: absolute;
+  width: 317px;
+  top: 40px;
+  left: 24px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 15.7px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-47 {
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 15.7px;
+  letter-spacing: 0;
+}
+
+.servicios .overlap-18 {
+  position: absolute;
+  width: 132px;
+  height: 40px;
+  top: 11px;
+  left: 618px;
+  background-color: #479fd4;
+  border-radius: 8.39px;
+}
+
+.servicios .text-wrapper-48 {
+  top: 11px;
+  left: 17px;
+  font-size: 13.4px;
+  position: absolute;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .overlap-19 {
+  position: absolute;
+  width: 364px;
+  height: 169px;
+  top: 286px;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 2.61px 2.61px #00000040;
+}
+
+.servicios .div-8 {
+  position: absolute;
+  width: 317px;
+  top: 39px;
+  left: 24px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 15.7px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .overlap-20 {
+  position: absolute;
+  width: 364px;
+  height: 169px;
+  top: 286px;
+  left: 386px;
+  background-color: #ffffff;
+  box-shadow: 0px 2.61px 2.61px #00000040;
+}
+
+.servicios .overlap-21 {
+  position: absolute;
+  width: 364px;
+  height: 169px;
+  top: 99px;
+  left: 386px;
+  background-color: #ffffff;
+  box-shadow: 0px 2.61px 2.61px #00000040;
+}
+
+.servicios .abonos-evolutivos-3 {
+  position: absolute;
+  width: 312px;
+  top: 40px;
+  left: 29px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 15.7px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .puntos-3 {
+  position: absolute;
+  width: 737px;
+  height: 345px;
+  top: 1979px;
+  left: 45px;
+  background-image: url(https://c.animaapp.com/L9Hv37hP/img/captura-de-pantalla-2024-09-29-a-las-15-40-00-1-2.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.servicios .footer-3 {
+  position: absolute;
+  width: 861px;
+  height: 207px;
+  top: 2324px;
+  left: -6px;
+  background-color: transparent;
+}
+
+.servicios .overlap-22 {
+  position: relative;
+  width: 841px;
+  height: 207px;
+  background-color: #000000;
+}
+
+.servicios .text-wrapper-49 {
+  position: absolute;
+  width: 227px;
+  top: 75px;
+  left: 66px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 11.8px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .ctechpng-5 {
+  position: absolute;
+  width: 110px;
+  height: 24px;
+  top: 35px;
+  left: 66px;
+  object-fit: cover;
+}
+
+.servicios .logopartner {
+  position: absolute;
+  width: 110px;
+  height: 32px;
+  top: 131px;
+  left: 66px;
+  object-fit: cover;
+}
+
+.servicios .text-wrapper-50 {
+  position: absolute;
+  top: 35px;
+  left: 474px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 11.8px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.servicios .text-wrapper-51 {
+  top: 35px;
+  left: 646px;
+  font-weight: 700;
+  font-size: 11.8px;
+  white-space: nowrap;
+  position: absolute;
+  font-family: "Inter", Helvetica;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-52 {
+  position: absolute;
+  top: 58px;
+  left: 474px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-53 {
+  position: absolute;
+  top: 79px;
+  left: 474px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-54 {
+  position: absolute;
+  top: 100px;
+  left: 474px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-55 {
+  top: 121px;
+  left: 474px;
+  font-weight: 400;
+  font-size: 10.5px;
+  position: absolute;
+  font-family: "Inter", Helvetica;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-56 {
+  position: absolute;
+  top: 58px;
+  left: 646px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-57 {
+  position: absolute;
+  top: 79px;
+  left: 646px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-58 {
+  position: absolute;
+  top: 100px;
+  left: 646px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .linkedin-3 {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 131px;
+  left: 188px;
+  object-fit: cover;
+}
+
+.servicios.servicios-wrapper-4 {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.servicios .div-9 {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 1440px;
+  height: 3658.5px;
+  position: relative;
+}
+
+.servicios .footer-4 {
+  position: absolute;
+  width: 1460px;
+  height: 354px;
+  top: 3304px;
+  left: 0;
+  background-color: transparent;
+}
+
+.servicios .overlap-group-4 {
+  position: relative;
+  width: 1440px;
+  height: 354px;
+  background-color: #050b21;
+}
+
+.servicios .text-wrapper-59 {
+  position: absolute;
+  width: 388px;
+  top: 128px;
+  left: 114px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 20.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .ctechpng-6 {
+  position: absolute;
+  width: 188px;
+  height: 40px;
+  top: 60px;
+  left: 114px;
+  object-fit: cover;
+}
+
+.servicios .image {
+  width: 188px;
+  left: 114px;
+  position: absolute;
+  height: 55px;
+  top: 224px;
+  object-fit: cover;
+}
+
+.servicios .text-wrapper-60 {
+  position: absolute;
+  top: 60px;
+  left: 812px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 20.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-61 {
+  top: 60px;
+  left: 1107px;
+  font-weight: 700;
+  font-size: 20.2px;
+  position: absolute;
+  font-family: "Inter", Helvetica;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-62 {
+  position: absolute;
+  top: 99px;
+  left: 812px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-63 {
+  position: absolute;
+  top: 135px;
+  left: 812px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-64 {
+  position: absolute;
+  top: 171px;
+  left: 812px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-65 {
+  top: 207px;
+  left: 812px;
+  font-weight: 400;
+  font-size: 18px;
+  position: absolute;
+  font-family: "Inter", Helvetica;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-66 {
+  position: absolute;
+  top: 99px;
+  left: 1107px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-67 {
+  position: absolute;
+  top: 135px;
+  left: 1107px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-68 {
+  position: absolute;
+  top: 171px;
+  left: 1107px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .image-2 {
+  width: 55px;
+  left: 323px;
+  position: absolute;
+  height: 55px;
+  top: 224px;
+  object-fit: cover;
+}
+
+.servicios .puntos-4 {
+  position: absolute;
+  width: 1332px;
+  height: 623px;
+  top: 2681px;
+  left: 54px;
+  background-image: url(https://c.animaapp.com/L9Hv37hP/img/captura-de-pantalla-2024-09-29-a-las-15-40-00-1-3.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.servicios .div-10 {
+  position: absolute;
+  width: 1304px;
+  height: 783px;
+  top: 1803px;
+  left: 74px;
+}
+
+.servicios .text-wrapper-69 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 45px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-70 {
+  position: absolute;
+  width: 354px;
+  top: 17px;
+  left: 681px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* Estilo básico de las cajas */
+.overlap-23, .overlap-24, .overlap-25, .overlap-26, .overlap-27 {
+  position: relative;
+  transition: transform 0.3s ease; /* Para una animación suave */
+}
+
+/* Efecto de aumento cuando el mouse pasa por encima */
+.overlap-23:hover, .overlap-24:hover, .overlap-25:hover, .overlap-26:hover, .overlap-27:hover {
+  transform: scale(1.05); /* Aumenta el tamaño al 110% */
+}
+
+/* También puedes añadir sombras para que se vea más destacado */
+.overlap-23:hover, .overlap-24:hover, .overlap-25:hover, .overlap-26:hover, .overlap-27:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra sutil al pasar el mouse */
+}
+
+.overlap-group-5:hover{
+  transform: scale(1.05); /* Aumenta el tamaño al 110% */
+
+}
+
+
+.servicios .overlap-23 {
+  position: absolute;
+  width: 627px;
+  height: 290px;
+  top: 170px;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 4.5px 4.5px #00000040;
+}
+
+.servicios .proyectos-de-3 {
+  position: absolute;
+  width: 546px;
+  top: 69px;
+  left: 40px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 27px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-71 {
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 27px;
+  letter-spacing: 0;
+}
+
+.servicios .overlap-24 {
+  position: absolute;
+  width: 227px;
+  height: 69px;
+  top: 19px;
+  left: 1063px;
+  background-color: #479fd4;
+  border-radius: 14.44px;
+}
+
+.servicios .text-wrapper-72 {
+  top: 19px;
+  left: 29px;
+  font-size: 23.1px;
+  position: absolute;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .overlap-25 {
+  position: absolute;
+  width: 627px;
+  height: 290px;
+  top: 493px;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 4.5px 4.5px #00000040;
+}
+
+.servicios .div-11 {
+  position: absolute;
+  width: 546px;
+  top: 68px;
+  left: 40px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 27px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .overlap-26 {
+  position: absolute;
+  width: 627px;
+  height: 290px;
+  top: 493px;
+  left: 664px;
+  background-color: #ffffff;
+  box-shadow: 0px 4.5px 4.5px #00000040;
+}
+
+.servicios .overlap-27 {
+  position: absolute;
+  width: 627px;
+  height: 290px;
+  top: 170px;
+  left: 664px;
+  background-color: #ffffff;
+  box-shadow: 0px 4.5px 4.5px #00000040;
+}
+
+.servicios .abonos-evolutivos-4 {
+  position: absolute;
+  width: 538px;
+  top: 69px;
+  left: 51px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 27px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .aportamos-3 {
+  position: absolute;
+  width: 1448px;
+  height: 962px;
+  top: 773px;
+  left: 0;
+}
+
+.servicios .overlap-28 {
+  position: relative;
+  width: 1440px;
+  height: 962px;
+  background-color: #050b21;
+}
+
+.servicios .text-wrapper-73 {
+  position: absolute;
+  top: 61px;
+  left: 114px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 54px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-74 {
+  position: absolute;
+  top: 444px;
+  left: 854px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 45px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .experiencia-m-s-de-4 {
+  position: absolute;
+  width: 511px;
+  top: 533px;
+  left: 854px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 22.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-75 {
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 22.5px;
+  letter-spacing: 0;
+}
+
+.servicios .en-un-mundo-4 {
+  position: absolute;
+  width: 1151px;
+  top: 179px;
+  left: 114px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 27px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .captura-de-pantalla-4 {
+  position: absolute;
+  width: 669px;
+  height: 402px;
+  top: 462px;
+  left: 114px;
+  object-fit: cover;
+}
+
+.servicios .nosotros-3 {
+  position: absolute;
+  width: 1446px;
+  height: 684px;
+  top: 89px;
+  left: 0;
+}
+
+.servicios .overlap-29 {
+  position: relative;
+  width: 1440px;
+  height: 684px;
+  background-image: url(https://c.animaapp.com/L9Hv37hP/img/captura-de-pantalla-2024-09-29-a-las-15-15-44-1-3.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.servicios .text-wrapper-76 {
+  position: absolute;
+  top: 123px;
+  left: 114px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 54px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .impulsa-tu-4 {
+  position: absolute;
+  width: 827px;
+  top: 241px;
+  left: 114px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 27px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .overlap-group-5 {
+  position: absolute;
+  width: 266px;
+  height: 81px;
+  top: 489px;
+  left: 114px;
+  background-color: #479fd4;
+  border-radius: 16.88px;
+}
+
+.servicios .text-wrapper-77 {
+  top: 22px;
+  left: 34px;
+  font-size: 27px;
+  position: absolute;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .navbar {
+  position: fixed;
+  width: 100%;
+  height: 89px;
+  top: 0;
+  left: 0;
+}
+
+.servicios .navbar {
+  position: fixed;
+  width: 100%;
+  height: 89px;
+  background-color: #ffffff;
+  box-shadow: 0px 4.5px 4.5px #00000040;
+}
+
+.servicios .text-wrapper-78 {
+  left: 593px;
+  font-weight: 400;
+  position: absolute;
+  top: 29px;
+  font-family: "Open Sans", Helvetica;
+  color: #000000;
+  font-size: 22.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-79 {
+  left: 1299px;
+  font-weight: 400;
+  position: absolute;
+  top: 29px;
+  font-family: "Open Sans", Helvetica;
+  color: #000000;
+  font-size: 22.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-80 {
+  position: absolute;
+  top: 29px;
+  left: 684px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 22.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-81 {
+  left: 880px;
+  font-weight: 700;
+  position: absolute;
+  top: 29px;
+  font-family: "Open Sans", Helvetica;
+  color: #000000;
+  font-size: 22.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.servicios .text-wrapper-82 {
+  left: 1007px;
+  font-weight: 400;
+  position: absolute;
+  top: 29px;
+  font-family: "Open Sans", Helvetica;
+  color: #000000;
+  font-size: 22.5px;
+  letter-spacing: 0;
+  line-height: normal;
+  display: inline-block; /* Ajusta el tamaño al contenido */
+  white-space: nowrap;   /* Evita el salto de línea si es necesario */
+}
+
+.servicios .text-wrapper-83 {
+  left: 1146px;
+  font-weight: 400;
+  position: absolute;
+  top: 29px;
+  font-family: "Open Sans", Helvetica;
+  color: #000000;
+  font-size: 22.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* Estilo para el submenú */
+.servicios .drop-down {
+  opacity: 0; /* Inicialmente oculto */
+  pointer-events: none; /* Deshabilitar la interactividad */
+  position: absolute;
+  top: 40px; /* Espaciado debajo de "Industrias" */
+  left: 0; /* Alineado con el padre */
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  list-style: none;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 10; /* Asegurar que aparezca por encima de otros elementos */
+  transition: opacity 0.3s ease-out; /* Transición suave para desaparecer */
+  width: 190px;
+}
+
+/* Estilos de los items del submenú */
+.servicios .drop-down li {
+  font-family: "Open Sans", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.servicios .drop-down li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.servicios .drop-down li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Mostrar el submenú al pasar el mouse sobre "Industrias" */
+.servicios .text-wrapper-82:hover .drop-down {
+  opacity: 1; /* Hacerlo visible */
+  pointer-events: auto; /* Habilitar la interactividad */
+  transition: opacity 0.3s ease-in; /* Transición suave para aparecer */
+}
+
+/* Mantener el submenú visible mientras el mouse esté sobre el submenú */
+.servicios .drop-down:hover {
+  opacity: 1; /* Mantener visible mientras el mouse está sobre el submenú */
+  pointer-events: auto; /* Habilitar la interactividad */
+}
+
+/* Mantener el submenú oculto hasta que el mouse pase por "Industrias" */
+.servicios .text-wrapper-82 {
+  position: relative;
+  cursor: pointer; /* Indicar que es interactivo */
+}
+
+.servicios .text-wrapper-82:hover .drop-down {
+  opacity: 1; /* Hacerlo visible */
+  pointer-events: auto; /* Habilitar la interactividad */
+  transition: opacity 0.3s ease-in; /* Transición suave al aparecer */
+}
+
+/* Mantener el submenú visible después de que el mouse se aleje por 2 segundos */
+.servicios .drop-down.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 4s ease-out; /* Se desvanece lentamente */
+}
+
+.servicios .ctechpng-7 {
+  position: absolute;
+  width: 166px;
+  height: 36px;
+  top: 26px;
+  left: 114px;
+  object-fit: cover;
+}
+
+/* Barra de navegación */
+.nav-bar {
+  position: fixed;  /* Fija la barra en la parte superior */
+  width: 100%;  /* Asegura que ocupe todo el ancho */
+  height: 60px;  /* Altura fija de la barra */
+  top: 0;  /* Siempre en la parte superior */
+  left: 0;  /* Alineación desde la izquierda */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #ffffff;
+  z-index: 1;  /* Asegura que esté por encima de otros elementos */
+}
+
+.nav-bar .ctechpng-2 {
+  width: 148px;
+  height: 32px;
+  object-fit: cover;
+}
+
+.nav-bar .burger {
+  width: 52px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.nav-bar .burger div {
+  width: 100%;
+  height: 6px;
+  background-color: #479fd4;
+}
+
+/* Estilos del menú */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #479fd4;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;  /* Asegura que esté por encima de otros elementos */
+}
+
+.menu-options {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  color: white;
+}
+
+.menu-options li {
+  color: white;
+  font-family: "Inter", Helvetica;
+  padding-top: 30px;
+  font-weight: 500;
+}
+
+.menu-options a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.industriasmenu a{
+  font-size: 17px;
+}
+
+@media (max-width: 595px) {
+  .servicios.servicios-wrapper-2 {
+    display: none !important;
+  }
+  .servicios.servicios-wrapper-3 {
+    display: none !important;
+  }
+  .servicios.servicios-wrapper-4 {
+    display: none !important;
+  }
+}
+
+@media (min-width: 596px) and (max-width: 833px) {
+  .servicios.servicios-wrapper {
+    display: none !important;
+  }
+  .servicios.servicios-wrapper-3 {
+    display: none !important;
+  }
+  .servicios.servicios-wrapper-4 {
+    display: none !important;
+  }
+}
+
+@media (min-width: 834px) and (max-width: 1439px) {
+  .servicios.servicios-wrapper {
+    display: none !important;
+  }
+  .servicios.servicios-wrapper-2 {
+    display: none !important;
+  }
+  .servicios.servicios-wrapper-4 {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .servicios.servicios-wrapper {
+    display: none !important;
+  }
+  .servicios.servicios-wrapper-2 {
+    display: none !important;
+  }
+  .servicios.servicios-wrapper-3 {
+    display: none !important;
+  }
+  .nav-bar{
+    display: none !important;
+  }
+  .menu-overlay{
+    display: none !important;
+  }
+}

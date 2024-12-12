@@ -1,0 +1,2544 @@
+.industrias-cg.industrias-cg-wrapper {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.industrias-cg .div {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 390px;
+  height: 2601px;
+  position: relative;
+}
+
+.industrias-cg .nav-bar {
+  position: absolute;
+  width: 348px;
+  height: 32px;
+  top: 11px;
+  left: 28px;
+}
+
+.industrias-cg .rectangle {
+  top: 1px;
+  position: absolute;
+  width: 52px;
+  height: 8px;
+  left: 296px;
+  background-color: #479fd4;
+}
+
+.industrias-cg .rectangle-2 {
+  top: 12px;
+  position: absolute;
+  width: 52px;
+  height: 8px;
+  left: 296px;
+  background-color: #479fd4;
+}
+
+.industrias-cg .rectangle-3 {
+  top: 24px;
+  position: absolute;
+  width: 52px;
+  height: 8px;
+  left: 296px;
+  background-color: #479fd4;
+}
+
+.industrias-cg .ctechpng {
+  width: 148px;
+  height: 32px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.industrias-cg .consumer {
+  position: absolute;
+  width: 846px;
+  height: 553px;
+  top: 58px;
+  left: 0;
+}
+
+.industrias-cg .overlap-group {
+  position: relative;
+  width: 840px;
+  height: 553px;
+  background-color: #050b21;
+}
+
+.industrias-cg .overlap {
+  position: absolute;
+  width: 336px;
+  height: 89px;
+  top: 59px;
+  left: 28px;
+}
+
+.industrias-cg .consumer-goods {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 32.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .image {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 25px;
+  left: 272px;
+  object-fit: cover;
+}
+
+.industrias-cg .text-wrapper {
+  position: absolute;
+  width: 333px;
+  top: 184px;
+  left: 31px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 15.7px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .overlap-2 {
+  position: absolute;
+  width: 336px;
+  height: 120px;
+  top: 346px;
+  left: 28px;
+  background-color: #ffffff;
+  border-radius: 13.12px;
+}
+
+.industrias-cg .aumento-de-ingresos {
+  position: absolute;
+  width: 212px;
+  top: 10px;
+  left: 107px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 13.1px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .captura-de-pantalla {
+  position: absolute;
+  width: 74px;
+  height: 92px;
+  top: 4px;
+  left: 11px;
+  object-fit: cover;
+}
+
+.industrias-cg .overlap-3 {
+  position: absolute;
+  width: 329px;
+  height: 1224px;
+  top: 860px;
+  left: 28px;
+}
+
+.industrias-cg .grisi {
+  position: absolute;
+  width: 329px;
+  height: 1224px;
+  top: 0;
+  left: 0;
+}
+
+.industrias-cg .caso {
+  position: absolute;
+  width: 333px;
+  height: 392px;
+  top: 0;
+  left: 0;
+}
+
+.industrias-cg .overlap-group-2 {
+  position: relative;
+  width: 329px;
+  height: 392px;
+  background-color: #b6e3ff70;
+  border-radius: 12.77px;
+}
+
+.industrias-cg .caso-de-xito-grupo {
+  position: absolute;
+  width: 284px;
+  top: 52px;
+  left: 32px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 17.8px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .span {
+  font-weight: 700;
+}
+
+.industrias-cg .text-wrapper-2 {
+  font-weight: 600;
+}
+
+.industrias-cg .modelo-de-negocio {
+  position: absolute;
+  width: 279px;
+  top: 221px;
+  left: 32px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 13.8px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-3 {
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 13.8px;
+  letter-spacing: 0;
+}
+
+.industrias-cg .desafios {
+  position: absolute;
+  width: 331px;
+  height: 213px;
+  top: 413px;
+  left: 0;
+}
+
+.industrias-cg .desaf-os-grupo-grisi-wrapper {
+  position: relative;
+  width: 329px;
+  height: 213px;
+  background-color: #479fd4;
+  border-radius: 12.77px;
+}
+
+.industrias-cg .desaf-os-grupo-grisi {
+  position: absolute;
+  width: 285px;
+  top: 14px;
+  left: 32px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.industrias-cg .text-wrapper-4 {
+  font-size: 12.8px;
+}
+
+.industrias-cg .soluciones {
+  position: absolute;
+  width: 331px;
+  height: 231px;
+  top: 647px;
+  left: 0;
+}
+
+.industrias-cg .soluciones-wrapper {
+  position: relative;
+  width: 329px;
+  height: 231px;
+  background-color: #b6e3ff70;
+  border-radius: 12.77px;
+}
+
+.industrias-cg .p {
+  position: absolute;
+  width: 280px;
+  top: 17px;
+  left: 21px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+}
+
+.industrias-cg .text-wrapper-5 {
+  font-weight: 700;
+  font-size: 12.8px;
+}
+
+.industrias-cg .beneficios {
+  position: absolute;
+  width: 329px;
+  height: 324px;
+  top: 900px;
+  left: 0;
+  background-color: #479fd4;
+  border-radius: 12.77px;
+}
+
+.industrias-cg .globos {
+  position: relative;
+  width: 299px;
+  height: 111px;
+  top: 175px;
+  left: 20px;
+}
+
+.industrias-cg .div-wrapper {
+  position: absolute;
+  width: 158px;
+  height: 29px;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 24.44px;
+  border: 1.83px solid;
+  border-color: #050b21;
+}
+
+.industrias-cg .text-wrapper-6 {
+  position: absolute;
+  top: 6px;
+  left: 11px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 9.8px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .overlap-4 {
+  position: absolute;
+  width: 112px;
+  height: 29px;
+  top: 39px;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 24.44px;
+  border: 1.83px solid;
+  border-color: #050b21;
+}
+
+.industrias-cg .overlap-5 {
+  position: absolute;
+  width: 117px;
+  height: 29px;
+  top: 82px;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 24.44px;
+  border: 1.83px solid;
+  border-color: #050b21;
+}
+
+.industrias-cg .text-wrapper-7 {
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 9.8px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .overlap-group-3 {
+  position: absolute;
+  width: 164px;
+  height: 29px;
+  top: 39px;
+  left: 125px;
+  background-color: #ffffff;
+  border-radius: 24.44px;
+  border: 1.83px solid;
+  border-color: #050b21;
+}
+
+.industrias-cg .overlap-6 {
+  position: absolute;
+  width: 144px;
+  height: 29px;
+  top: 82px;
+  left: 125px;
+  background-color: #ffffff;
+  border-radius: 24.44px;
+  border: 1.83px solid;
+  border-color: #050b21;
+}
+
+.industrias-cg .beneficios-la-soluci {
+  position: absolute;
+  width: 282px;
+  top: 937px;
+  left: 21px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.industrias-cg .grisiimg {
+  position: absolute;
+  width: 326px;
+  height: 214px;
+  top: 629px;
+  left: 29px;
+  object-fit: cover;
+}
+
+.industrias-cg .footer {
+  position: absolute;
+  width: 2035px;
+  height: 496px;
+  top: 2141px;
+  left: -618px;
+  background-color: transparent;
+}
+
+.industrias-cg .overlap-7 {
+  position: relative;
+  width: 2015px;
+  height: 496px;
+  background-color: #050b21;
+}
+
+.industrias-cg .linkedin {
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  top: 132px;
+  left: 774px;
+  object-fit: cover;
+}
+
+.industrias-cg .partner {
+  position: absolute;
+  width: 111px;
+  height: 33px;
+  top: 132px;
+  left: 650px;
+  object-fit: cover;
+}
+
+.industrias-cg .text-wrapper-8 {
+  position: absolute;
+  width: 229px;
+  top: 76px;
+  left: 650px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 11.9px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .img {
+  width: 111px;
+  height: 24px;
+  top: 35px;
+  left: 650px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.industrias-cg .text-wrapper-9 {
+  position: absolute;
+  top: 356px;
+  left: 829px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-10 {
+  position: absolute;
+  top: 334px;
+  left: 829px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-11 {
+  position: absolute;
+  top: 313px;
+  left: 829px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-12 {
+  top: 290px;
+  left: 829px;
+  font-weight: 700;
+  font-size: 11.9px;
+  white-space: nowrap;
+  position: absolute;
+  font-family: "Inter", Helvetica;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-13 {
+  top: 377px;
+  left: 655px;
+  font-weight: 400;
+  font-size: 10.6px;
+  position: absolute;
+  font-family: "Inter", Helvetica;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-14 {
+  position: absolute;
+  top: 356px;
+  left: 655px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-15 {
+  position: absolute;
+  top: 334px;
+  left: 655px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-16 {
+  position: absolute;
+  top: 313px;
+  left: 655px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-17 {
+  position: absolute;
+  top: 290px;
+  left: 655px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 11.9px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.industrias-cg.industrias-cg-wrapper-2 {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.industrias-cg .div-2 {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 596px;
+  height: 3974.86px;
+  position: relative;
+}
+
+.industrias-cg .nav-bar-2 {
+  position: absolute;
+  width: 532px;
+  height: 49px;
+  top: 17px;
+  left: 43px;
+}
+
+.industrias-cg .rectangle-4 {
+  position: absolute;
+  width: 79px;
+  height: 12px;
+  top: 2px;
+  left: 452px;
+  background-color: #479fd4;
+}
+
+.industrias-cg .rectangle-5 {
+  position: absolute;
+  width: 79px;
+  height: 12px;
+  top: 19px;
+  left: 452px;
+  background-color: #479fd4;
+}
+
+.industrias-cg .rectangle-6 {
+  position: absolute;
+  width: 79px;
+  height: 12px;
+  top: 36px;
+  left: 452px;
+  background-color: #479fd4;
+}
+
+.industrias-cg .ctechpng-2 {
+  position: absolute;
+  width: 226px;
+  height: 49px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.industrias-cg .overlap-group-wrapper {
+  position: absolute;
+  width: 1290px;
+  height: 845px;
+  top: 89px;
+  left: 0;
+}
+
+.industrias-cg .overlap-group-4 {
+  position: relative;
+  width: 1284px;
+  height: 845px;
+  background-color: #050b21;
+}
+
+.industrias-cg .overlap-8 {
+  position: absolute;
+  width: 514px;
+  height: 136px;
+  top: 90px;
+  left: 43px;
+}
+
+.industrias-cg .consumer-goods-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 49.8px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .image-2 {
+  position: absolute;
+  width: 98px;
+  height: 98px;
+  top: 38px;
+  left: 416px;
+  object-fit: cover;
+}
+
+.industrias-cg .text-wrapper-18 {
+  position: absolute;
+  width: 509px;
+  top: 281px;
+  left: 47px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 24.1px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .overlap-9 {
+  position: absolute;
+  width: 513px;
+  height: 183px;
+  top: 529px;
+  left: 43px;
+  background-color: #ffffff;
+  border-radius: 20.05px;
+}
+
+.industrias-cg .aumento-de-ingresos-2 {
+  position: absolute;
+  width: 324px;
+  top: 15px;
+  left: 164px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .captura-de-pantalla-2 {
+  position: absolute;
+  width: 113px;
+  height: 141px;
+  top: 6px;
+  left: 17px;
+  object-fit: cover;
+}
+
+.industrias-cg .overlap-10 {
+  position: absolute;
+  width: 503px;
+  height: 1871px;
+  top: 1314px;
+  left: 43px;
+}
+
+.industrias-cg .grisi-2 {
+  position: absolute;
+  width: 503px;
+  height: 1871px;
+  top: 0;
+  left: 0;
+}
+
+.industrias-cg .caso-2 {
+  position: absolute;
+  width: 507px;
+  height: 599px;
+  top: 0;
+  left: 0;
+}
+
+.industrias-cg .overlap-group-5 {
+  position: relative;
+  width: 503px;
+  height: 599px;
+  background-color: #b6e3ff70;
+  border-radius: 19.51px;
+}
+
+.industrias-cg .caso-de-xito-grupo-2 {
+  position: absolute;
+  width: 434px;
+  top: 79px;
+  left: 49px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 27.3px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .modelo-de-negocio-2 {
+  position: absolute;
+  width: 426px;
+  top: 338px;
+  left: 49px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 21.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-19 {
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 21.2px;
+  letter-spacing: 0;
+}
+
+.industrias-cg .overlap-wrapper {
+  position: absolute;
+  width: 505px;
+  height: 326px;
+  top: 631px;
+  left: 0;
+}
+
+.industrias-cg .overlap-11 {
+  position: relative;
+  width: 503px;
+  height: 326px;
+  background-color: #479fd4;
+  border-radius: 19.51px;
+}
+
+.industrias-cg .desaf-os-grupo-grisi-2 {
+  position: absolute;
+  width: 435px;
+  top: 21px;
+  left: 49px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 27px;
+}
+
+.industrias-cg .text-wrapper-20 {
+  font-size: 19.5px;
+}
+
+.industrias-cg .soluciones-2 {
+  position: absolute;
+  width: 505px;
+  height: 353px;
+  top: 989px;
+  left: 0;
+}
+
+.industrias-cg .overlap-12 {
+  position: relative;
+  width: 503px;
+  height: 353px;
+  background-color: #b6e3ff70;
+  border-radius: 19.51px;
+}
+
+.industrias-cg .soluciones-3 {
+  position: absolute;
+  width: 428px;
+  top: 26px;
+  left: 32px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 27px;
+}
+
+.industrias-cg .text-wrapper-21 {
+  font-weight: 700;
+  font-size: 19.5px;
+}
+
+.industrias-cg .globos-wrapper {
+  position: absolute;
+  width: 503px;
+  height: 495px;
+  top: 1375px;
+  left: 0;
+  background-color: #479fd4;
+  border-radius: 19.51px;
+}
+
+.industrias-cg .globos-2 {
+  position: relative;
+  width: 452px;
+  height: 169px;
+  top: 267px;
+  left: 31px;
+}
+
+.industrias-cg .overlap-group-6 {
+  position: absolute;
+  width: 242px;
+  height: 44px;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 37.35px;
+  border: 2.8px solid;
+  border-color: #050b21;
+}
+
+.industrias-cg .text-wrapper-22 {
+  position: absolute;
+  top: 8px;
+  left: 17px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 14.9px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .overlap-13 {
+  position: absolute;
+  width: 172px;
+  height: 44px;
+  top: 60px;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 37.35px;
+  border: 2.8px solid;
+  border-color: #050b21;
+}
+
+.industrias-cg .overlap-14 {
+  position: absolute;
+  width: 179px;
+  height: 44px;
+  top: 125px;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 37.35px;
+  border: 2.8px solid;
+  border-color: #050b21;
+}
+
+.industrias-cg .text-wrapper-23 {
+  position: absolute;
+  top: 9px;
+  left: 12px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 14.9px;
+}
+
+.industrias-cg .overlap-15 {
+  position: absolute;
+  width: 250px;
+  height: 44px;
+  top: 60px;
+  left: 191px;
+  background-color: #ffffff;
+  border-radius: 37.35px;
+  border: 2.8px solid;
+  border-color: #050b21;
+}
+
+.industrias-cg .overlap-16 {
+  position: absolute;
+  width: 220px;
+  height: 44px;
+  top: 125px;
+  left: 191px;
+  background-color: #ffffff;
+  border-radius: 37.35px;
+  border: 2.8px solid;
+  border-color: #050b21;
+}
+
+.industrias-cg .beneficios-la-soluci-2 {
+  position: absolute;
+  width: 431px;
+  top: 1432px;
+  left: 32px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 31.2px;
+}
+
+.industrias-cg .grisiimg-2 {
+  position: absolute;
+  width: 498px;
+  height: 327px;
+  top: 961px;
+  left: 44px;
+  object-fit: cover;
+}
+
+.industrias-cg .footer-2 {
+  position: absolute;
+  width: 3100px;
+  height: 758px;
+  top: 3272px;
+  left: -944px;
+  background-color: transparent;
+}
+
+.industrias-cg .overlap-17 {
+  position: relative;
+  width: 3080px;
+  height: 758px;
+  background-color: #050b21;
+}
+
+.industrias-cg .linkedin-2 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 202px;
+  left: 1182px;
+  object-fit: cover;
+}
+
+.industrias-cg .partner-2 {
+  position: absolute;
+  width: 169px;
+  height: 50px;
+  top: 202px;
+  left: 994px;
+  object-fit: cover;
+}
+
+.industrias-cg .text-wrapper-24 {
+  position: absolute;
+  width: 350px;
+  top: 116px;
+  left: 994px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 18.3px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .ctechpng-3 {
+  position: absolute;
+  width: 169px;
+  height: 37px;
+  top: 54px;
+  left: 994px;
+  object-fit: cover;
+}
+
+.industrias-cg .text-wrapper-25 {
+  position: absolute;
+  top: 544px;
+  left: 1267px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-26 {
+  position: absolute;
+  top: 511px;
+  left: 1267px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-27 {
+  position: absolute;
+  top: 479px;
+  left: 1267px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-28 {
+  top: 443px;
+  left: 1267px;
+  font-weight: 700;
+  font-size: 18.3px;
+  position: absolute;
+  font-family: "Inter", Helvetica;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-29 {
+  top: 576px;
+  left: 1001px;
+  font-weight: 400;
+  font-size: 16.2px;
+  position: absolute;
+  font-family: "Inter", Helvetica;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-30 {
+  position: absolute;
+  top: 544px;
+  left: 1001px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-31 {
+  position: absolute;
+  top: 511px;
+  left: 1001px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-32 {
+  position: absolute;
+  top: 479px;
+  left: 1001px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-33 {
+  position: absolute;
+  top: 443px;
+  left: 1001px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 18.3px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg.industrias-cg-wrapper-3 {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.industrias-cg .div-3 {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 834px;
+  height: 1694px;
+  position: relative;
+}
+
+.industrias-cg .ctechpng-4 {
+  position: absolute;
+  width: 148px;
+  height: 32px;
+  top: 15px;
+  left: 29px;
+  object-fit: cover;
+}
+
+.industrias-cg .rectangle-7 {
+  position: absolute;
+  width: 52px;
+  height: 8px;
+  top: 12px;
+  left: 736px;
+  background-color: #479fd4;
+}
+
+.industrias-cg .rectangle-8 {
+  position: absolute;
+  width: 52px;
+  height: 8px;
+  top: 23px;
+  left: 736px;
+  background-color: #479fd4;
+}
+
+.industrias-cg .rectangle-9 {
+  position: absolute;
+  width: 52px;
+  height: 8px;
+  top: 35px;
+  left: 736px;
+  background-color: #479fd4;
+}
+
+.industrias-cg .consumer-2 {
+  position: absolute;
+  width: 846px;
+  height: 549px;
+  top: 79px;
+  left: 0;
+}
+
+.industrias-cg .overlap-group-7 {
+  position: relative;
+  width: 840px;
+  height: 549px;
+  background-color: #050b21;
+}
+
+.industrias-cg .overlap-18 {
+  position: absolute;
+  width: 407px;
+  height: 108px;
+  top: 62px;
+  left: 405px;
+}
+
+.industrias-cg .consumer-goods-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 39.4px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .image-3 {
+  position: absolute;
+  width: 77px;
+  height: 77px;
+  top: 30px;
+  left: 329px;
+  object-fit: cover;
+}
+
+.industrias-cg .text-wrapper-34 {
+  position: absolute;
+  width: 382px;
+  top: 192px;
+  left: 408px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 15.7px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .overlap-19 {
+  position: absolute;
+  width: 353px;
+  height: 113px;
+  top: 331px;
+  left: 403px;
+  background-color: #ffffff;
+  border-radius: 13.12px;
+}
+
+.industrias-cg .aumento-de-ingresos-3 {
+  position: absolute;
+  width: 219px;
+  top: 10px;
+  left: 112px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 13.1px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .captura-de-pantalla-3 {
+  width: 77px;
+  height: 92px;
+  top: 10px;
+  left: 12px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.industrias-cg .overlap-20 {
+  position: absolute;
+  width: 338px;
+  height: 363px;
+  top: 75px;
+  left: 40px;
+}
+
+.industrias-cg .captura-de-pantalla-4 {
+  width: 267px;
+  height: 271px;
+  top: 64px;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.industrias-cg .captura-de-pantalla-5 {
+  width: 253px;
+  height: 363px;
+  top: 0;
+  left: 86px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.industrias-cg .grisi-3 {
+  position: absolute;
+  width: 763px;
+  height: 822px;
+  top: 647px;
+  left: 36px;
+}
+
+.industrias-cg .grisiimg-3 {
+  position: absolute;
+  width: 367px;
+  height: 403px;
+  top: 209px;
+  left: 396px;
+  object-fit: cover;
+}
+
+.industrias-cg .caso-3 {
+  position: absolute;
+  width: 767px;
+  height: 193px;
+  top: 0;
+  left: 0;
+}
+
+.industrias-cg .overlap-group-8 {
+  position: relative;
+  width: 763px;
+  height: 193px;
+  background-color: #b6e3ff70;
+  border-radius: 12.77px;
+}
+
+.industrias-cg .modelo-de-negocio-3 {
+  position: absolute;
+  width: 257px;
+  top: 40px;
+  left: 478px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 12px;
+}
+
+.industrias-cg .text-wrapper-35 {
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 12px;
+}
+
+.industrias-cg .caso-de-xito-grupo-3 {
+  position: absolute;
+  width: 375px;
+  top: 40px;
+  left: 24px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20.4px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .desafios-2 {
+  position: absolute;
+  width: 377px;
+  height: 193px;
+  top: 209px;
+  left: 0;
+}
+
+.industrias-cg .overlap-21 {
+  position: relative;
+  width: 375px;
+  height: 193px;
+  background-color: #479fd4;
+  border-radius: 12.77px;
+}
+
+.industrias-cg .desaf-os-grupo-grisi-3 {
+  position: absolute;
+  width: 335px;
+  top: 20px;
+  left: 24px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20.4px;
+}
+
+.industrias-cg .soluciones-4 {
+  position: absolute;
+  width: 377px;
+  height: 193px;
+  top: 419px;
+  left: 0;
+}
+
+.industrias-cg .overlap-22 {
+  position: relative;
+  width: 375px;
+  height: 193px;
+  background-color: #b6e3ff70;
+  border-radius: 12.77px;
+}
+
+.industrias-cg .soluciones-5 {
+  position: absolute;
+  width: 320px;
+  top: 14px;
+  left: 24px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+}
+
+.industrias-cg .beneficios-2 {
+  position: absolute;
+  width: 775px;
+  height: 193px;
+  top: 630px;
+  left: 0;
+}
+
+.industrias-cg .overlap-23 {
+  position: relative;
+  width: 763px;
+  height: 193px;
+  background-color: #479fd4;
+  border-radius: 12.77px;
+}
+
+.industrias-cg .beneficios-la-soluci-3 {
+  position: absolute;
+  width: 324px;
+  top: 49px;
+  left: 396px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20.4px;
+}
+
+.industrias-cg .overlap-24 {
+  position: absolute;
+  width: 165px;
+  height: 30px;
+  top: 40px;
+  left: 47px;
+  background-color: #ffffff;
+  border-radius: 25.54px;
+  border: 1.92px solid;
+  border-color: #050b21;
+}
+
+.industrias-cg .text-wrapper-36 {
+  position: absolute;
+  top: 6px;
+  left: 12px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 10.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .overlap-25 {
+  position: absolute;
+  width: 117px;
+  height: 30px;
+  top: 81px;
+  left: 47px;
+  background-color: #ffffff;
+  border-radius: 25.54px;
+  border: 1.92px solid;
+  border-color: #050b21;
+}
+
+.industrias-cg .overlap-group-9 {
+  position: absolute;
+  width: 123px;
+  height: 30px;
+  top: 126px;
+  left: 47px;
+  background-color: #ffffff;
+  border-radius: 25.54px;
+  border: 1.92px solid;
+  border-color: #050b21;
+}
+
+.industrias-cg .text-wrapper-37 {
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 10.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .overlap-26 {
+  position: absolute;
+  width: 171px;
+  height: 30px;
+  top: 81px;
+  left: 178px;
+  background-color: #ffffff;
+  border-radius: 25.54px;
+  border: 1.92px solid;
+  border-color: #050b21;
+}
+
+.industrias-cg .overlap-27 {
+  position: absolute;
+  width: 151px;
+  height: 30px;
+  top: 126px;
+  left: 178px;
+  background-color: #ffffff;
+  border-radius: 25.54px;
+  border: 1.92px solid;
+  border-color: #050b21;
+}
+
+.industrias-cg .footer-3 {
+  position: absolute;
+  width: 857px;
+  height: 206px;
+  top: 1488px;
+  left: 0;
+  background-color: transparent;
+}
+
+.industrias-cg .overlap-28 {
+  position: relative;
+  width: 837px;
+  height: 206px;
+  background-color: #050b21;
+}
+
+.industrias-cg .text-wrapper-38 {
+  position: absolute;
+  width: 226px;
+  top: 75px;
+  left: 66px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 11.8px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .ctechpng-5 {
+  position: absolute;
+  width: 109px;
+  height: 24px;
+  top: 35px;
+  left: 66px;
+  object-fit: cover;
+}
+
+.industrias-cg .image-4 {
+  width: 109px;
+  left: 66px;
+  position: absolute;
+  height: 32px;
+  top: 130px;
+  object-fit: cover;
+}
+
+.industrias-cg .text-wrapper-39 {
+  position: absolute;
+  top: 35px;
+  left: 472px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 11.8px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.industrias-cg .text-wrapper-40 {
+  top: 35px;
+  left: 644px;
+  font-weight: 700;
+  font-size: 11.8px;
+  white-space: nowrap;
+  position: absolute;
+  font-family: "Inter", Helvetica;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-41 {
+  position: absolute;
+  top: 58px;
+  left: 472px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-42 {
+  position: absolute;
+  top: 78px;
+  left: 472px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-43 {
+  position: absolute;
+  top: 99px;
+  left: 472px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-44 {
+  top: 120px;
+  left: 472px;
+  font-weight: 400;
+  font-size: 10.5px;
+  position: absolute;
+  font-family: "Inter", Helvetica;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-45 {
+  position: absolute;
+  top: 58px;
+  left: 644px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-46 {
+  position: absolute;
+  top: 78px;
+  left: 644px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-47 {
+  position: absolute;
+  top: 99px;
+  left: 644px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .image-5 {
+  width: 32px;
+  left: 188px;
+  position: absolute;
+  height: 32px;
+  top: 130px;
+  object-fit: cover;
+}
+
+.industrias-cg.industrias-cg-wrapper-4 {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.industrias-cg .div-4 {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 1440px;
+  height: 2891.25px;
+  position: relative;
+}
+
+.industrias-cg .navbar-wrapper {
+  position: absolute;
+  width: 1452px;
+  height: 89px;
+  top: 0;
+  left: 0;
+}
+
+.industrias-cg .navbar {
+  position: relative;
+  width: 100%;
+  height: 89px;
+  background-color: #ffffff;
+}
+
+.industrias-cg .text-wrapper-48 {
+  left: 593px;
+  font-weight: 400;
+  position: absolute;
+  top: 29px;
+  font-family: "Open Sans", Helvetica;
+  color: #000000;
+  font-size: 22.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-49 {
+  left: 1299px;
+  font-weight: 400;
+  position: absolute;
+  top: 29px;
+  font-family: "Open Sans", Helvetica;
+  color: #000000;
+  font-size: 22.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-50 {
+  position: absolute;
+  top: 29px;
+  left: 684px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 22.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-51 {
+  left: 880px;
+  font-weight: 400;
+  position: absolute;
+  top: 29px;
+  font-family: "Open Sans", Helvetica;
+  color: #000000;
+  font-size: 22.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-52 {
+  left: 1007px;
+  font-weight: 700;
+  position: absolute;
+  top: 29px;
+  font-family: "Open Sans", Helvetica;
+  color: #000000;
+  font-size: 22.5px;
+  letter-spacing: 0;
+  line-height: normal;
+  display: inline-block; /* Ajusta el tamaño al contenido */
+  white-space: nowrap;   /* Evita el salto de línea si es necesario */
+}
+
+.industrias-cg .text-wrapper-53 {
+  left: 1146px;
+  font-weight: 400;
+  position: absolute;
+  top: 29px;
+  font-family: "Open Sans", Helvetica;
+  color: #000000;
+  font-size: 22.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .ctechpng-6 {
+  position: absolute;
+  width: 166px;
+  height: 36px;
+  top: 26px;
+  left: 114px;
+  object-fit: cover;
+}
+
+.industrias-cg .footer-4 {
+  position: absolute;
+  width: 1460px;
+  height: 354px;
+  top: 2537px;
+  left: 0;
+  background-color: transparent;
+}
+
+.industrias-cg .overlap-29 {
+  position: relative;
+  width: 1440px;
+  height: 354px;
+  background-color: #050b21;
+}
+
+.industrias-cg .text-wrapper-54 {
+  position: absolute;
+  width: 388px;
+  top: 128px;
+  left: 114px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 20.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .ctechpng-7 {
+  position: absolute;
+  width: 188px;
+  height: 40px;
+  top: 60px;
+  left: 114px;
+  object-fit: cover;
+}
+
+.industrias-cg .image-6 {
+  position: absolute;
+  width: 188px;
+  height: 55px;
+  top: 224px;
+  left: 114px;
+  object-fit: cover;
+}
+
+.industrias-cg .text-wrapper-55 {
+  position: absolute;
+  top: 60px;
+  left: 812px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 20.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-56 {
+  top: 60px;
+  left: 1107px;
+  font-weight: 700;
+  font-size: 20.2px;
+  position: absolute;
+  font-family: "Inter", Helvetica;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-57 {
+  position: absolute;
+  top: 99px;
+  left: 812px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-58 {
+  position: absolute;
+  top: 135px;
+  left: 812px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-59 {
+  position: absolute;
+  top: 171px;
+  left: 812px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* Estilo para el submenú */
+.industrias-cg .drop-down {
+  opacity: 0; /* Inicialmente oculto */
+  pointer-events: none; /* Deshabilitar la interactividad */
+  position: absolute;
+  top: 40px; /* Espaciado debajo de "Industrias" */
+  left: 0; /* Alineado con el padre */
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  list-style: none;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 10; /* Asegurar que aparezca por encima de otros elementos */
+  transition: opacity 0.3s ease-out; /* Transición suave para desaparecer */
+  width: 190px;
+}
+
+/* Estilos de los items del submenú */
+.industrias-cg .drop-down li {
+  font-family: "Open Sans", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.industrias-cg .drop-down li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.industrias-cg .drop-down li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Mostrar el submenú al pasar el mouse sobre "Industrias" */
+.industrias-cg .text-wrapper-52:hover .drop-down {
+  opacity: 1; /* Hacerlo visible */
+  pointer-events: auto; /* Habilitar la interactividad */
+  transition: opacity 0.3s ease-in; /* Transición suave para aparecer */
+}
+
+/* Mantener el submenú visible mientras el mouse esté sobre el submenú */
+.industrias-cg .drop-down:hover {
+  opacity: 1; /* Mantener visible mientras el mouse está sobre el submenú */
+  pointer-events: auto; /* Habilitar la interactividad */
+}
+
+/* Mantener el submenú oculto hasta que el mouse pase por "Industrias" */
+.industrias-cg .text-wrapper-52 {
+  position: relative;
+  cursor: pointer; /* Indicar que es interactivo */
+}
+
+.industrias-cg .text-wrapper-52:hover .drop-down {
+  opacity: 1; /* Hacerlo visible */
+  pointer-events: auto; /* Habilitar la interactividad */
+  transition: opacity 0.3s ease-in; /* Transición suave al aparecer */
+}
+
+/* Mantener el submenú visible después de que el mouse se aleje por 2 segundos */
+.industrias-cg .drop-down.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 2s ease-out; /* Se desvanece lentamente */
+}
+
+
+.industrias-cg .text-wrapper-60 {
+  top: 207px;
+  left: 812px;
+  font-weight: 400;
+  font-size: 18px;
+  position: absolute;
+  font-family: "Inter", Helvetica;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-61 {
+  position: absolute;
+  top: 99px;
+  left: 1107px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-62 {
+  position: absolute;
+  top: 135px;
+  left: 1107px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-63 {
+  position: absolute;
+  top: 171px;
+  left: 1107px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .image-7 {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  top: 224px;
+  left: 323px;
+  object-fit: cover;
+}
+
+.industrias-cg .grisi-4 {
+  position: absolute;
+  width: 1344px;
+  height: 1449px;
+  top: 1057px;
+  left: 47px;
+}
+
+.industrias-cg .grisiimg-4 {
+  position: absolute;
+  width: 647px;
+  height: 710px;
+  top: 369px;
+  left: 698px;
+  object-fit: cover;
+}
+
+.industrias-cg .caso-4 {
+  position: absolute;
+  width: 1348px;
+  height: 340px;
+  top: 0;
+  left: 0;
+}
+
+.industrias-cg .overlap-group-10 {
+  position: relative;
+  width: 1344px;
+  height: 340px;
+  background-color: #b6e3ff70;
+  border-radius: 22.5px;
+}
+
+.industrias-cg .modelo-de-negocio-4 {
+  position: absolute;
+  width: 453px;
+  top: 71px;
+  left: 843px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 22.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .text-wrapper-64 {
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 22.5px;
+  letter-spacing: 0;
+}
+
+.industrias-cg .caso-de-xito-grupo-4 {
+  position: absolute;
+  width: 660px;
+  top: 71px;
+  left: 42px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .desafios-3 {
+  position: absolute;
+  width: 664px;
+  height: 340px;
+  top: 369px;
+  left: 0;
+}
+
+.industrias-cg .overlap-30 {
+  position: relative;
+  width: 662px;
+  height: 340px;
+  background-color: #479fd4;
+  border-radius: 22.5px;
+}
+
+.industrias-cg .desaf-os-grupo-grisi-4 {
+  position: absolute;
+  width: 591px;
+  top: 36px;
+  left: 42px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 36px;
+}
+
+.industrias-cg .text-wrapper-65 {
+  font-size: 18px;
+  line-height: 0.5px; 
+  letter-spacing: 0;
+}
+
+.industrias-cg .soluciones-6 {
+  position: absolute;
+  width: 664px;
+  height: 340px;
+  top: 739px;
+  left: 0;
+}
+
+.industrias-cg .overlap-31 {
+  position: relative;
+  width: 662px;
+  height: 340px;
+  background-color: #b6e3ff70;
+  border-radius: 22.5px;
+}
+
+.industrias-cg .soluciones-7 {
+  position: absolute;
+  width: 564px;
+  top: 25px;
+  left: 42px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 36px;
+}
+
+.industrias-cg .text-wrapper-66 {
+  font-weight: 700;
+  font-size: 22.5px;
+}
+
+.industrias-cg .beneficios-3 {
+  position: absolute;
+  width: 1356px;
+  height: 340px;
+  top: 1109px;
+  left: 0;
+}
+
+.industrias-cg .overlap-32 {
+  position: relative;
+  width: 1344px;
+  height: 340px;
+  background-color: #479fd4;
+  border-radius: 22.5px;
+}
+
+.industrias-cg .beneficios-la-soluci-4 {
+  position: absolute;
+  width: 571px;
+  top: 85px;
+  left: 698px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 36px;
+}
+
+.industrias-cg .overlap-33 {
+  position: absolute;
+  width: 291px;
+  height: 53px;
+  top: 71px;
+  left: 83px;
+  background-color: #ffffff;
+  border-radius: 45px;
+  border: 3.38px solid;
+  border-color: #050b21;
+}
+
+.industrias-cg .text-wrapper-67 {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .overlap-34 {
+  position: absolute;
+  width: 207px;
+  height: 53px;
+  top: 143px;
+  left: 83px;
+  background-color: #ffffff;
+  border-radius: 45px;
+  border: 3.38px solid;
+  border-color: #050b21;
+}
+
+.industrias-cg .overlap-35 {
+  position: absolute;
+  width: 216px;
+  height: 53px;
+  top: 222px;
+  left: 83px;
+  background-color: #ffffff;
+  border-radius: 45px;
+  border: 3.38px solid;
+  border-color: #050b21;
+}
+
+.industrias-cg .text-wrapper-68 {
+  position: absolute;
+  top: 11px;
+  left: 15px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .overlap-36 {
+  position: absolute;
+  width: 302px;
+  height: 53px;
+  top: 143px;
+  left: 314px;
+  background-color: #ffffff;
+  border-radius: 45px;
+  border: 3.38px solid;
+  border-color: #050b21;
+}
+
+.industrias-cg .overlap-group-11 {
+  position: absolute;
+  width: 266px;
+  height: 53px;
+  top: 222px;
+  left: 314px;
+  background-color: #ffffff;
+  border-radius: 45px;
+  border: 3.38px solid;
+  border-color: #050b21;
+}
+
+.industrias-cg .consumer-3 {
+  position: absolute;
+  width: 1446px;
+  height: 942px;
+  top: 89px;
+  left: 0;
+}
+
+.industrias-cg .overlap-37 {
+  position: relative;
+  width: 1440px;
+  height: 942px;
+  background-color: #050b21;
+}
+
+.industrias-cg .overlap-38 {
+  position: absolute;
+  width: 697px;
+  height: 185px;
+  top: 107px;
+  left: 694px;
+}
+
+.industrias-cg .consumer-goods-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 67.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .image-8 {
+  position: absolute;
+  width: 133px;
+  height: 133px;
+  top: 52px;
+  left: 565px;
+  object-fit: cover;
+}
+
+.industrias-cg .text-wrapper-69 {
+  position: absolute;
+  width: 655px;
+  top: 330px;
+  left: 700px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 27px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .overlap-39 {
+  position: absolute;
+  width: 605px;
+  height: 194px;
+  top: 567px;
+  left: 691px;
+  background-color: #ffffff;
+  border-radius: 22.5px;
+}
+
+.industrias-cg .aumento-de-ingresos-4 {
+  position: absolute;
+  width: 376px;
+  top: 18px;
+  left: 192px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 22.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.industrias-cg .captura-de-pantalla-6 {
+  width: 133px;
+  height: 158px;
+  top: 18px;
+  left: 20px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.industrias-cg .overlap-group-12 {
+  position: absolute;
+  width: 580px;
+  height: 623px;
+  top: 128px;
+  left: 69px;
+}
+
+.industrias-cg .captura-de-pantalla-7 {
+  width: 458px;
+  height: 465px;
+  top: 110px;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.industrias-cg .captura-de-pantalla-8 {
+  width: 433px;
+  height: 623px;
+  top: 0;
+  left: 147px;
+  position: absolute;
+  object-fit: cover;
+}
+
+/* Barra de navegación */
+.nav-bar {
+  position: fixed;  /* Fija la barra en la parte superior */
+  width: 100%;  /* Asegura que ocupe todo el ancho */
+  height: 60px;  /* Altura fija de la barra */
+  top: 0;  /* Siempre en la parte superior */
+  left: 0;  /* Alineación desde la izquierda */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #ffffff;
+  z-index: 1;  /* Asegura que esté por encima de otros elementos */
+}
+
+.nav-bar .ctechpng-2 {
+  width: 148px;
+  height: 32px;
+  object-fit: cover;
+}
+
+.nav-bar .burger {
+  width: 52px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.nav-bar .burger div {
+  width: 100%;
+  height: 6px;
+  background-color: #479fd4;
+}
+
+/* Estilos del menú */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #479fd4;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;  /* Asegura que esté por encima de otros elementos */
+}
+
+.menu-options {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  color: white;
+}
+
+.menu-options li {
+  color: white;
+  font-family: "Inter", Helvetica;
+  padding-top: 30px;
+  font-weight: 500;
+}
+
+.menu-options a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.industriasmenu a{
+  font-size: 17px;
+}
+
+.overlap-33:hover, .overlap-34:hover, .overlap-35:hover, .overlap-36:hover, .overlap-group-11:hover  {
+  transform: scale(1.05); /* Aumenta el tamaño al 110% */
+}
+
+@media (max-width: 595px) {
+  .industrias-cg.industrias-cg-wrapper-2 {
+    display: none !important;
+  }
+  .industrias-cg.industrias-cg-wrapper-3 {
+    display: none !important;
+  }
+  .industrias-cg.industrias-cg-wrapper-4 {
+    display: none !important;
+  }
+}
+
+@media (min-width: 596px) and (max-width: 833px) {
+  .industrias-cg.industrias-cg-wrapper {
+    display: none !important;
+  }
+  .industrias-cg.industrias-cg-wrapper-3 {
+    display: none !important;
+  }
+  .industrias-cg.industrias-cg-wrapper-4 {
+    display: none !important;
+  }
+}
+
+@media (min-width: 834px) and (max-width: 1439px) {
+  .industrias-cg.industrias-cg-wrapper {
+    display: none !important;
+  }
+  .industrias-cg.industrias-cg-wrapper-2 {
+    display: none !important;
+  }
+  .industrias-cg.industrias-cg-wrapper-4 {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .industrias-cg.industrias-cg-wrapper {
+    display: none !important;
+  }
+  .industrias-cg.industrias-cg-wrapper-2 {
+    display: none !important;
+  }
+  .industrias-cg.industrias-cg-wrapper-3 {
+    display: none !important;
+  }
+  .nav-bar{
+    display: none !important;
+  }
+  .menu-overlay{
+    display: none !important;
+  }
+}
