@@ -475,6 +475,10 @@
 }
 
 
+
+
+
+
 .contacto .overlap-group-3 {
   position: relative;
   width: 836px;
@@ -680,6 +684,11 @@
   top: 79px;
 }
 
+.contacto .overlap-3 .form {
+  margin-left: 500px;
+}
+
+
 /* Estilo general del contenedor de contacto para tablet 1 */
 .overlap-wrapper .overlap-3 {
   position: relative;
@@ -696,7 +705,6 @@
   background: #ffffff;
   padding: 10px; /* Reducido el padding */
   border-radius: 8px; /* Bordes redondeados */
-  width: 40%; /* Ajustado a 50% para hacerlo más angosto */
   margin: 0 auto;
 }
 
