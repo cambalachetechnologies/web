@@ -1584,7 +1584,7 @@
 
 .novedades .overlap-group-5 {
   position: relative;
-  width: 834px;
+  width: 100%;
   height: 196px;
   left: 12px;
   background-image: url(https://c.animaapp.com/jXqGQ2R8/img/captura-de-pantalla-2024-09-29-a-las-12-21-49-1-2.png);
@@ -1874,7 +1874,7 @@
 
 .novedades .overlap-17 {
   position: relative;
-  width: 837px;
+  width: 2000px;
   height: 304px;
   background-color: #050b21;
 }
@@ -2700,7 +2700,7 @@
 .novedades .cards-4 {
   position: absolute;
   width: 1213px;
-  height: 1488px;
+  height: 1000px;
   top: 375px;
   left: 114px;
 }
