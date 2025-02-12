@@ -260,7 +260,7 @@
           <div class="overlap-4">
             <div class="LET-s-MAKE-THINGS-4">LET’S<br />MAKE<br />THINGS<br />HAPPEN.</div>
             <div class="form-desk">
-<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onsubmit="return validateCaptcha();">
     <!-- Campo oculto: ID de la organización -->
     <input type="hidden" name="oid" value="00D5w000003XOQ6">
     
@@ -275,26 +275,33 @@
     <input type="tel" id="phone" name="phone" placeholder="Celular" required />
     <textarea id="description" name="description" placeholder="Mensaje" required></textarea>
 
-    <!-- reCAPTCHA v2 (casilla de verificación) -->
-    <div class="g-recaptcha" data-sitekey="6Ld1TtUqAAAAAAgPnHc9MAZNvfdexH5uo62fARFi"></div>
-
     <!-- Botón de envío -->
     <button type="submit" class="submit-btn">Enviar</button>
 </form>
 
-<!-- Cargar el script de reCAPTCHA -->
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<!-- Cargar el script de reCAPTCHA v3 -->
+<script src="https://www.google.com/recaptcha/api.js?render=6Ld1TtUqAAAAAAgPnHc9MAZNvfdexH5uo62fARFi"></script>
 
-<!-- Validar si el reCAPTCHA fue completado -->
 <script>
-    document.querySelector('form').addEventListener('submit', function(event) {
-        var response = grecaptcha.getResponse();
-        if (response.length == 0) {
-            event.preventDefault(); // Bloquea el envío si no se completa el reCAPTCHA
-            alert("Por favor, marca la casilla 'No soy un robot' antes de enviar el formulario.");
-        }
-    });
+    function validateCaptcha() {
+        // Ejecutamos reCAPTCHA v3 en segundo plano
+        grecaptcha.execute('6Ld1TtUqAAAAAAgPnHc9MAZNvfdexH5uo62fARFi', { action: 'submit' }).then(function(token) {
+            // Creamos un campo oculto para el token y lo agregamos al formulario
+            var input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = 'g-recaptcha-response';
+            input.value = token;
+            document.querySelector('form').appendChild(input);
+            
+            // El formulario se puede enviar
+            return true;
+        }).catch(function(error) {
+            alert("Error al verificar reCAPTCHA. Por favor, inténtalo de nuevo.");
+            return false; // Previene el envío en caso de error
+        });
+    }
 </script>
+
 
             </div>
           </div>
