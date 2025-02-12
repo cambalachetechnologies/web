@@ -497,7 +497,7 @@
           <img class="ctechpng-6" src="https://c.animaapp.com/b9jUDC8D/img/ctech1920png-2-3@2x.png" />
         </footer>
         <div class="contacto-4">
-<form id="salesforce-form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+<form id="salesforce-form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onsubmit="return validateCaptcha();">
     <input type="hidden" name="oid" value="00D5w000003XOQ6">
     <input type="hidden" name="retURL" value="http://c-tech.com.ar/index.html">
 
@@ -516,14 +516,16 @@
 
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script>
-    document.getElementById("salesforce-form").addEventListener("submit", function(event) {
+    function validateCaptcha() {
         var response = grecaptcha.getResponse();
         if (response.length == 0) {
-            event.preventDefault(); // Bloquea el envío si no está verificado
             alert("Por favor, marca la casilla de reCAPTCHA antes de enviar el formulario.");
+            return false; // Previene el envío del formulario si no está marcado
         }
-    });
+        return true; // Permite el envío si se completó el reCAPTCHA
+    }
 </script>
+
 
           <div class="LET-s-MAKE-THINGS-4">LET’S<br />MAKE<br />THINGS<br />HAPPEN.</div>
         </div>        
