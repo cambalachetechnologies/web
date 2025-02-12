@@ -497,24 +497,34 @@
           <img class="ctechpng-6" src="https://c.animaapp.com/b9jUDC8D/img/ctech1920png-2-3@2x.png" />
         </footer>
         <div class="contacto-4">
-          <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-              <!-- Campo oculto: ID de la organización -->
-              <input type="hidden" name="oid" value="00D5w000003XOQ6">
-              
-              <!-- Campo oculto: URL de retorno -->
-              <input type="hidden" name="retURL" value="http://c-tech.com.ar/index.html">
-      
-        <!-- Campos del formulario -->
-        <input type="text" id="first_name" name="first_name" placeholder="Nombre" required />
-        <input type="text" id="last_name" name="last_name" placeholder="Apellido" required />
-        <input type="text" id="company" name="company" placeholder="Empresa" required />
-        <input type="email" id="email" name="email" placeholder="Correo" required />
-        <input type="tel" id="phone" name="phone" placeholder="Celular" required />
-        <textarea id="description" name="description" placeholder="Mensaje" required></textarea>
+<form id="salesforce-form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+    <input type="hidden" name="oid" value="00D5w000003XOQ6">
+    <input type="hidden" name="retURL" value="http://c-tech.com.ar/index.html">
 
-        <!-- Botón de envío -->
-        <button type="submit" class="submit-btn">Enviar</button>
-    </form>
+    <input type="text" id="first_name" name="first_name" placeholder="Nombre" required />
+    <input type="text" id="last_name" name="last_name" placeholder="Apellido" required />
+    <input type="text" id="company" name="company" placeholder="Empresa" required />
+    <input type="email" id="email" name="email" placeholder="Correo" required />
+    <input type="tel" id="phone" name="phone" placeholder="Celular" required />
+    <textarea id="description" name="description" placeholder="Mensaje" required></textarea>
+
+    <!-- reCAPTCHA v2 (Casilla de verificación) -->
+    <div class="g-recaptcha" data-sitekey="6Ld1TtUqAAAAAAgPnHc9MAZNvfdexH5uo62fARFi"></div>
+
+    <button type="submit">Enviar</button>
+</form>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+    document.getElementById("salesforce-form").addEventListener("submit", function(event) {
+        var response = grecaptcha.getResponse();
+        if (response.length == 0) {
+            event.preventDefault(); // Bloquea el envío si no está verificado
+            alert("Por favor, marca la casilla de reCAPTCHA antes de enviar el formulario.");
+        }
+    });
+</script>
+
           <div class="LET-s-MAKE-THINGS-4">LET’S<br />MAKE<br />THINGS<br />HAPPEN.</div>
         </div>        
         <div class="somos-3">
