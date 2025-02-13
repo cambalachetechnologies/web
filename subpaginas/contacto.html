@@ -53,34 +53,42 @@
 <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onsubmit="return validateCaptcha();">
     <!-- Campo oculto: ID de la organización -->
     <input type="hidden" name="oid" value="00D5w000003XOQ6">
-  
+    
     <!-- Campo oculto: URL de retorno -->
     <input type="hidden" name="retURL" value="http://c-tech.com.ar/index.html">
-  
-    <!-- Campos del formulario -->
-    <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required />
-    <input type="text" id="cargo" name="cargo" placeholder="Cargo" required />
-    <input type="text" id="compania" name="compania" placeholder="Compañía" required />
-    <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required />
-    <input type="tel" id="telefono" name="telefono" placeholder="Número de teléfono" required />
-    <textarea id="comentarios" name="comentarios" placeholder="Mensaje" required></textarea>
 
-    <!-- reCAPTCHA v2 (Casilla de verificación) -->
-    <div class="g-recaptcha" data-sitekey="6Ld1TtUqAAAAAAgPnHc9MAZNvfdexH5uo62fARFi"></div>
+    <!-- Campos del formulario -->
+    <input type="text" id="first_name" name="first_name" placeholder="Nombre" required />
+    <input type="text" id="last_name" name="last_name" placeholder="Apellido" required />
+    <input type="text" id="company" name="company" placeholder="Empresa" required />
+    <input type="email" id="email" name="email" placeholder="Correo" required />
+    <input type="tel" id="phone" name="phone" placeholder="Celular" required />
+    <textarea id="description" name="description" placeholder="Mensaje" required></textarea>
 
     <!-- Botón de envío -->
     <button type="submit" class="submit-btn">Enviar</button>
 </form>
 
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<!-- Cargar el script de reCAPTCHA v3 -->
+<script src="https://www.google.com/recaptcha/api.js?render=6Ld1TtUqAAAAAAgPnHc9MAZNvfdexH5uo62fARFi"></script>
+
 <script>
     function validateCaptcha() {
-        var response = grecaptcha.getResponse();
-        if (response.length == 0) {
-            alert("Por favor, marca la casilla de reCAPTCHA antes de enviar el formulario.");
-            return false; // Previene el envío del formulario si no está marcado
-        }
-        return true; // Permite el envío si se completó el reCAPTCHA
+        // Ejecutamos reCAPTCHA v3 en segundo plano
+        grecaptcha.execute('6Ld1TtUqAAAAAAgPnHc9MAZNvfdexH5uo62fARFi', { action: 'submit' }).then(function(token) {
+            // Creamos un campo oculto para el token y lo agregamos al formulario
+            var input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = 'g-recaptcha-response';
+            input.value = token;
+            document.querySelector('form').appendChild(input);
+            
+            // El formulario se puede enviar
+            return true;
+        }).catch(function(error) {
+            alert("Error al verificar reCAPTCHA. Por favor, inténtalo de nuevo.");
+            return false; // Previene el envío en caso de error
+        });
     }
 </script>
 
@@ -122,34 +130,42 @@
 <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onsubmit="return validateCaptcha();">
     <!-- Campo oculto: ID de la organización -->
     <input type="hidden" name="oid" value="00D5w000003XOQ6">
-  
+    
     <!-- Campo oculto: URL de retorno -->
     <input type="hidden" name="retURL" value="http://c-tech.com.ar/index.html">
-  
-    <!-- Campos del formulario -->
-    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required />
-    <input type="text" id="apellido" name="apellido" placeholder="Apellido" required />
-    <input type="text" id="empresa" name="empresa" placeholder="Empresa" required />
-    <input type="email" id="correo" name="correo" placeholder="Correo" required />
-    <input type="tel" id="celular" name="celular" placeholder="Celular" required />
-    <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
 
-    <!-- reCAPTCHA v2 (Casilla de verificación) -->
-    <div class="g-recaptcha" data-sitekey="6Ld1TtUqAAAAAAgPnHc9MAZNvfdexH5uo62fARFi"></div>
+    <!-- Campos del formulario -->
+    <input type="text" id="first_name" name="first_name" placeholder="Nombre" required />
+    <input type="text" id="last_name" name="last_name" placeholder="Apellido" required />
+    <input type="text" id="company" name="company" placeholder="Empresa" required />
+    <input type="email" id="email" name="email" placeholder="Correo" required />
+    <input type="tel" id="phone" name="phone" placeholder="Celular" required />
+    <textarea id="description" name="description" placeholder="Mensaje" required></textarea>
 
     <!-- Botón de envío -->
     <button type="submit" class="submit-btn">Enviar</button>
 </form>
 
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<!-- Cargar el script de reCAPTCHA v3 -->
+<script src="https://www.google.com/recaptcha/api.js?render=6Ld1TtUqAAAAAAgPnHc9MAZNvfdexH5uo62fARFi"></script>
+
 <script>
     function validateCaptcha() {
-        var response = grecaptcha.getResponse();
-        if (response.length == 0) {
-            alert("Por favor, marca la casilla de reCAPTCHA antes de enviar el formulario.");
-            return false; // Previene el envío del formulario si no está marcado
-        }
-        return true; // Permite el envío si se completó el reCAPTCHA
+        // Ejecutamos reCAPTCHA v3 en segundo plano
+        grecaptcha.execute('6Ld1TtUqAAAAAAgPnHc9MAZNvfdexH5uo62fARFi', { action: 'submit' }).then(function(token) {
+            // Creamos un campo oculto para el token y lo agregamos al formulario
+            var input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = 'g-recaptcha-response';
+            input.value = token;
+            document.querySelector('form').appendChild(input);
+            
+            // El formulario se puede enviar
+            return true;
+        }).catch(function(error) {
+            alert("Error al verificar reCAPTCHA. Por favor, inténtalo de nuevo.");
+            return false; // Previene el envío en caso de error
+        });
     }
 </script>
 
@@ -199,31 +215,39 @@
     
     <!-- Campo oculto: URL de retorno -->
     <input type="hidden" name="retURL" value="http://c-tech.com.ar/index.html">
-    
+
     <!-- Campos del formulario -->
-    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required />
-    <input type="text" id="apellido" name="apellido" placeholder="Apellido" required />
-    <input type="text" id="empresa" name="empresa" placeholder="Empresa" required />
-    <input type="email" id="correo" name="correo" placeholder="Correo" required />
-    <input type="tel" id="celular" name="celular" placeholder="Celular" required />
-    <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
-    
-    <!-- reCAPTCHA v2 (Casilla de verificación) -->
-    <div class="g-recaptcha" data-sitekey="6Ld1TtUqAAAAAAgPnHc9MAZNvfdexH5uo62fARFi"></div>
+    <input type="text" id="first_name" name="first_name" placeholder="Nombre" required />
+    <input type="text" id="last_name" name="last_name" placeholder="Apellido" required />
+    <input type="text" id="company" name="company" placeholder="Empresa" required />
+    <input type="email" id="email" name="email" placeholder="Correo" required />
+    <input type="tel" id="phone" name="phone" placeholder="Celular" required />
+    <textarea id="description" name="description" placeholder="Mensaje" required></textarea>
 
     <!-- Botón de envío -->
     <button type="submit" class="submit-btn">Enviar</button>
 </form>
 
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<!-- Cargar el script de reCAPTCHA v3 -->
+<script src="https://www.google.com/recaptcha/api.js?render=6Ld1TtUqAAAAAAgPnHc9MAZNvfdexH5uo62fARFi"></script>
+
 <script>
     function validateCaptcha() {
-        var response = grecaptcha.getResponse();
-        if (response.length == 0) {
-            alert("Por favor, marca la casilla de reCAPTCHA antes de enviar el formulario.");
-            return false; // Previene el envío del formulario si no está marcado
-        }
-        return true; // Permite el envío si se completó el reCAPTCHA
+        // Ejecutamos reCAPTCHA v3 en segundo plano
+        grecaptcha.execute('6Ld1TtUqAAAAAAgPnHc9MAZNvfdexH5uo62fARFi', { action: 'submit' }).then(function(token) {
+            // Creamos un campo oculto para el token y lo agregamos al formulario
+            var input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = 'g-recaptcha-response';
+            input.value = token;
+            document.querySelector('form').appendChild(input);
+            
+            // El formulario se puede enviar
+            return true;
+        }).catch(function(error) {
+            alert("Error al verificar reCAPTCHA. Por favor, inténtalo de nuevo.");
+            return false; // Previene el envío en caso de error
+        });
     }
 </script>
 
