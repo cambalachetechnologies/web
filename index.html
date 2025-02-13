@@ -16,6 +16,7 @@
 
   gtag('config', 'G-KVQD6PVNXQ');
 </script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Ld1TtUqAAAAAAgPnHc9MAZNvfdexH5uo62fARFi"></script>
   </head>
   <body>
     <div class="nav-bar">
@@ -120,24 +121,45 @@
             <div class="overlap-3">
               <div class="LET-s-MAKE-THINGS">LET’S<br />MAKE<br />THINGS<br />HAPPEN.</div>
               <div class="form">
-                <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-                  <!-- Campo oculto: ID de la organización -->
-                  <input type="hidden" name="oid" value="00D5w000003XOQ6">
-                  
-                  <!-- Campo oculto: URL de retorno -->
-                  <input type="hidden" name="retURL" value="http://c-tech.com.ar/index.html">
-          
-                  <!-- Campos del formulario -->
-                  <input type="text" id="first_name" name="first_name" placeholder="Nombre" required />
-                  <input type="text" id="last_name" name="last_name" placeholder="Apellido" required />
-                  <input type="text" id="company" name="company" placeholder="Empresa" required />
-                  <input type="email" id="email" name="email" placeholder="Correo" required />
-                  <input type="tel" id="phone" name="phone" placeholder="Celular" required />
-                  <textarea id="description" name="description" placeholder="Mensaje" required></textarea>
-          
-                  <!-- Botón de envío -->
-                  <button type="submit" class="submit-btn">Enviar</button>
-                </form>
+<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onsubmit="return submitForm();">
+  <!-- Campo oculto: ID de la organización -->
+  <input type="hidden" name="oid" value="00D5w000003XOQ6">
+  
+  <!-- Campo oculto: URL de retorno -->
+  <input type="hidden" name="retURL" value="http://c-tech.com.ar/index.html">
+  
+  <!-- Campos del formulario -->
+  <input type="text" id="first_name" name="first_name" placeholder="Nombre" required />
+  <input type="text" id="last_name" name="last_name" placeholder="Apellido" required />
+  <input type="text" id="company" name="company" placeholder="Empresa" required />
+  <input type="email" id="email" name="email" placeholder="Correo" required />
+  <input type="tel" id="phone" name="phone" placeholder="Celular" required />
+  <textarea id="description" name="description" placeholder="Mensaje" required></textarea>
+  
+  <!-- Botón de envío -->
+  <button type="submit" class="submit-btn">Enviar</button>
+</form>
+
+<script>
+  // Función para obtener el token de reCAPTCHA v3 y enviar el formulario
+  function submitForm() {
+    grecaptcha.ready(function() {
+      grecaptcha.execute('6Ld1TtUqAAAAAAgPnHc9MAZNvfdexH5uo62fARFi', { action: 'submit' }).then(function(token) {
+        // Agregar el token de reCAPTCHA al formulario
+        var recaptchaInput = document.createElement('input');
+        recaptchaInput.setAttribute('type', 'hidden');
+        recaptchaInput.setAttribute('name', 'g-recaptcha-response');
+        recaptchaInput.setAttribute('value', token);
+        document.querySelector('form').appendChild(recaptchaInput);
+        // Ahora enviamos el formulario
+        document.querySelector('form').submit();
+      });
+    });
+    // Prevenir el envío por defecto mientras obtenemos el token
+    return false;
+  }
+</script>
+
               </div>
             </div>
           </div>
@@ -266,24 +288,45 @@
                 LET’S<br />MAKE<br />THINGS<br />HAPPEN.
               </div>
               <div class="form-2">
-                <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-                  <!-- Campo oculto: ID de la organización -->
-                  <input type="hidden" name="oid" value="00D5w000003XOQ6">
-                  
-                  <!-- Campo oculto: URL de retorno -->
-                  <input type="hidden" name="retURL" value="http://c-tech.com.ar/index.html">
-                  
-                  <!-- Campos del formulario -->
-                  <input type="text" id="first_name" name="first_name" placeholder="Nombre" required />
-                  <input type="text" id="last_name" name="last_name" placeholder="Apellido" required />
-                  <input type="text" id="company" name="company" placeholder="Empresa" required />
-                  <input type="email" id="email" name="email" placeholder="Correo" required />
-                  <input type="tel" id="phone" name="phone" placeholder="Celular" required />
-                  <textarea id="description" name="description" placeholder="Mensaje" required></textarea>
-                  
-                  <!-- Botón de envío -->
-                  <button type="submit" class="submit-btn">Enviar</button>
-                </form>
+<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onsubmit="return submitForm();">
+  <!-- Campo oculto: ID de la organización -->
+  <input type="hidden" name="oid" value="00D5w000003XOQ6">
+
+  <!-- Campo oculto: URL de retorno -->
+  <input type="hidden" name="retURL" value="http://c-tech.com.ar/index.html">
+
+  <!-- Campos del formulario -->
+  <input type="text" id="first_name" name="first_name" placeholder="Nombre" required />
+  <input type="text" id="last_name" name="last_name" placeholder="Apellido" required />
+  <input type="text" id="company" name="company" placeholder="Empresa" required />
+  <input type="email" id="email" name="email" placeholder="Correo" required />
+  <input type="tel" id="phone" name="phone" placeholder="Celular" required />
+  <textarea id="description" name="description" placeholder="Mensaje" required></textarea>
+
+  <!-- Botón de envío -->
+  <button type="submit" class="submit-btn">Enviar</button>
+</form>
+
+<script>
+    // Función para obtener el token de reCAPTCHA v3 y enviar el formulario
+    function submitForm() {
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6Ld1TtUqAAAAAAgPnHc9MAZNvfdexH5uo62fARFi', { action: 'submit' }).then(function(token) {
+                // Agregar el token de reCAPTCHA al formulario
+                var recaptchaInput = document.createElement('input');
+                recaptchaInput.setAttribute('type', 'hidden');
+                recaptchaInput.setAttribute('name', 'g-recaptcha-response');
+                recaptchaInput.setAttribute('value', token);
+                document.querySelector('form').appendChild(recaptchaInput);
+                // Ahora enviamos el formulario
+                document.querySelector('form').submit();
+            });
+        });
+        // Prevenir el envío por defecto mientras obtenemos el token
+        return false;
+    }
+</script>
+
               </div>
             </div>
           </div>
@@ -420,27 +463,48 @@
         </div>
 
         <div class="contacto-3">
-          <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-            <!-- Campo oculto: ID de la organización -->
-            <input type="hidden" name="oid" value="00D5w000003XOQ6">
-            
-            <!-- Campo oculto: URL de retorno -->
-            <input type="hidden" name="retURL" value="http://c-tech.com.ar/index.html">
-        
-            <!-- Campos del formulario -->
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required />
-            <input type="text" id="apellido" name="apellido" placeholder="Apellido" required />
-            <input type="text" id="empresa" name="empresa" placeholder="Empresa" required />
-            <input type="email" id="correo" name="correo" placeholder="Correo" required />
-            <input type="tel" id="celular" name="celular" placeholder="Celular" required />
-            <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
-        
-            <!-- Botón de envío -->
-            <button type="submit" class="submit-btn">Enviar</button>
-          </form>
+   <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onsubmit="return submitForm();">
+    <!-- Campo oculto: ID de la organización -->
+    <input type="hidden" name="oid" value="00D5w000003XOQ6">
+    
+    <!-- Campo oculto: URL de retorno -->
+    <input type="hidden" name="retURL" value="http://c-tech.com.ar/index.html">
+
+    <!-- Campos del formulario -->
+    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required />
+    <input type="text" id="apellido" name="apellido" placeholder="Apellido" required />
+    <input type="text" id="empresa" name="empresa" placeholder="Empresa" required />
+    <input type="email" id="correo" name="correo" placeholder="Correo" required />
+    <input type="tel" id="celular" name="celular" placeholder="Celular" required />
+    <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
+
+    <!-- Botón de envío -->
+    <button type="submit" class="submit-btn">Enviar</button>
+</form>
+
+<script>
+    // Función para obtener el token de reCAPTCHA v3 y enviar el formulario
+    function submitForm() {
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6Ld1TtUqAAAAAAgPnHc9MAZNvfdexH5uo62fARFi', { action: 'submit' }).then(function(token) {
+                // Agregar el token de reCAPTCHA al formulario
+                var recaptchaInput = document.createElement('input');
+                recaptchaInput.setAttribute('type', 'hidden');
+                recaptchaInput.setAttribute('name', 'g-recaptcha-response');
+                recaptchaInput.setAttribute('value', token);
+                document.querySelector('form').appendChild(recaptchaInput);
+                // Ahora enviamos el formulario
+                document.querySelector('form').submit();
+            });
+        });
+        // Prevenir el envío por defecto mientras obtenemos el token
+        return false;
+    }
+</script>
+
         </div>        
           <div class="LET-s-MAKE-THINGS-3">LET’S<br />MAKE<br />THINGS<br />HAPPEN.</div>
-        </div>        </form>
+        </div>       
         
         <footer class="footer-3">
           <div class="overlap-17">
