@@ -1,4 +1,4 @@
-/* Estilos generales */
+/* 🌍 Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,7 +6,7 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Contenedor principal de la nota */
+/* 📦 Contenedor de la nota */
 .nota {
     max-width: 900px;
     margin: 20px auto;
@@ -16,26 +16,29 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* 🔵 Sección título y descripción */
+/* 🔵 Encabezado de la nota */
 .nota-header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: #00AEEF; /* Azul celeste */
+    justify-content: space-between;
+    background-color: #00AEEF;
     color: white;
     padding: 20px;
     border-radius: 10px;
 }
 
+.nota-texto {
+    flex: 1;
+}
+
 .nota-header h1 {
     font-size: 24px;
     margin: 0;
-    flex: 1;
 }
 
 .nota-header p {
     font-size: 16px;
-    margin: 0;
+    margin: 5px 0 0;
 }
 
 /* 📷 Imagen principal */
@@ -48,7 +51,7 @@ body {
 
 /* 🔵 Concepto con fondo azul */
 .nota-concepto {
-    background-color: #004AAD; /* Azul oscuro */
+    background-color: #004AAD;
     color: white;
     text-align: center;
     padding: 15px;
@@ -58,7 +61,7 @@ body {
     margin: 20px 0;
 }
 
-/* 📜 Secciones con fondo blanco */
+/* 📜 Secciones */
 .nota-seccion {
     padding: 20px;
     background-color: white;
@@ -85,3 +88,4 @@ body {
     object-fit: cover;
     border-radius: 10px;
 }
+
