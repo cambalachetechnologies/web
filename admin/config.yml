@@ -1,18 +1,26 @@
 backend:
   name: git-gateway
-  branch: main  # Usa la rama principal donde está tu sitio web
+  branch: main  # Asegúrate de que esto apunte a la rama correcta
 
-media_folder: "images/uploads" # Carpeta donde se guardarán las imágenes
-public_folder: "/images/uploads"
+media_folder: "static/images"  # Carpeta donde se almacenan las imágenes
+public_folder: "/images"  # Ruta pública de las imágenes en el sitio
 
 collections:
-  - name: "novedades"  
-    label: "Novedades"
-    folder: "novedades" # Carpeta donde se guardarán las notas
-    create: true
-    slug: "{{slug}}"
+  - name: "notas"  # El nombre de la colección de notas
+    label: "Notas"  # Lo que se verá en la interfaz de Netlify CMS
+    folder: "content/notas"  # Carpeta donde se almacenarán las notas en tu repositorio
+    create: true  # Permitir crear nuevas notas desde el CMS
+    slug: "{{slug}}"  # Cómo se estructurará el slug en las URLs
     fields:
       - { label: "Título", name: "title", widget: "string" }
-      - { label: "Fecha", name: "date", widget: "datetime" }
-      - { label: "Cuerpo", name: "body", widget: "markdown" }
-      - { label: "Imagen destacada", name: "image", widget: "image" }
+      - { label: "Descripción", name: "description", widget: "text" }
+      - { label: "Imagen Principal", name: "image", widget: "image" }
+      - { label: "Concepto", name: "concept", widget: "text" }
+      - { label: "Secciones", name: "sections", widget: "list", fields:
+          [
+            { label: "Subtítulo", name: "subtitle", widget: "string" },
+            { label: "Párrafo", name: "paragraph", widget: "text" },
+            { label: "Imagen (Opcional)", name: "image", widget: "image" }
+          ]
+      }
+
