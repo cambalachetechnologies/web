@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nota</title>
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="../css/stylenota.css">
     <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
 </head>
 <body>
 
     <article class="nota">
+        <!-- 🔵 Sección de encabezado con título, descripción e imagen -->
         <div class="nota-header">
-            <h1 id="nota-titulo"></h1>
-            <p id="nota-descripcion"></p>
+            <div class="nota-texto">
+                <h1 id="nota-titulo"></h1>
+                <p id="nota-descripcion"></p>
+            </div>
+            <img id="nota-imagen" class="nota-imagen" style="display: none;" />
         </div>
-        
-        <img id="nota-imagen" class="nota-imagen" style="display: none;"/>
 
-        <div id="nota-contenido" class="nota-contenido"></div>
+        <!-- 🔵 Concepto con fondo azul -->
+        <div id="nota-concepto" class="nota-concepto"></div>
+
+        <!-- 📜 Contenido de la nota -->
+        <div id="nota-contenido"></div>
     </article>
 
     <script>
@@ -38,7 +44,31 @@
 
                 // Convertir el Markdown a HTML con Showdown.js
                 const converter = new showdown.Converter();
-                document.getElementById("nota-contenido").innerHTML = converter.makeHtml(text);
+                const htmlContent = converter.makeHtml(text);
+
+                // Extraer los datos de la nota desde el Markdown
+                const metadataMatch = text.match(/---([\s\S]*?)---/);
+                if (metadataMatch) {
+                    const metadataText = metadataMatch[1];
+                    const metadata = Object.fromEntries(
+                        metadataText.split("\n").map(line => line.split(": ").map(s => s.trim()))
+                    );
+
+                    // Asignar los valores
+                    document.getElementById("nota-titulo").textContent = metadata.titulo || "Sin título";
+                    document.getElementById("nota-descripcion").textContent = metadata.descripcion || "Sin descripción";
+                    document.getElementById("nota-concepto").textContent = metadata.concepto || "";
+
+                    // Mostrar imagen si está disponible
+                    if (metadata.imagen) {
+                        const imagenElemento = document.getElementById("nota-imagen");
+                        imagenElemento.src = `/images/${metadata.imagen}`;
+                        imagenElemento.style.display = "block";
+                    }
+                }
+
+                // Insertar el contenido convertido
+                document.getElementById("nota-contenido").innerHTML = htmlContent;
             } catch (error) {
                 document.getElementById("nota-contenido").innerHTML = `<p>Error al cargar la nota: ${error.message}</p>`;
             }
