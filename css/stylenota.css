@@ -1,91 +1,97 @@
-/* 🌍 Estilos generales */
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 
-/* 📦 Contenedor de la nota */
 .nota {
-    max-width: 900px;
+    max-width: 960px;
     margin: 20px auto;
-    background: white;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* 🔵 Encabezado de la nota */
 .nota-header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    background-color: #00AEEF;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.nota-texto {
-    flex: 1;
+    align-items: center;
+    background-color: #00b0f0; /* Celeste */
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
 }
 
 .nota-header h1 {
-    font-size: 24px;
     margin: 0;
 }
 
 .nota-header p {
-    font-size: 16px;
-    margin: 5px 0 0;
+    margin: 0;
 }
 
-/* 📷 Imagen principal */
+.nota-meta {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.nota-meta p {
+    margin: 5px 0;
+}
+
 .nota-imagen {
-    width: 40%;
-    max-height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
+    display: block;
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
 }
 
-/* 🔵 Concepto con fondo azul */
-.nota-concepto {
-    background-color: #004AAD;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 10px;
-    margin: 20px 0;
+.nota-contenido {
+    margin-top: 30px;
 }
 
-/* 📜 Secciones */
-.nota-seccion {
-    padding: 20px;
-    background-color: white;
-    margin: 10px 0;
-    border-radius: 10px;
-}
-
-.nota-seccion h2 {
+.nota-contenido h2 {
     color: #333;
-    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.nota-contenido p {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.nota-contenido img {
+    display: block;
+    margin: 30px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Concepto en azul */
+.nota-concepto {
+    background-color: #0077b6;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+/* Estilo de las secciones */
+.nota-seccion {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.nota-seccion h3 {
+    color: #333;
 }
 
 .nota-seccion p {
-    color: #555;
-    font-size: 16px;
+    color: #333;
 }
-
-/* 📷 Imagen extra en el medio */
-.nota-imagen-extra {
-    display: block;
-    margin: 30px auto;
-    width: 80%;
-    max-height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
