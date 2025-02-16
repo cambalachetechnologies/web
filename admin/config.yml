@@ -15,15 +15,14 @@ collections:
       - { label: "Título", name: "titulo", widget: "string" }
       - { label: "Descripción", name: "descripcion", widget: "text" }
       - { label: "Imagen", name: "imagen", widget: "image", required: false }  # Imagen no obligatoria
+      - { label: "Concepto", name: "concepto", widget: "string" }
       - { label: "Contenido", name: "contenido", widget: "markdown" }
+      - { label: "Secciones", name: "secciones", widget: "list", fields: [
+          { label: "Subtítulo", name: "subtitulo", widget: "string" },
+          { label: "Párrafo", name: "parrafo", widget: "markdown" },
+          { label: "Imagen", name: "imagen", widget: "image", required: false }  # Imagen no obligatoria
+        ]
+      }
 
-  - name: "images"
-    label: "Imagenes"
-    folder: "content/images"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Título", name: "titulo", widget: "string" }
-      - { label: "Imagen", name: "imagen", widget: "image", required: false }  # Imagen no obligatoria
 
 
