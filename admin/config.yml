@@ -1,26 +1,29 @@
 backend:
   name: git-gateway
-  branch: main  # Asegúrate de que esto apunte a la rama correcta
+  branch: main
 
-media_folder: "static/images"  # Carpeta donde se almacenan las imágenes
-public_folder: "/images"  # Ruta pública de las imágenes en el sitio
+media_folder: "static/images"  # Carpeta donde se guardarán las imágenes
+public_folder: "/images"  # Ruta pública para acceder a las imágenes
 
 collections:
-  - name: "notas"  # El nombre de la colección de notas
-    label: "Notas"  # Lo que se verá en la interfaz de Netlify CMS
-    folder: "content/notas"  # Carpeta donde se almacenarán las notas en tu repositorio
-    create: true  # Permitir crear nuevas notas desde el CMS
-    slug: "{{slug}}"  # Cómo se estructurará el slug en las URLs
+  - name: "notas"
+    label: "Notas"
+    folder: "content/notas"
+    create: true
+    slug: "{{slug}}"
     fields:
-      - { label: "Título", name: "title", widget: "string" }
-      - { label: "Descripción", name: "description", widget: "text" }
-      - { label: "Imagen Principal", name: "image", widget: "image" }
-      - { label: "Concepto", name: "concept", widget: "text" }
-      - { label: "Secciones", name: "sections", widget: "list", fields:
-          [
-            { label: "Subtítulo", name: "subtitle", widget: "string" },
-            { label: "Párrafo", name: "paragraph", widget: "text" },
-            { label: "Imagen (Opcional)", name: "image", widget: "image" }
-          ]
-      }
+      - { label: "Título", name: "titulo", widget: "string" }
+      - { label: "Descripción", name: "descripcion", widget: "text" }
+      - { label: "Imagen", name: "imagen", widget: "image", required: false }  # Imagen no obligatoria
+      - { label: "Contenido", name: "contenido", widget: "markdown" }
+
+  - name: "images"
+    label: "Imagenes"
+    folder: "content/images"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "titulo", widget: "string" }
+      - { label: "Imagen", name: "imagen", widget: "image", required: false }  # Imagen no obligatoria
+
 
