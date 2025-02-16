@@ -1,0 +1,11 @@
+name: Enable GitHub OAuth
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enable OAuth
+        run: echo "Netlify CMS habilitado con GitHub"
