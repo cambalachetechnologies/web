@@ -10,25 +10,25 @@
 <body>
 
     <article class="nota">
-        <!-- 🔵 Sección de encabezado con título, descripción e imagen -->
         <div class="nota-header">
-            <div class="nota-texto">
-                <h1 id="nota-titulo"></h1>
-                <p id="nota-descripcion"></p>
-            </div>
-            <img id="nota-imagen" class="nota-imagen" style="display: none;" />
+            <h1 id="nota-titulo"></h1>
+            <p id="nota-descripcion"></p>
+        </div>
+        
+        <img id="nota-imagen" class="nota-imagen" style="display: none;"/>
+
+        <div class="nota-meta">
+            <p id="nota-publicado-por"></p>
+            <p id="nota-rol"></p>
+            <p id="nota-fecha-publicacion"></p>
         </div>
 
-        <!-- 🔵 Concepto con fondo azul -->
-        <div id="nota-concepto" class="nota-concepto"></div>
-
-        <!-- 📜 Contenido de la nota -->
-        <div id="nota-contenido"></div>
+        <div id="nota-contenido" class="nota-contenido"></div>
     </article>
 
     <script>
         async function loadMarkdown() {
-            // Obtener el parámetro de la URL (ejemplo: nota.html?file=vitalcan.md)
+            // Obtener el parámetro de la URL (ejemplo: nota.html?file=maximstore-revoluciona-su-gestión-junto-a-cambalache-technologies.md)
             const urlParams = new URLSearchParams(window.location.search);
             const fileName = urlParams.get("file");
 
@@ -44,34 +44,54 @@
 
                 // Convertir el Markdown a HTML con Showdown.js
                 const converter = new showdown.Converter();
-                const htmlContent = converter.makeHtml(text);
+                const html = converter.makeHtml(text);
+                
+                // Insertar contenido en la página
+                document.getElementById("nota-contenido").innerHTML = html;
 
-                // Extraer los datos de la nota desde el Markdown
-                const metadataMatch = text.match(/---([\s\S]*?)---/);
-                if (metadataMatch) {
-                    const metadataText = metadataMatch[1];
-                    const metadata = Object.fromEntries(
-                        metadataText.split("\n").map(line => line.split(": ").map(s => s.trim()))
-                    );
+                // Extraer metadata
+                const metadata = extractMetadata(text);
+                document.getElementById("nota-titulo").textContent = metadata.titulo;
+                document.getElementById("nota-descripcion").textContent = metadata.descripcion;
+                document.getElementById("nota-publicado-por").textContent = "Publicado por: " + metadata.publicado_por;
+                document.getElementById("nota-rol").textContent = "Rol: " + metadata.rol;
+                document.getElementById("nota-fecha-publicacion").textContent = "Fecha de publicación: " + metadata.fecha_publicacion;
 
-                    // Asignar los valores
-                    document.getElementById("nota-titulo").textContent = metadata.titulo || "Sin título";
-                    document.getElementById("nota-descripcion").textContent = metadata.descripcion || "Sin descripción";
-                    document.getElementById("nota-concepto").textContent = metadata.concepto || "";
-
-                    // Mostrar imagen si está disponible
-                    if (metadata.imagen) {
-                        const imagenElemento = document.getElementById("nota-imagen");
-                        imagenElemento.src = `/images/${metadata.imagen}`;
-                        imagenElemento.style.display = "block";
-                    }
+                if (metadata.imagen) {
+                    const img = document.getElementById("nota-imagen");
+                    img.src = metadata.imagen;
+                    img.style.display = "block";
                 }
 
-                // Insertar el contenido convertido
-                document.getElementById("nota-contenido").innerHTML = htmlContent;
             } catch (error) {
                 document.getElementById("nota-contenido").innerHTML = `<p>Error al cargar la nota: ${error.message}</p>`;
             }
+        }
+
+        function extractMetadata(text) {
+            const metadata = {};
+            const lines = text.split("\n");
+
+            // Buscar metadatos
+            lines.forEach(line => {
+                if (line.startsWith("titulo:")) {
+                    metadata.titulo = line.replace("titulo:", "").trim();
+                } else if (line.startsWith("descripcion:")) {
+                    metadata.descripcion = line.replace("descripcion:", "").trim();
+                } else if (line.startsWith("imagen:")) {
+                    metadata.imagen = line.replace("imagen:", "").trim();
+                } else if (line.startsWith("concepto:")) {
+                    metadata.concepto = line.replace("concepto:", "").trim();
+                } else if (line.startsWith("publicado_por:")) {
+                    metadata.publicado_por = line.replace("publicado_por:", "").trim();
+                } else if (line.startsWith("rol:")) {
+                    metadata.rol = line.replace("rol:", "").trim();
+                } else if (line.startsWith("fecha_publicacion:")) {
+                    metadata.fecha_publicacion = line.replace("fecha_publicacion:", "").trim();
+                }
+            });
+
+            return metadata;
         }
 
         loadMarkdown();
@@ -79,5 +99,3 @@
 
 </body>
 </html>
-
-
