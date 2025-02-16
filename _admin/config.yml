@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: TU_USUARIO/TU_REPOSITORIO
+  branch: main # O el nombre de la rama principal (puede ser "master")
+
+media_folder: "images/uploads" # Carpeta donde se guardarán las imágenes
+public_folder: "/images/uploads"
+
+collections:
+  - name: "novedades"
+    label: "Novedades"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Fecha", name: "date", widget: "datetime" }
+      - { label: "Contenido", name: "body", widget: "markdown" }
+      - { label: "Imagen destacada", name: "thumbnail", widget: "image" }
