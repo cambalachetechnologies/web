@@ -40,7 +40,7 @@
             try {
                 const response = await fetch(`../content/notas/${fileName}`);
                 const text = await response.text();
-                const { metadata } = extractMetadata(text);
+                const { metadata, secciones } = extractMetadata(text);
 
                 document.getElementById("page-title").textContent = metadata.titulo || "Nota";
                 document.getElementById("nota-titulo").textContent = metadata.titulo || "Sin título";
@@ -57,7 +57,7 @@
                 }
 
                 const converter = new showdown.Converter();
-                generateSections(metadata.secciones, converter);
+                document.getElementById("nota-contenido").innerHTML = generateSections(secciones, converter);
             } catch (error) {
                 document.getElementById("nota-contenido").innerHTML = `<p>Error al cargar la nota: ${error.message}</p>`;
             }
@@ -65,66 +65,38 @@
 
         function extractMetadata(text) {
             const metadata = {};
-            const contentStart = text.indexOf("---", 3);
+            let secciones = [];
+            let contentStart = text.indexOf("---", 3);
 
             if (contentStart !== -1) {
                 const metadataText = text.substring(3, contentStart).trim();
+                contentStart += 3;
+                
                 metadataText.split("\n").forEach(line => {
-                    const match = line.match(/^([\w_]+):\s*(.+)$/);
-                    if (match) {
-                        metadata[match[1].trim()] = match[2].trim();
+                    const [key, ...value] = line.split(":");
+                    if (key && value) {
+                        metadata[key.trim()] = value.join(":").trim();
                     }
                 });
-                metadata.secciones = extractSecciones(text.substring(contentStart + 3).trim());
-            }
-            return { metadata };
-        }
 
-        function extractSecciones(text) {
-            const secciones = [];
-            const sectionRegex = /-\s+subtitulo:\s*(.+)\n\s+parrafo:\s*((?:.+\n?)+?)(?:\n\s+imagen:\s*(.+))?/g;
-            let match;
-            while ((match = sectionRegex.exec(text)) !== null) {
-                secciones.push({
-                    subtitulo: match[1].trim(),
-                    parrafo: match[2].trim().replace(/\n/g, ' '),
-                    imagen: match[3] ? match[3].trim() : null
-                });
+                try {
+                    secciones = JSON.parse(metadata.secciones.replace(/\n/g, ''));
+                } catch (e) {
+                    console.error("Error al parsear las secciones", e);
+                }
             }
-            return secciones;
+            return { metadata, secciones };
         }
 
         function generateSections(secciones, converter) {
-            if (!secciones || !Array.isArray(secciones)) return;
-            const contenidoDiv = document.getElementById("nota-contenido");
-            contenidoDiv.innerHTML = "";
-
-            secciones.forEach(sec => {
-                const seccionDiv = document.createElement("section");
-                seccionDiv.classList.add("nota-seccion");
-
-                if (sec.subtitulo) {
-                    const subtitulo = document.createElement("h2");
-                    subtitulo.textContent = sec.subtitulo;
-                    seccionDiv.appendChild(subtitulo);
-                }
-
-                if (sec.parrafo) {
-                    const parrafo = document.createElement("p");
-                    parrafo.innerHTML = converter.makeHtml(sec.parrafo);
-                    seccionDiv.appendChild(parrafo);
-                }
-
-                if (sec.imagen) {
-                    const img = document.createElement("img");
-                    img.src = sec.imagen;
-                    img.alt = "Imagen de sección";
-                    img.classList.add("nota-seccion-imagen");
-                    seccionDiv.appendChild(img);
-                }
-
-                contenidoDiv.appendChild(seccionDiv);
-            });
+            if (!secciones || !Array.isArray(secciones)) return "";
+            return secciones.map(sec => `
+                <section class="nota-seccion">
+                    <h2>${sec.subtitulo || ""}</h2>
+                    <p>${converter.makeHtml(sec.parrafo || "")}</p>
+                    ${sec.imagen ? `<img src="${sec.imagen}" alt="Imagen de sección" class="nota-seccion-imagen">` : ""}
+                </section>
+            `).join("\n");
         }
 
         loadMarkdown();
