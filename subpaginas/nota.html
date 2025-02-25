@@ -39,8 +39,12 @@
 
             try {
                 const response = await fetch(`../content/notas/${fileName}`);
+                if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
                 const text = await response.text();
+                console.log("Markdown cargado:", text); // 🔍 Debugging
+
                 const { metadata, content } = extractMetadata(text);
+                console.log("Metadata extraída:", metadata); // 🔍 Debugging
 
                 document.getElementById("page-title").textContent = metadata.titulo || "Nota";
                 document.getElementById("nota-titulo").textContent = metadata.titulo || "Sin título";
@@ -52,12 +56,12 @@
 
                 if (metadata.imagen) {
                     const img = document.getElementById("nota-imagen");
-                    img.src = `../static/images/${metadata.imagen}`; // Ajuste de ruta de imagen
+                    img.src = `../static/images/${metadata.imagen}`;
                     img.style.display = "block";
                 }
 
                 const converter = new showdown.Converter();
-                generateSections(metadata.secciones, converter);
+                generateSections(metadata.secciones || [], converter);
             } catch (error) {
                 document.getElementById("nota-contenido").innerHTML = `<p>Error al cargar la nota: ${error.message}</p>`;
             }
@@ -65,29 +69,44 @@
 
         function extractMetadata(text) {
             const metadata = {};
-            let contentStart = text.indexOf("---", 3);
-            if (contentStart !== -1) {
-                const metadataText = text.substring(3, contentStart).trim();
-                contentStart += 3;
-                const content = text.substring(contentStart).trim();
+            let content = "";
+            const match = text.match(/---([\s\S]*?)---\s*\n([\s\S]*)/);
+
+            if (match) {
+                const metadataText = match[1].trim();
+                content = match[2].trim();
 
                 metadataText.split("\n").forEach(line => {
                     const [key, ...value] = line.split(":");
-                    if (key && value) {
+                    if (key && value.length) {
                         metadata[key.trim()] = value.join(":").trim();
                     }
                 });
 
-                return { metadata, content };
+                // 🛠 Convertir secciones desde JSON string a objeto
+                if (metadata.secciones) {
+                    try {
+                        metadata.secciones = JSON.parse(metadata.secciones);
+                    } catch (error) {
+                        console.error("Error parseando secciones JSON:", error);
+                        metadata.secciones = [];
+                    }
+                }
+            } else {
+                content = text.trim();
             }
-            return { metadata: {}, content: text };
+
+            return { metadata, content };
         }
 
         function generateSections(secciones, converter) {
-            if (!secciones || !Array.isArray(secciones)) return;
+            if (!secciones.length) {
+                console.warn("⚠ No hay secciones definidas.");
+                return;
+            }
 
             const contenidoDiv = document.getElementById("nota-contenido");
-            contenidoDiv.innerHTML = ""; // Limpia el contenido previo
+            contenidoDiv.innerHTML = "";
 
             secciones.forEach(seccion => {
                 const seccionDiv = document.createElement("div");
@@ -101,13 +120,13 @@
 
                 if (seccion.parrafo) {
                     const parrafo = document.createElement("p");
-                    parrafo.innerHTML = converter.makeHtml(seccion.parrafo); // Convierte Markdown a HTML
+                    parrafo.innerHTML = converter.makeHtml(seccion.parrafo);
                     seccionDiv.appendChild(parrafo);
                 }
 
                 if (seccion.imagen) {
                     const img = document.createElement("img");
-                    img.src = `../static/images/${seccion.imagen}`; // Ruta corregida
+                    img.src = `../static/images/${seccion.imagen}`;
                     img.classList.add("nota-imagen-secundaria");
                     seccionDiv.appendChild(img);
                 }
@@ -120,4 +139,3 @@
     </script>
 </body>
 </html>
-
