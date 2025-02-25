@@ -40,8 +40,9 @@
             try {
                 const response = await fetch(`../content/notas/${fileName}`);
                 const text = await response.text();
-                const { metadata, content } = extractMetadata(text);
+                const { metadata } = extractMetadata(text);
 
+                // Insertar metadatos en la página
                 document.getElementById("page-title").textContent = metadata.titulo || "Nota";
                 document.getElementById("nota-titulo").textContent = metadata.titulo || "Sin título";
                 document.getElementById("nota-descripcion").textContent = metadata.descripcion || "Sin descripción";
@@ -56,8 +57,9 @@
                     img.style.display = "block";
                 }
 
+                // Insertar contenido de las secciones
                 const converter = new showdown.Converter();
-                document.getElementById("nota-contenido").innerHTML = generateSections(metadata.secciones, converter);
+                generateSections(metadata.secciones, converter);
             } catch (error) {
                 document.getElementById("nota-contenido").innerHTML = `<p>Error al cargar la nota: ${error.message}</p>`;
             }
@@ -66,32 +68,75 @@
         function extractMetadata(text) {
             const metadata = {};
             let contentStart = text.indexOf("---", 3);
+
             if (contentStart !== -1) {
                 const metadataText = text.substring(3, contentStart).trim();
                 contentStart += 3;
-                const content = text.substring(contentStart).trim();
 
                 metadataText.split("\n").forEach(line => {
-                    const [key, ...value] = line.split(":");
-                    if (key && value) {
-                        metadata[key.trim()] = value.join(":").trim();
+                    const match = line.match(/^(\w+):\s*(.+)$/);
+                    if (match) {
+                        const key = match[1].trim();
+                        const value = match[2].trim();
+                        metadata[key] = value;
                     }
                 });
 
-                return { metadata, content };
+                // Extraer secciones si existen
+                const seccionesMatch = text.match(/secciones:\s*\n((?:\s+-\s+subtitulo:.*\n(?:\s+.+\n)*\s*)+)/);
+                if (seccionesMatch) {
+                    metadata.secciones = extractSecciones(seccionesMatch[1]);
+                }
             }
-            return { metadata: {}, content: text };
+
+            return { metadata };
+        }
+
+        function extractSecciones(text) {
+            const secciones = [];
+            const sectionRegex = /-\s+subtitulo:\s*(.+)\n\s+parrafo:\s*(.+)(?:\n\s+imagen:\s*(.+))?/g;
+            let match;
+            while ((match = sectionRegex.exec(text)) !== null) {
+                secciones.push({
+                    subtitulo: match[1].trim(),
+                    parrafo: match[2].trim(),
+                    imagen: match[3] ? match[3].trim() : null
+                });
+            }
+            return secciones;
         }
 
         function generateSections(secciones, converter) {
-            if (!secciones || !Array.isArray(secciones)) return "";
-            return secciones.map(sec => `
-                <section class="nota-seccion">
-                    <h2>${sec.subtitulo || ""}</h2>
-                    <div>${converter.makeHtml(sec.parrafo || "")}</div>
-                    ${sec.imagen ? `<img src="${sec.imagen}" alt="Imagen de sección" class="nota-seccion-imagen">` : ""}
-                </section>
-            `).join("");
+            if (!secciones || !Array.isArray(secciones)) return;
+            const contenidoDiv = document.getElementById("nota-contenido");
+            contenidoDiv.innerHTML = ""; // Limpia contenido previo
+
+            secciones.forEach(sec => {
+                const seccionDiv = document.createElement("section");
+                seccionDiv.classList.add("nota-seccion");
+
+                if (sec.subtitulo) {
+                    const subtitulo = document.createElement("h2");
+                    subtitulo.textContent = sec.subtitulo;
+                    seccionDiv.appendChild(subtitulo);
+                }
+
+                if (sec.parrafo) {
+                    const parrafo = document.createElement("p");
+                    parrafo.innerHTML = converter.makeHtml(sec.parrafo);
+                    seccionDiv.appendChild(parrafo);
+                }
+
+                if (sec.imagen) {
+                    const img = document.createElement("img");
+                    img.src = sec.imagen;
+                    img.alt = "Imagen de sección";
+                    img.classList.add("nota-seccion-imagen");
+                    seccionDiv.appendChild(img);
+                }
+
+                contenidoDiv.appendChild(seccionDiv);
+            });
         }
 
         loadMarkdown();
