@@ -42,7 +42,6 @@
                 const text = await response.text();
                 const { metadata } = extractMetadata(text);
 
-                // Insertar metadatos en la página
                 document.getElementById("page-title").textContent = metadata.titulo || "Nota";
                 document.getElementById("nota-titulo").textContent = metadata.titulo || "Sin título";
                 document.getElementById("nota-descripcion").textContent = metadata.descripcion || "Sin descripción";
@@ -57,7 +56,6 @@
                     img.style.display = "block";
                 }
 
-                // Insertar contenido de las secciones
                 const converter = new showdown.Converter();
                 generateSections(metadata.secciones, converter);
             } catch (error) {
@@ -67,39 +65,29 @@
 
         function extractMetadata(text) {
             const metadata = {};
-            let contentStart = text.indexOf("---", 3);
+            const contentStart = text.indexOf("---", 3);
 
             if (contentStart !== -1) {
                 const metadataText = text.substring(3, contentStart).trim();
-                contentStart += 3;
-
                 metadataText.split("\n").forEach(line => {
-                    const match = line.match(/^(\w+):\s*(.+)$/);
+                    const match = line.match(/^([\w_]+):\s*(.+)$/);
                     if (match) {
-                        const key = match[1].trim();
-                        const value = match[2].trim();
-                        metadata[key] = value;
+                        metadata[match[1].trim()] = match[2].trim();
                     }
                 });
-
-                // Extraer secciones si existen
-                const seccionesMatch = text.match(/secciones:\s*\n((?:\s+-\s+subtitulo:.*\n(?:\s+.+\n)*\s*)+)/);
-                if (seccionesMatch) {
-                    metadata.secciones = extractSecciones(seccionesMatch[1]);
-                }
+                metadata.secciones = extractSecciones(text.substring(contentStart + 3).trim());
             }
-
             return { metadata };
         }
 
         function extractSecciones(text) {
             const secciones = [];
-            const sectionRegex = /-\s+subtitulo:\s*(.+)\n\s+parrafo:\s*(.+)(?:\n\s+imagen:\s*(.+))?/g;
+            const sectionRegex = /-\s+subtitulo:\s*(.+)\n\s+parrafo:\s*((?:.+\n?)+?)(?:\n\s+imagen:\s*(.+))?/g;
             let match;
             while ((match = sectionRegex.exec(text)) !== null) {
                 secciones.push({
                     subtitulo: match[1].trim(),
-                    parrafo: match[2].trim(),
+                    parrafo: match[2].trim().replace(/\n/g, ' '),
                     imagen: match[3] ? match[3].trim() : null
                 });
             }
@@ -109,7 +97,7 @@
         function generateSections(secciones, converter) {
             if (!secciones || !Array.isArray(secciones)) return;
             const contenidoDiv = document.getElementById("nota-contenido");
-            contenidoDiv.innerHTML = ""; // Limpia contenido previo
+            contenidoDiv.innerHTML = "";
 
             secciones.forEach(sec => {
                 const seccionDiv = document.createElement("section");
