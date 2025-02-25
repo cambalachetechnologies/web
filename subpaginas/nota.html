@@ -40,8 +40,9 @@
             try {
                 const response = await fetch(`../content/notas/${fileName}`);
                 const text = await response.text();
-                const { metadata, secciones } = extractMetadata(text);
+                const { metadata, content } = extractMetadata(text);
 
+                // Insertar metadatos en la página
                 document.getElementById("page-title").textContent = metadata.titulo || "Nota";
                 document.getElementById("nota-titulo").textContent = metadata.titulo || "Sin título";
                 document.getElementById("nota-descripcion").textContent = metadata.descripcion || "Sin descripción";
@@ -50,14 +51,17 @@
                 document.getElementById("nota-fecha-publicacion").textContent = metadata.fecha_publicacion || "Desconocida";
                 document.getElementById("nota-concepto").textContent = metadata.concepto || "";
 
+                // Mostrar la imagen si existe
                 if (metadata.imagen) {
                     const img = document.getElementById("nota-imagen");
-                    img.src = metadata.imagen;
+                    img.src = metadata.imagen.startsWith("/") ? `..${metadata.imagen}` : `../static/images/${metadata.imagen}`;
                     img.style.display = "block";
                 }
 
+                // Convertir secciones a HTML
                 const converter = new showdown.Converter();
-                document.getElementById("nota-contenido").innerHTML = generateSections(secciones, converter);
+                document.getElementById("nota-contenido").innerHTML = generateSections(metadata.secciones, converter);
+
             } catch (error) {
                 document.getElementById("nota-contenido").innerHTML = `<p>Error al cargar la nota: ${error.message}</p>`;
             }
@@ -65,27 +69,33 @@
 
         function extractMetadata(text) {
             const metadata = {};
-            let secciones = [];
             let contentStart = text.indexOf("---", 3);
-
             if (contentStart !== -1) {
                 const metadataText = text.substring(3, contentStart).trim();
                 contentStart += 3;
-                
+                const content = text.substring(contentStart).trim();
+
+                // Convertir YAML a objeto JSON
                 metadataText.split("\n").forEach(line => {
-                    const [key, ...value] = line.split(":");
+                    const [key, ...value] = line.split(": ");
                     if (key && value) {
-                        metadata[key.trim()] = value.join(":").trim();
+                        metadata[key.trim()] = value.join(": ").trim();
                     }
                 });
 
+                // Intentar convertir secciones en JSON
                 try {
-                    secciones = JSON.parse(metadata.secciones.replace(/\n/g, ''));
+                    if (metadata.secciones) {
+                        metadata.secciones = JSON.parse(metadata.secciones.replace(/'/g, '"'));
+                    }
                 } catch (e) {
-                    console.error("Error al parsear las secciones", e);
+                    console.error("Error al parsear secciones:", e);
+                    metadata.secciones = [];
                 }
+
+                return { metadata, content };
             }
-            return { metadata, secciones };
+            return { metadata: {}, content: text };
         }
 
         function generateSections(secciones, converter) {
@@ -93,10 +103,10 @@
             return secciones.map(sec => `
                 <section class="nota-seccion">
                     <h2>${sec.subtitulo || ""}</h2>
-                    <p>${converter.makeHtml(sec.parrafo || "")}</p>
-                    ${sec.imagen ? `<img src="${sec.imagen}" alt="Imagen de sección" class="nota-seccion-imagen">` : ""}
+                    <div>${converter.makeHtml(sec.parrafo || "")}</div>
+                    ${sec.imagen ? `<img src="../static/images/${sec.imagen}" alt="Imagen de sección" class="nota-seccion-imagen">` : ""}
                 </section>
-            `).join("\n");
+            `).join("");
         }
 
         loadMarkdown();
