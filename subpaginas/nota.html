@@ -41,10 +41,10 @@
                 const response = await fetch(`../content/notas/${fileName}`);
                 if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
                 const text = await response.text();
-                console.log("Markdown cargado:", text); // 🔍 Debugging
+                console.log("Markdown cargado:", text);
 
                 const { metadata, content } = extractMetadata(text);
-                console.log("Metadata extraída:", metadata); // 🔍 Debugging
+                console.log("Metadata extraída:", metadata);
 
                 document.getElementById("page-title").textContent = metadata.titulo || "Nota";
                 document.getElementById("nota-titulo").textContent = metadata.titulo || "Sin título";
@@ -56,7 +56,7 @@
 
                 if (metadata.imagen) {
                     const img = document.getElementById("nota-imagen");
-                    img.src = `../static/images/${metadata.imagen}`;
+                    img.src = metadata.imagen.startsWith("/") ? `../static${metadata.imagen}` : `../static/images/${metadata.imagen}`;
                     img.style.display = "block";
                 }
 
@@ -83,7 +83,6 @@
                     }
                 });
 
-                // 🛠 Convertir secciones desde JSON string a objeto
                 if (metadata.secciones) {
                     try {
                         metadata.secciones = JSON.parse(metadata.secciones);
@@ -100,7 +99,7 @@
         }
 
         function generateSections(secciones, converter) {
-            if (!secciones.length) {
+            if (!Array.isArray(secciones) || secciones.length === 0) {
                 console.warn("⚠ No hay secciones definidas.");
                 return;
             }
@@ -126,7 +125,7 @@
 
                 if (seccion.imagen) {
                     const img = document.createElement("img");
-                    img.src = `../static/images/${seccion.imagen}`;
+                    img.src = seccion.imagen.startsWith("/") ? `../static${seccion.imagen}` : `../static/images/${seccion.imagen}`;
                     img.classList.add("nota-imagen-secundaria");
                     seccionDiv.appendChild(img);
                 }
