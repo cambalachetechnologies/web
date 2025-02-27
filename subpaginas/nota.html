@@ -65,7 +65,8 @@
                 }
 
                 const converter = new showdown.Converter();
-                generateSections(metadata.secciones || [], converter);
+                generateSections(metadata.secciones || [], converter); // Asegúrate de que secciones es un array
+
             } catch (error) {
                 document.getElementById("nota-contenido").innerHTML = `<p>Error al cargar la nota: ${error.message}</p>`;
             }
@@ -84,7 +85,7 @@
 
                 if (metadata.secciones) {
                     try {
-                        metadata.secciones = JSON.parse(metadata.secciones);
+                        metadata.secciones = JSON.parse(metadata.secciones); // Parseo explícito
                     } catch (error) {
                         console.error("Error parseando secciones JSON:", error);
                         metadata.secciones = [];
