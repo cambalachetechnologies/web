@@ -17,31 +17,18 @@
         <p><strong>Fecha de publicación:</strong> <span id="nota-fecha-publicacion">Desconocida</span></p>
     </section>
 
-    <section id="nota-contenido"></section>
-    <section id="nota-concepto"></section>
+    <section id="nota-contenido">
+        <h2 id="nota-subtitulo-1"></h2>
+        <p id="nota-parrafo-1"></p>
+        <h2 id="nota-subtitulo-2"></h2>
+        <p id="nota-parrafo-2"></p>
+    </section>
 
     <section id="nota-imagen-container">
         <img id="nota-imagen" style="display:none;" alt="Imagen de la nota" />
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
     <script>
-        function extractMetadata(markdown) {
-            const metadataRegex = /^---\n([\s\S]+?)\n---\n([\s\S]*)/;
-            const match = markdown.match(metadataRegex);
-            
-            if (!match) return { metadata: {}, content: markdown };
-            
-            const metadataLines = match[1].split("\n");
-            const metadata = {};
-            metadataLines.forEach(line => {
-                const [key, ...value] = line.split(": ");
-                metadata[key.trim()] = value.join(": ").trim();
-            });
-            
-            return { metadata, content: match[2] };
-        }
-
         async function loadMarkdown() {
             const urlParams = new URLSearchParams(window.location.search);
             const fileName = urlParams.get("file");
@@ -55,8 +42,12 @@
                 const response = await fetch(`../content/notas/${fileName}`);
                 if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
                 const text = await response.text();
-
-                const { metadata, content } = extractMetadata(text);
+                
+                const metadata = {};
+                text.split('\n').forEach(line => {
+                    const [key, ...value] = line.split(": ");
+                    if (key && value) metadata[key.trim()] = value.join(": ").trim();
+                });
                 
                 document.getElementById("page-title").textContent = metadata.titulo || "Nota";
                 document.getElementById("nota-titulo").textContent = metadata.titulo || "Nota";
@@ -64,10 +55,10 @@
                 document.getElementById("nota-publicado-por").textContent = metadata.publicado_por || "Desconocido";
                 document.getElementById("nota-rol").textContent = metadata.rol || "Desconocido";
                 document.getElementById("nota-fecha-publicacion").textContent = metadata.fecha_publicacion || "Desconocida";
-
-                const converter = new showdown.Converter();
-                document.getElementById("nota-concepto").innerHTML = metadata.concepto ? metadata.concepto.replace(/\n/g, "<br>") : "";
-                document.getElementById("nota-contenido").innerHTML = converter.makeHtml(content);
+                document.getElementById("nota-subtitulo-1").textContent = metadata.subtitulo_1 || "";
+                document.getElementById("nota-parrafo-1").textContent = metadata.parrafo_1 || "";
+                document.getElementById("nota-subtitulo-2").textContent = metadata.subtitulo_2 || "";
+                document.getElementById("nota-parrafo-2").textContent = metadata.parrafo_2 || "";
 
                 if (metadata.imagen) {
                     const img = document.getElementById("nota-imagen");
