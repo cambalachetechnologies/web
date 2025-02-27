@@ -18,4 +18,7 @@ collections:
       - { label: "Fecha de publicación", name: "fecha_publicacion", widget: "datetime", format: "YYYY-MM-DD" }
       - { label: "Publicado por", name: "publicado_por", widget: "string" }
       - { label: "Rol del autor", name: "rol", widget: "string" }
-      - { label: "Contenido", name: "contenido", widget: "markdown" }
+      - { label: "Subtítulo 1", name: "subtitulo_1", widget: "string" }
+      - { label: "Párrafo 1", name: "parrafo_1", widget: "text" }
+      - { label: "Subtítulo 2", name: "subtitulo_2", widget: "string" }
+      - { label: "Párrafo 2", name: "parrafo_2", widget: "text" }
