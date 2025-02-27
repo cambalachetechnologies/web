@@ -15,13 +15,7 @@ collections:
       - { label: "Título", name: "titulo", widget: "string" }
       - { label: "Descripción", name: "descripcion", widget: "text" }
       - { label: "Imagen", name: "imagen", widget: "image", required: false }
-      - { label: "Concepto", name: "concepto", widget: "string" }
-      - { label: "Secciones", name: "secciones", widget: "list", fields: [
-          { label: "Subtítulo", name: "subtitulo", widget: "string" },
-          { label: "Párrafo", name: "parrafo", widget: "markdown" },
-          { label: "Imagen", name: "imagen", widget: "image", required: false }
-        ]
-      }
-      - { label: "Publicado por", name: "publicado_por", widget: "string" }  # Nuevo campo: quién publicó la nota
-      - { label: "Rol del autor", name: "rol", widget: "string" }  # Nuevo campo: rol del autor
-      - { label: "Fecha de publicación", name: "fecha_publicacion", widget: "datetime", format: "YYYY-MM-DD" }  # Nuevo campo: fecha de publicación
+      - { label: "Fecha de publicación", name: "fecha_publicacion", widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "Publicado por", name: "publicado_por", widget: "string" }
+      - { label: "Rol del autor", name: "rol", widget: "string" }
+      - { label: "Contenido", name: "contenido", widget: "markdown" }
