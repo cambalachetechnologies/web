@@ -29,6 +29,22 @@
     </section>
 
     <script>
+        function extractMetadata(markdown) {
+            const metadataRegex = /^---\n([\s\S]+?)\n---\n([\s\S]*)/;
+            const match = markdown.match(metadataRegex);
+            
+            if (!match) return { metadata: {}, content: markdown };
+            
+            const metadataLines = match[1].split("\n");
+            const metadata = {};
+            metadataLines.forEach(line => {
+                const [key, ...value] = line.split(": ");
+                metadata[key.trim()] = value.join(": ").trim();
+            });
+            
+            return { metadata, content: match[2] };
+        }
+
         async function loadMarkdown() {
             const urlParams = new URLSearchParams(window.location.search);
             const fileName = urlParams.get("file");
@@ -39,15 +55,11 @@
             }
 
             try {
-                const response = await fetch(`../content/notas/${fileName}`);
+                const response = await fetch(`/content/notas/${fileName}`);
                 if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
                 const text = await response.text();
-                
-                const metadata = {};
-                text.split('\n').forEach(line => {
-                    const [key, ...value] = line.split(": ");
-                    if (key && value) metadata[key.trim()] = value.join(": ").trim();
-                });
+
+                const { metadata } = extractMetadata(text);
                 
                 document.getElementById("page-title").textContent = metadata.titulo || "Nota";
                 document.getElementById("nota-titulo").textContent = metadata.titulo || "Nota";
@@ -55,6 +67,7 @@
                 document.getElementById("nota-publicado-por").textContent = metadata.publicado_por || "Desconocido";
                 document.getElementById("nota-rol").textContent = metadata.rol || "Desconocido";
                 document.getElementById("nota-fecha-publicacion").textContent = metadata.fecha_publicacion || "Desconocida";
+                
                 document.getElementById("nota-subtitulo-1").textContent = metadata.subtitulo_1 || "";
                 document.getElementById("nota-parrafo-1").textContent = metadata.parrafo_1 || "";
                 document.getElementById("nota-subtitulo-2").textContent = metadata.subtitulo_2 || "";
