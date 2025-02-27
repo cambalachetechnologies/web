@@ -41,7 +41,7 @@
                 const [key, ...value] = line.split(": ");
                 metadata[key.trim()] = value.join(": ").trim();
             });
-            
+
             return { metadata, content: match[2] };
         }
 
@@ -59,8 +59,9 @@
                 if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
                 const text = await response.text();
 
-                const { metadata } = extractMetadata(text);
-                
+                const { metadata, content } = extractMetadata(text);
+                console.log(metadata); // Verifica los metadatos extraídos
+
                 document.getElementById("page-title").textContent = metadata.titulo || "Nota";
                 document.getElementById("nota-titulo").textContent = metadata.titulo || "Nota";
                 document.getElementById("nota-descripcion").innerHTML = metadata.descripcion ? metadata.descripcion.replace(/\n/g, "<br>") : "Sin descripción";
@@ -77,6 +78,11 @@
                     const img = document.getElementById("nota-imagen");
                     img.src = metadata.imagen.startsWith("/") ? `../static${metadata.imagen}` : `../static/images/${metadata.imagen}`;
                     img.style.display = "block";
+                }
+
+                // Si el contenido no está vacío, se muestra
+                if (content) {
+                    document.getElementById("nota-contenido").innerHTML += `<p>${content.replace(/\n/g, "<br>")}</p>`;
                 }
 
             } catch (error) {
