@@ -4,30 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="page-title">Nota</title>
-    <link rel="stylesheet" href="../css/stylenota.css">
-    <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script> <!-- Agregada librería para parsear YAML -->
 </head>
 <body>
-    <article class="nota">
-        <header class="nota-header">
-            <div class="nota-info">
-                <h1 id="nota-titulo"></h1>
-                <p id="nota-descripcion"></p>
-            </div>
-            <img id="nota-imagen" class="nota-imagen" style="display: none;"/>
-        </header>
+    <header>
+        <h1 id="nota-titulo">Nota</h1>
+        <div id="nota-descripcion"></div>
+    </header>
+    
+    <section id="nota-detalles">
+        <p><strong>Publicado por:</strong> <span id="nota-publicado-por">Desconocido</span></p>
+        <p><strong>Rol del autor:</strong> <span id="nota-rol">Desconocido</span></p>
+        <p><strong>Fecha de publicación:</strong> <span id="nota-fecha-publicacion">Desconocida</span></p>
+    </section>
 
-        <section class="nota-metadata">
-            <p><strong>Publicado por:</strong> <span id="nota-publicado-por"></span></p>
-            <p><strong>Rol:</strong> <span id="nota-rol"></span></p>
-            <p><strong>Fecha de publicación:</strong> <span id="nota-fecha-publicacion"></span></p>
-        </section>
+    <section id="nota-contenido">
+        <!-- Aquí se renderiza el contenido Markdown -->
+    </section>
 
-        <section id="nota-concepto" class="nota-concepto"></section>
-        <section id="nota-contenido" class="nota-contenido"></section>
-    </article>
+    <section id="nota-concepto">
+        <!-- Aquí se mostrará el concepto -->
+    </section>
 
+    <section id="nota-imagen-container">
+        <img id="nota-imagen" style="display:none;" alt="Imagen de la nota" />
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
     <script>
         async function loadMarkdown() {
             const urlParams = new URLSearchParams(window.location.search);
@@ -47,7 +49,6 @@
                 const { metadata, content } = extractMetadata(text);
                 console.log("Metadata extraída:", metadata);
 
-                // Asegúrate de que no estamos reasignando variables constantes
                 const pageTitle = metadata.titulo || "Nota";
                 document.getElementById("page-title").textContent = pageTitle;
                 document.getElementById("nota-titulo").textContent = pageTitle;
@@ -56,7 +57,10 @@
                 document.getElementById("nota-publicado-por").textContent = metadata.publicado_por || "Desconocido";
                 document.getElementById("nota-rol").textContent = metadata.rol || "Desconocido";
                 document.getElementById("nota-fecha-publicacion").textContent = metadata.fecha_publicacion || "Desconocida";
+
+                const converter = new showdown.Converter();
                 document.getElementById("nota-concepto").innerHTML = metadata.concepto ? metadata.concepto.replace(/\n/g, "<br>") : "";
+                document.getElementById("nota-contenido").innerHTML = converter.makeHtml(metadata.contenido);
 
                 if (metadata.imagen) {
                     const img = document.getElementById("nota-imagen");
@@ -64,74 +68,9 @@
                     img.style.display = "block";
                 }
 
-                const converter = new showdown.Converter();
-                generateSections(metadata.secciones || [], converter); // Asegúrate de que secciones es un array
-
             } catch (error) {
                 document.getElementById("nota-contenido").innerHTML = `<p>Error al cargar la nota: ${error.message}</p>`;
             }
-        }
-
-        function extractMetadata(text) {
-            let metadata = {};  // Cambié a 'let' para evitar la reasignación de una constante
-            let content = "";
-            const match = text.match(/---([\s\S]*?)---\s*\n([\s\S]*)/);
-
-            if (match) {
-                const metadataText = match[1].trim();
-                content = match[2].trim();
-
-                metadata = jsyaml.load(metadataText); // Parseamos el YAML correctamente
-
-                if (metadata.secciones) {
-                    try {
-                        metadata.secciones = JSON.parse(metadata.secciones); // Parseo explícito
-                    } catch (error) {
-                        console.error("Error parseando secciones JSON:", error);
-                        metadata.secciones = [];
-                    }
-                }
-            } else {
-                content = text.trim();
-            }
-
-            return { metadata, content };
-        }
-
-        function generateSections(secciones, converter) {
-            if (!Array.isArray(secciones) || secciones.length === 0) {
-                console.warn("⚠ No hay secciones definidas.");
-                return;
-            }
-
-            const contenidoDiv = document.getElementById("nota-contenido");
-            contenidoDiv.innerHTML = "";
-
-            secciones.forEach(seccion => {
-                const seccionDiv = document.createElement("div");
-                seccionDiv.classList.add("nota-seccion");
-
-                if (seccion.subtitulo) {
-                    const subtitulo = document.createElement("h2");
-                    subtitulo.textContent = seccion.subtitulo;
-                    seccionDiv.appendChild(subtitulo);
-                }
-
-                if (seccion.parrafo) {
-                    const parrafo = document.createElement("p");
-                    parrafo.innerHTML = converter.makeHtml(seccion.parrafo);
-                    seccionDiv.appendChild(parrafo);
-                }
-
-                if (seccion.imagen) {
-                    const img = document.createElement("img");
-                    img.src = seccion.imagen.startsWith("/") ? `../static${seccion.imagen}` : `../static/images/${seccion.imagen}`;
-                    img.classList.add("nota-imagen-secundaria");
-                    seccionDiv.appendChild(img);
-                }
-
-                contenidoDiv.appendChild(seccionDiv);
-            });
         }
 
         loadMarkdown();
