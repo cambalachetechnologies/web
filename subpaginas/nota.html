@@ -6,6 +6,7 @@
     <title id="page-title">Nota</title>
     <link rel="stylesheet" href="../css/stylenota.css">
     <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script> <!-- Agregada librería para parsear YAML -->
 </head>
 <body>
     <article class="nota">
@@ -48,11 +49,11 @@
 
                 document.getElementById("page-title").textContent = metadata.titulo || "Nota";
                 document.getElementById("nota-titulo").textContent = metadata.titulo || "Sin título";
-                document.getElementById("nota-descripcion").textContent = metadata.descripcion || "Sin descripción";
+                document.getElementById("nota-descripcion").innerHTML = metadata.descripcion ? metadata.descripcion.replace(/\n/g, "<br>") : "Sin descripción";  // Usado innerHTML para respetar saltos de línea
                 document.getElementById("nota-publicado-por").textContent = metadata.publicado_por || "Desconocido";
                 document.getElementById("nota-rol").textContent = metadata.rol || "Desconocido";
                 document.getElementById("nota-fecha-publicacion").textContent = metadata.fecha_publicacion || "Desconocida";
-                document.getElementById("nota-concepto").textContent = metadata.concepto || "";
+                document.getElementById("nota-concepto").innerHTML = metadata.concepto ? metadata.concepto.replace(/\n/g, "<br>") : "";  // Usado innerHTML para respetar saltos de línea
 
                 if (metadata.imagen) {
                     const img = document.getElementById("nota-imagen");
@@ -76,12 +77,7 @@
                 const metadataText = match[1].trim();
                 content = match[2].trim();
 
-                metadataText.split("\n").forEach(line => {
-                    const [key, ...value] = line.split(":");
-                    if (key && value.length) {
-                        metadata[key.trim()] = value.join(":").trim();
-                    }
-                });
+                metadata = jsyaml.load(metadataText); // Parseamos el YAML correctamente
 
                 if (metadata.secciones) {
                     try {
