@@ -80,9 +80,10 @@
                     img.style.display = "block";
                 }
 
-                // Si el contenido no está vacío, se muestra
+                // Si el contenido adicional está presente, mostrarlo también
                 if (content) {
-                    document.getElementById("nota-contenido").innerHTML += `<p>${content.replace(/\n/g, "<br>")}</p>`;
+                    // Asegura que el contenido del archivo Markdown también sea mostrado
+                    document.getElementById("nota-contenido").innerHTML += content.replace(/\n/g, "<br>");
                 }
 
             } catch (error) {
