@@ -47,13 +47,16 @@
                 const { metadata, content } = extractMetadata(text);
                 console.log("Metadata extraída:", metadata);
 
-                document.getElementById("page-title").textContent = metadata.titulo || "Nota";
-                document.getElementById("nota-titulo").textContent = metadata.titulo || "Sin título";
-                document.getElementById("nota-descripcion").innerHTML = metadata.descripcion ? metadata.descripcion.replace(/\n/g, "<br>") : "Sin descripción";  // Usado innerHTML para respetar saltos de línea
+                // Asegúrate de que no estamos reasignando variables constantes
+                const pageTitle = metadata.titulo || "Nota";
+                document.getElementById("page-title").textContent = pageTitle;
+                document.getElementById("nota-titulo").textContent = pageTitle;
+
+                document.getElementById("nota-descripcion").innerHTML = metadata.descripcion ? metadata.descripcion.replace(/\n/g, "<br>") : "Sin descripción";
                 document.getElementById("nota-publicado-por").textContent = metadata.publicado_por || "Desconocido";
                 document.getElementById("nota-rol").textContent = metadata.rol || "Desconocido";
                 document.getElementById("nota-fecha-publicacion").textContent = metadata.fecha_publicacion || "Desconocida";
-                document.getElementById("nota-concepto").innerHTML = metadata.concepto ? metadata.concepto.replace(/\n/g, "<br>") : "";  // Usado innerHTML para respetar saltos de línea
+                document.getElementById("nota-concepto").innerHTML = metadata.concepto ? metadata.concepto.replace(/\n/g, "<br>") : "";
 
                 if (metadata.imagen) {
                     const img = document.getElementById("nota-imagen");
@@ -69,7 +72,7 @@
         }
 
         function extractMetadata(text) {
-            const metadata = {};
+            let metadata = {};  // Cambié a 'let' para evitar la reasignación de una constante
             let content = "";
             const match = text.match(/---([\s\S]*?)---\s*\n([\s\S]*)/);
 
