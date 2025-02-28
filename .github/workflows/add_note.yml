@@ -78,7 +78,7 @@ jobs:
           GITHUB_TOKEN = os.getenv("NOTES_API")
           OWNER = "cambalachetechnologies"
           REPO = "web"
-          FILE_PATH = "notas.json"
+          FILE_PATH = "js/notas.json"
 
           # Recibir los inputs del workflow_dispatch
           note = {
