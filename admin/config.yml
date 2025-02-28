@@ -19,6 +19,6 @@ collections:
       - { label: "Publicado por", name: "publicado_por", widget: "string" }
       - { label: "Rol del autor", name: "rol", widget: "string" }
       - { label: "Subtítulo 1", name: "subtitulo_1", widget: "string" }
-      - { label: "Párrafo 1", name: "parrafo_1", widget: "text" }  # Cambié de markdown a text
+      - { label: "Párrafo 1", name: "parrafo_1", widget: "textarea" }  # Usé "textarea" para evitar saltos innecesarios
       - { label: "Subtítulo 2", name: "subtitulo_2", widget: "string" }
-      - { label: "Párrafo 2", name: "parrafo_2", widget: "text" }  # Cambié de markdown a text
+      - { label: "Párrafo 2", name: "parrafo_2", widget: "textarea" }  # También cambié aquí a "textarea"
