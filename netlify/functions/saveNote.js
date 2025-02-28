@@ -20,7 +20,7 @@ ${parrafo_2}
             `;
 
             // Definir la ruta donde se guardará el archivo .md
-            const filePath = path.join(__dirname, '../../content/notes', `${titulo.replace(/\s+/g, '_').toLowerCase()}.md`);
+            const filePath = path.join(__dirname, '../../content/notas', `${titulo.replace(/\s+/g, '_').toLowerCase()}.md`);
 
             // Escribir el archivo en el sistema de archivos de Netlify (sólo persiste durante la ejecución)
             fs.writeFileSync(filePath, markdownContent);
