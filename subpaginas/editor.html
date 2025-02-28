@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Notas</title>
+    <link rel="stylesheet" href="../css/styleeditor.css">
+</head>
+<body>
+    <header>
+        <h1>Editor de Notas</h1>
+    </header>
+    
+    <main>
+        <form id="notaForm">
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" name="titulo" required>
+
+            <label for="subtitulo_1">Subtítulo 1:</label>
+            <input type="text" id="subtitulo_1" name="subtitulo_1" required>
+
+            <label for="parrafo_1">Párrafo 1:</label>
+            <textarea id="parrafo_1" name="parrafo_1" required></textarea>
+
+            <label for="subtitulo_2">Subtítulo 2:</label>
+            <input type="text" id="subtitulo_2" name="subtitulo_2" required>
+
+            <label for="parrafo_2">Párrafo 2:</label>
+            <textarea id="parrafo_2" name="parrafo_2" required></textarea>
+
+            <button type="submit">Guardar Nota</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Creado por Cambalache Technologies</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
