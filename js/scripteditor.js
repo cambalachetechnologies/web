@@ -33,39 +33,43 @@ function handleLogin(event) {
 // Evento para manejar el submit del formulario de login
 loginForm.addEventListener("submit", handleLogin);
 
-// Función para manejar el submit del formulario de notas y generar el archivo .md
-function handleNotaSubmit(event) {
-    event.preventDefault(); // Evita que el formulario se envíe de manera tradicional
+// Función para manejar el formulario y enviar los datos al backend
+function handleNotaForm(event) {
+    event.preventDefault(); // Prevenir el comportamiento por defecto
 
-    // Obtener los valores del formulario
     const titulo = document.getElementById("titulo").value;
     const subtitulo_1 = document.getElementById("subtitulo_1").value;
     const parrafo_1 = document.getElementById("parrafo_1").value;
     const subtitulo_2 = document.getElementById("subtitulo_2").value;
     const parrafo_2 = document.getElementById("parrafo_2").value;
 
-    // Crear el contenido para el archivo .md
-    const contenidoMD = `---
-titulo: ${titulo}
-descripcion: ${parrafo_1.substring(0, 100)}...  # Extracto del primer párrafo
-fecha_publicacion: ${new Date().toISOString().split('T')[0]}  # Fecha actual en formato YYYY-MM-DD
-publicado_por: Nombre del autor
-rol: Marketing
-subtitulo_1: ${subtitulo_1}
-parrafo_1: ${parrafo_1}
-subtitulo_2: ${subtitulo_2}
-parrafo_2: ${parrafo_2}
----`;
+    // Datos a enviar al servidor
+    const data = {
+        titulo,
+        subtitulo_1,
+        parrafo_1,
+        subtitulo_2,
+        parrafo_2
+    };
 
-    // Crear un Blob para el archivo .md
-    const blob = new Blob([contenidoMD], { type: 'text/markdown' });
-
-    // Crear un enlace para descargar el archivo
-    const link = document.createElement('a');
-    link.href = URL.createObjectURL(blob);
-    link.download = `${titulo.replace(/\s+/g, '_').toLowerCase()}.md`;  // Nombre del archivo .md basado en el título
-    link.click();  // Iniciar la descarga
+    // Enviar los datos al backend
+    fetch('http://localhost:3000/saveNote', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Success:', data);
+        alert('Nota guardada correctamente');
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+        alert('Hubo un error al guardar la nota');
+    });
 }
 
-// Evento para manejar el submit del formulario de notas
-notaForm.addEventListener("submit", handleNotaSubmit);
+// Conectar el formulario de notas con la función handleNotaForm
+document.getElementById("notaForm").addEventListener("submit", handleNotaForm);
