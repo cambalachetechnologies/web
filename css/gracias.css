@@ -1,0 +1,104 @@
+/* ============================================
+   GRACIAS PAGE — gracias.html
+   ============================================ */
+
+.gracias-actions .btn {
+  text-decoration: none;
+}
+
+.gracias-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 24px 80px;
+  background:
+    radial-gradient(900px 500px at 80% -10%, rgba(26, 185, 255, 0.18), transparent 60%),
+    radial-gradient(700px 420px at 10% 30%, rgba(1, 118, 211, 0.12), transparent 65%),
+    linear-gradient(180deg, #F8FAFC 0%, #EEF4FB 100%);
+}
+
+.gracias-card {
+  background: var(--c-white);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-xl);
+  padding: 64px 56px;
+  max-width: 580px;
+  width: 100%;
+  text-align: center;
+  box-shadow: var(--c-shadow-lg);
+}
+
+.gracias-icon {
+  width: 72px;
+  height: 72px;
+  background: linear-gradient(135deg, #0176D3, #1AB9FF);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 28px;
+}
+
+.gracias-icon svg {
+  width: 36px;
+  height: 36px;
+  stroke: #fff;
+  stroke-width: 2.5;
+}
+
+.gracias-card .tag {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--c-primary);
+  margin-bottom: 12px;
+  display: block;
+}
+
+.gracias-card h1 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 800;
+  color: var(--c-primary-deep);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0 0 16px;
+}
+
+.gracias-card h1 .gradient-text {
+  background: linear-gradient(135deg, #0176D3 0%, #1AB9FF 60%, #7DD3FC 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gracias-card > p {
+  color: var(--c-text-soft);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  margin: 0 0 32px;
+}
+
+.gracias-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.countdown {
+  font-size: 0.85rem;
+  color: var(--c-text-mute);
+  margin-top: 28px;
+}
+
+.countdown span {
+  font-weight: 600;
+  color: var(--c-primary);
+}
+
+@media (max-width: 600px) {
+  .gracias-card {
+    padding: 40px 24px;
+  }
+}
