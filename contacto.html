@@ -146,9 +146,9 @@
                 descField.value = 'Interés: ' + interest + '\n\n' + descField.value;
               }
 
+              // Inject reCAPTCHA token then submit
               grecaptcha.ready(function() {
                 grecaptcha.execute('6Ld1TtUqAAAAAAgPnHc9MAZNvfdexH5uo62fARFi', { action: 'submit' }).then(function(token) {
-                  // Inject reCAPTCHA token
                   let input = form.querySelector('input[name="g-recaptcha-response"]');
                   if (!input) {
                     input = document.createElement('input');
@@ -157,11 +157,15 @@
                     form.appendChild(input);
                   }
                   input.value = token;
+
+                  // Remove onsubmit to avoid infinite loop, then submit natively
+                  form.removeAttribute('onsubmit');
                   form.submit();
                 }).catch(function() {
                   alert('Error al verificar reCAPTCHA. Por favor, intentalo de nuevo.');
                 });
               });
+
               return false;
             }
           </script>
