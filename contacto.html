@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contacto — Cambalache Technologies</title>
+<link rel="icon" href="favicon.png" type="image/png" />
+<meta name="description" content="Hablemos. Equipo senior Salesforce listo para acompañar tu próxima transformación. Buenos Aires · LATAM." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logos/cambalache.png" alt="Cambalache Technologies" />
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+        <li><a href="soluciones.html">Soluciones</a></li>
+        <li><a href="casos-de-exito.html">Casos de éxito</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a href="contacto.html" class="btn btn-ghost">Hablar con un experto</a>
+      <a href="https://calendar.app.google/abw3b6BQdnb6V6QV9" target="_blank" rel="noopener" class="btn btn-primary">
+        Agendar reunión
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <button class="nav-toggle" aria-label="Menú"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero contact-hero">
+  <div class="container hero-inner">
+    <div class="text-center mx-auto" style="max-width: 780px;">
+      <span class="eyebrow reveal">Contacto</span>
+      <h1 class="reveal delay-1">Hablemos de tu <span class="gradient-text">próximo proyecto</span>.</h1>
+      <p class="lede reveal delay-2 mx-auto">Contanos qué estás buscando resolver. Un especialista senior te responde en menos de 24 horas hábiles con una propuesta inicial y los próximos pasos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FORM + INFO ============ -->
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- LEFT: FORM -->
+      <div class="contact-form-wrap reveal">
+        <div class="form-card">
+          <h2>Escribinos</h2>
+          <p class="form-lede">Completá el formulario y nos ponemos en contacto a la brevedad.</p>
+
+          <form
+            id="contact-form"
+            class="contact-form"
+            action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5w000003XOQ6"
+            method="POST">
+
+            <!-- Salesforce hidden fields -->
+            <input type="hidden" name="oid" value="00D5w000003XOQ6" />
+            <input type="hidden" name="retURL" value="https://c-tech.com.ar/gracias.html" />
+            <input type="hidden" name="lead_source" value="Web" />
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="first_name">Nombre <span>*</span></label>
+                <input type="text" id="first_name" name="first_name" required autocomplete="given-name" placeholder="Juan" />
+              </div>
+              <div class="form-field">
+                <label for="last_name">Apellido <span>*</span></label>
+                <input type="text" id="last_name" name="last_name" required autocomplete="family-name" placeholder="Pérez" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="company">Empresa</label>
+                <input type="text" id="company" name="company" autocomplete="organization" placeholder="Tu empresa" />
+              </div>
+              <div class="form-field">
+                <label for="phone">Teléfono</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+54 9 11 1234-5678" />
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email corporativo <span>*</span></label>
+              <input type="email" id="email" name="email" required autocomplete="email" placeholder="vos@empresa.com" />
+            </div>
+
+
+
+            <div class="form-field">
+              <label for="description">Contanos sobre tu proyecto <span>*</span></label>
+              <textarea id="description" name="description" rows="5" required placeholder="¿Qué problema querés resolver? ¿En qué etapa estás?"></textarea>
+            </div>
+
+            <div class="form-consent">
+              <label class="checkbox">
+                <input type="checkbox" id="consent" name="consent" required />
+                <span>Acepto que Cambalache Technologies me contacte para responder mi consulta.</span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+              Enviar mensaje
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+
+            <p class="form-status" data-form-status></p>
+          </form>
+
+
+        </div>
+      </div>
+
+      <!-- RIGHT: INFO + CALENDAR CTA -->
+      <aside class="contact-info-wrap">
+
+        <!-- Calendar CTA card -->
+        <div class="info-cta-card reveal delay-1">
+          <div class="info-cta-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2"/>
+              <path d="M16 2v4M8 2v4M3 10h18"/>
+              <circle cx="12" cy="16" r="2" fill="currentColor" stroke="none"/>
+            </svg>
+          </div>
+          <h3>¿Preferís hablar directo?</h3>
+          <p>Agendá una reunión de 30 minutos sin compromiso con un especialista Salesforce.</p>
+          <a href="https://calendar.app.google/abw3b6BQdnb6V6QV9" target="_blank" rel="noopener" class="btn btn-light btn-block">
+            Agendar reunión
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <!-- Info items -->
+        <div class="info-items reveal delay-2">
+
+          <a href="mailto:info@c-tech.com.ar" class="info-item">
+            <div class="info-item-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="M22 6 12 13 2 6"/>
+              </svg>
+            </div>
+            <div class="info-item-body">
+              <span class="info-item-label">Escribinos</span>
+              <strong>info@c-tech.com.ar</strong>
+            </div>
+          </a>
+
+          <a href="tel:+5491151246444" class="info-item">
+            <div class="info-item-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <div class="info-item-body">
+              <span class="info-item-label">Llamanos</span>
+              <strong>+54 9 11 5124-6444</strong>
+            </div>
+          </a>
+
+          <div class="info-item info-item-static">
+            <div class="info-item-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div class="info-item-body">
+              <span class="info-item-label">Visitanos</span>
+              <strong>Godoy Cruz 1550</strong>
+              <small>Palermo, Buenos Aires<br/>Argentina</small>
+            </div>
+          </div>
+
+          <div class="info-item info-item-static info-item-social">
+            <div class="info-item-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+            </div>
+            <div class="info-item-body">
+              <span class="info-item-label">Seguinos</span>
+              <div class="social-links">
+                <a href="https://www.linkedin.com/company/cambalachetechnologies/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                  <svg viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zM8.5 18H6V10h2.5v8zM7.2 8.8a1.4 1.4 0 1 1 0-2.8 1.4 1.4 0 0 1 0 2.8zM18 18h-2.5v-3.9c0-.93-.02-2.13-1.3-2.13-1.3 0-1.5 1.02-1.5 2.06V18H10.2V10h2.4v1.1h.03a2.63 2.63 0 0 1 2.37-1.3c2.54 0 3 1.67 3 3.84V18z"/></svg>
+                  LinkedIn
+                </a>
+                <a href="https://www.instagram.com/cambalachetechnologies/" target="_blank" rel="noopener" aria-label="Instagram">
+                  <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.07 1.2.05 1.8.25 2.2.4.6.2 1 .5 1.4 1 .5.4.8.8 1 1.4.15.4.35 1 .4 2.2C21.93 8.4 22 8.8 22 12s0 3.6-.07 4.8c-.05 1.2-.25 1.8-.4 2.2-.2.6-.5 1-1 1.4-.4.5-.8.8-1.4 1-.4.15-1 .35-2.2.4-1.2.07-1.6.07-4.8.07s-3.6 0-4.8-.07c-1.2-.05-1.8-.25-2.2-.4-.6-.2-1-.5-1.4-1-.5-.4-.8-.8-1-1.4-.15-.4-.35-1-.4-2.2C2.07 15.6 2 15.2 2 12s0-3.6.07-4.8c.05-1.2.25-1.8.4-2.2.2-.6.5-1 1-1.4.4-.5.8-.8 1.4-1 .4-.15 1-.35 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.15 0-3.5 0-4.7.07-1.1.05-1.7.25-2.1.4-.5.2-.9.45-1.3.85-.4.4-.65.8-.85 1.3-.15.4-.35 1-.4 2.1C2.6 9.5 2.6 9.85 2.6 13s0 3.5.07 4.7c.05 1.1.25 1.7.4 2.1.2.5.45.9.85 1.3.4.4.8.65 1.3.85.4.15 1 .35 2.1.4 1.2.07 1.55.07 4.7.07s3.5 0 4.7-.07c1.1-.05 1.7-.25 2.1-.4.5-.2.9-.45 1.3-.85.4-.4.65-.8.85-1.3.15-.4.35-1 .4-2.1.07-1.2.07-1.55.07-4.7s0-3.5-.07-4.7c-.05-1.1-.25-1.7-.4-2.1-.2-.5-.45-.9-.85-1.3-.4-.4-.8-.65-1.3-.85-.4-.15-1-.35-2.1-.4C15.5 4 15.15 4 12 4zm0 3.2A4.8 4.8 0 1 1 7.2 12 4.8 4.8 0 0 1 12 7.2zm0 7.92A3.12 3.12 0 1 0 8.88 12 3.12 3.12 0 0 0 12 15.12zm6.12-8.04a1.12 1.12 0 1 1-1.12-1.12 1.12 1.12 0 0 1 1.12 1.12z"/></svg>
+                  Instagram
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ MAP ============ -->
+<section class="map-section">
+  <div class="container">
+    <div class="map-card reveal">
+      <div class="map-info">
+        <span class="eyebrow">Nuestra oficina</span>
+        <h2>Palermo, Buenos Aires</h2>
+        <p>Estamos en pleno corazón de Palermo. Si querés venir a conocernos, coordinemos previamente para tomar un café.</p>
+        <address>
+          Godoy Cruz 1550<br/>
+          C1414 CABA, Argentina
+        </address>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Godoy+Cruz+1550,+Palermo,+Buenos+Aires" target="_blank" rel="noopener" class="map-link">
+          Cómo llegar
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </a>
+      </div>
+      <div class="map-embed">
+        <iframe
+          src="https://www.google.com/maps?q=Godoy+Cruz+1550,+Palermo,+Buenos+Aires,+Argentina&output=embed"
+          width="100%"
+          height="100%"
+          style="border:0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Oficina Cambalache Technologies - Godoy Cruz 1550, Palermo">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ-LIKE BLOCK ============ -->
+<section class="contact-extras">
+  <div class="container">
+    <div class="extras-grid">
+
+      <div class="extra-card reveal">
+        <div class="extra-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+        </div>
+        <h3>Respondemos rápido</h3>
+        <p>Te contactamos en menos de 24 horas hábiles con una primera lectura del proyecto y los próximos pasos.</p>
+      </div>
+
+      <div class="extra-card reveal delay-1">
+        <div class="extra-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+            <polyline points="22 4 12 14.01 9 11.01"/>
+          </svg>
+        </div>
+        <h3>Sin compromiso</h3>
+        <p>La primera reunión es una conversación. Si no encaja, te damos nuestra opinión honesta y seguimos cada uno por su lado.</p>
+      </div>
+
+      <div class="extra-card reveal delay-2">
+        <div class="extra-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </div>
+        <h3>Equipo senior, siempre</h3>
+        <p>Hablás directo con quien va a liderar tu proyecto. Nada de filtros comerciales ni intermediarios.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logos/cambalache.png" alt="Cambalache Technologies" />
+        <p>Boutique de consultoría Salesforce en LATAM. Especialistas en Agentforce, Consumer Goods Cloud, Field Service y Sales &amp; Service.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/cambalachetechnologies/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zM8.5 18H6V10h2.5v8zM7.2 8.8a1.4 1.4 0 1 1 0-2.8 1.4 1.4 0 0 1 0 2.8zM18 18h-2.5v-3.9c0-.93-.02-2.13-1.3-2.13-1.3 0-1.5 1.02-1.5 2.06V18H10.2V10h2.4v1.1h.03a2.63 2.63 0 0 1 2.37-1.3c2.54 0 3 1.67 3 3.84V18z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/cambalachetechnologies/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.07 1.2.05 1.8.25 2.2.4.6.2 1 .5 1.4 1 .5.4.8.8 1 1.4.15.4.35 1 .4 2.2C21.93 8.4 22 8.8 22 12s0 3.6-.07 4.8c-.05 1.2-.25 1.8-.4 2.2-.2.6-.5 1-1 1.4-.4.5-.8.8-1.4 1-.4.15-1 .35-2.2.4-1.2.07-1.6.07-4.8.07s-3.6 0-4.8-.07c-1.2-.05-1.8-.25-2.2-.4-.6-.2-1-.5-1.4-1-.5-.4-.8-.8-1-1.4-.15-.4-.35-1-.4-2.2C2.07 15.6 2 15.2 2 12s0-3.6.07-4.8c.05-1.2.25-1.8.4-2.2.2-.6.5-1 1-1.4.4-.5.8-.8 1.4-1 .4-.15 1-.35 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.15 0-3.5 0-4.7.07-1.1.05-1.7.25-2.1.4-.5.2-.9.45-1.3.85-.4.4-.65.8-.85 1.3-.15.4-.35 1-.4 2.1C2.6 9.5 2.6 9.85 2.6 13s0 3.5.07 4.7c.05 1.1.25 1.7.4 2.1.2.5.45.9.85 1.3.4.4.8.65 1.3.85.4.15 1 .35 2.1.4 1.2.07 1.55.07 4.7.07s3.5 0 4.7-.07c1.1-.05 1.7-.25 2.1-.4.5-.2.9-.45 1.3-.85.4-.4.65-.8.85-1.3.15-.4.35-1 .4-2.1.07-1.2.07-1.55.07-4.7s0-3.5-.07-4.7c-.05-1.1-.25-1.7-.4-2.1-.2-.5-.45-.9-.85-1.3-.4-.4-.8-.65-1.3-.85-.4-.15-1-.35-2.1-.4C15.5 4 15.15 4 12 4zm0 3.2A4.8 4.8 0 1 1 7.2 12 4.8 4.8 0 0 1 12 7.2zm0 7.92A3.12 3.12 0 1 0 8.88 12 3.12 3.12 0 0 0 12 15.12zm6.12-8.04a1.12 1.12 0 1 1-1.12-1.12 1.12 1.12 0 0 1 1.12 1.12z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+          <li><a href="soluciones.html">Soluciones</a></li>
+          <li><a href="casos-de-exito.html">Casos de éxito</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Soluciones</h4>
+        <ul>
+          <li><a href="soluciones.html#agentforce">Agentforce</a></li>
+          <li><a href="soluciones.html#cg-cloud">Consumer Goods Cloud</a></li>
+          <li><a href="soluciones.html#field-service">Field Service</a></li>
+          <li><a href="soluciones.html#core">Sales &amp; Service Core</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:info@c-tech.com.ar">info@c-tech.com.ar</a></li>
+          <li><a href="tel:+5491151246444">+54 9 11 5124-6444</a></li>
+          <li>Godoy Cruz 1550<br/>Palermo, Buenos Aires</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> Cambalache Technologies. Todos los derechos reservados.</span>
+      <img src="assets/logos/sf-partner.png" alt="Salesforce Registered Consulting Partner" />
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
