@@ -99,18 +99,7 @@
               <input type="email" id="email" name="email" required autocomplete="email" placeholder="vos@empresa.com" />
             </div>
 
-            <div class="form-field">
-              <label for="interest">¿Qué te interesa?</label>
-              <select id="interest">
-                <option value="">Seleccioná una opción</option>
-                <option value="Agentforce (IA + agentes)">Agentforce (IA + agentes)</option>
-                <option value="Consumer Goods Cloud">Consumer Goods Cloud</option>
-                <option value="Field Service">Field Service</option>
-                <option value="Sales &amp; Service Core">Sales &amp; Service Core</option>
-                <option value="Integraciones / MuleSoft">Integraciones / MuleSoft</option>
-                <option value="Otro / No estoy seguro">Otro / No estoy seguro</option>
-              </select>
-            </div>
+
 
             <div class="form-field">
               <label for="description">Contanos sobre tu proyecto <span>*</span></label>
@@ -138,34 +127,17 @@
             function handleFormSubmit(e) {
               e.preventDefault();
               const form = document.getElementById('contact-form');
-
-              // Merge interest into description
-              const interest = document.getElementById('interest').value;
-              const descField = document.getElementById('description');
-              if (interest) {
-                descField.value = 'Interés: ' + interest + '\n\n' + descField.value;
-              }
-
-              // Inject reCAPTCHA token then submit
-              grecaptcha.ready(function() {
-                grecaptcha.execute('6Ld1TtUqAAAAAAgPnHc9MAZNvfdexH5uo62fARFi', { action: 'submit' }).then(function(token) {
-                  let input = form.querySelector('input[name="g-recaptcha-response"]');
-                  if (!input) {
-                    input = document.createElement('input');
-                    input.type = 'hidden';
-                    input.name = 'g-recaptcha-response';
-                    form.appendChild(input);
-                  }
-                  input.value = token;
-
-                  // Remove onsubmit to avoid infinite loop, then submit natively
-                  form.removeAttribute('onsubmit');
-                  form.submit();
-                }).catch(function() {
-                  alert('Error al verificar reCAPTCHA. Por favor, intentalo de nuevo.');
-                });
+              grecaptcha.execute('6Ld1TtUqAAAAAAgPnHc9MAZNvfdexH5uo62fARFi', { action: 'submit' }).then(function(token) {
+                var input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = 'g-recaptcha-response';
+                input.value = token;
+                form.appendChild(input);
+                form.removeAttribute('onsubmit');
+                form.submit();
+              }).catch(function() {
+                alert('Error al verificar reCAPTCHA. Por favor, intentalo de nuevo.');
               });
-
               return false;
             }
           </script>
