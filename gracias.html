@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>¡Gracias! — Cambalache Technologies</title>
+<meta name="description" content="Recibimos tu mensaje. Un especialista senior te va a responder en menos de 24 horas hábiles." />
+<meta name="robots" content="noindex, nofollow" />
+<link rel="icon" href="favicon.png" type="image/png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet" href="css/gracias.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logos/cambalache.png" alt="Cambalache Technologies" />
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+        <li><a href="soluciones.html">Soluciones</a></li>
+        <li><a href="casos-de-exito.html">Casos de éxito</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a href="https://calendar.app.google/abw3b6BQdnb6V6QV9" target="_blank" rel="noopener" class="btn btn-primary">
+        Agendar reunión
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <button class="nav-toggle" aria-label="Menú"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="gracias-section">
+  <div class="gracias-card">
+    <div class="gracias-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="20 6 9 17 4 12"/>
+      </svg>
+    </div>
+    <p class="tag">Mensaje recibido</p>
+    <h1>¡Gracias por <span class="gradient-text">escribirnos</span>!</h1>
+    <p>Tu consulta llegó correctamente. Un especialista senior de nuestro equipo te va a responder en <strong>menos de 24 horas hábiles</strong> con una primera lectura del proyecto y los próximos pasos.</p>
+
+    <div class="gracias-actions">
+      <a href="https://calendar.app.google/abw3b6BQdnb6V6QV9" target="_blank" rel="noopener" class="btn btn-primary">
+        Agendar reunión ahora
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a href="index.html" class="btn btn-ghost">Volver al inicio</a>
+    </div>
+
+    <p class="countdown">Serás redirigido al inicio en <span id="timer">30</span> segundos.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom" style="justify-content: center; border-top: none; padding-top: 0;">
+      <span>© <span data-year></span> Cambalache Technologies. Todos los derechos reservados.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Countdown + redirect
+  let seconds = 30;
+  const timerEl = document.getElementById('timer');
+  const interval = setInterval(() => {
+    seconds--;
+    timerEl.textContent = seconds;
+    if (seconds <= 0) {
+      clearInterval(interval);
+      window.location.href = 'index.html';
+    }
+  }, 1000);
+
+  // Year in footer
+  document.querySelectorAll('[data-year]').forEach(el => {
+    el.textContent = new Date().getFullYear();
+  });
+</script>
+
+<script src="js/main.js"></script>
+</body>
+</html>
