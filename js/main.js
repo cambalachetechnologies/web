@@ -49,27 +49,9 @@ document.querySelectorAll('[data-tabs]').forEach(group => {
   });
 });
 
-// 6. Contact form (basic UX feedback — no real backend)
-const form = document.querySelector('#contact-form');
-if (form) {
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const btn = form.querySelector('button[type="submit"]');
-    const original = btn.innerHTML;
-    btn.innerHTML = 'Enviando...';
-    btn.disabled = true;
-    setTimeout(() => {
-      btn.innerHTML = '✓ Mensaje enviado';
-      btn.style.background = '#10B981';
-      form.reset();
-      setTimeout(() => {
-        btn.innerHTML = original;
-        btn.disabled = false;
-        btn.style.background = '';
-      }, 2800);
-    }, 900);
-  });
-}
+// 6. Contact form — submit nativo a Salesforce (no interceptar)
+// El form tiene action="https://webto.salesforce.com/..." y method="POST"
+// No se hace preventDefault para que el POST llegue a Salesforce correctamente.
 
 // 7. Year in footer
 document.querySelectorAll('[data-year]').forEach(el => {
